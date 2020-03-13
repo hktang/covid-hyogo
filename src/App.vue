@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Index pageTitle="COVID-19 Hyogo"/>
+    <ChartByDateContainer/>
   </div>
 </template>
 
 <script>
-import Index from './components/Index.vue'
+import ChartByDateContainer from './components/ChartByDateContainer.vue'
 
 export default {
   name: 'App',
   components: {
-    Index
+    ChartByDateContainer
   }
 }
 </script>
