@@ -5,23 +5,6 @@
 </template>
 
 <script>
-
-async function init() {
-    const { GoogleSpreadsheet } = require('google-spreadsheet');
-
-    // spreadsheet key is the long id in the sheets URL
-    const doc = new GoogleSpreadsheet('1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw');
-    doc.useApiKey(process.env.GOOGLE_API_KEY);
-
-    await doc.loadInfo();
-
-    const sheet = doc.sheetsByIndex[0];
-    console.log(sheet.title);
-    console.log(sheet.rowCount);
-}
-
-init();
-
 export default {
   name: 'Index',
   props: {
