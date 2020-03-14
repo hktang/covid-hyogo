@@ -1,22 +1,22 @@
 <template>
   <div id="app">
     <h1>COVID-19 Hyogo</h1>
-    <ChartByDateContainer/>
-    <ChartByCity/>
+    <ChartByDateContainer />
+    <MapByCity />
   </div>
 </template>
 
 <script>
-import ChartByDateContainer from './components/ChartByDateContainer.vue'
-import ChartByCity from './components/ChartByCity.vue'
+import ChartByDateContainer from "./components/ChartByDateContainer.vue";
+import MapByCity from "./components/MapByCity.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     ChartByDateContainer,
-    ChartByCity
+    MapByCity
   }
-}
+};
 </script>
 
 <style>

@@ -1,5 +1,5 @@
 <script>
-import { Bar } from 'vue-chartjs'
+import { Bar } from "vue-chartjs";
 
 export default {
   extends: Bar,
@@ -13,8 +13,8 @@ export default {
       default: null
     }
   },
-  mounted () {
-    this.renderChart(this.chartdata, this.options)
+  mounted() {
+    this.renderChart(this.chartdata, this.options);
   }
-}
+};
 </script>

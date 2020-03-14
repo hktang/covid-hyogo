@@ -6,15 +6,18 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "fix": "./node_modules/.bin/eslint --fix ./src"
+    "format": "./node_modules/.bin/eslint --fix ./src/*.js ./src/*.vue ./src/components/**"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
     "eslint-config-prettier": "^6.10.0",
+    "eslint-loader": "^3.0.3",
     "eslint-plugin-prettier": "^3.1.2",
     "leaflet": "^1.6.0",
+    "mobile-device-detect": "^0.3.3",
+    "prettier": "^1.19.1",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.0",
     "vue-loading-overlay": "^3.3.2",
@@ -24,9 +27,9 @@
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -35,8 +38,10 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+      "plugin:vue/recommended",
+      "eslint:recommended",
+      "prettier/vue",
+      "plugin:prettier/recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
