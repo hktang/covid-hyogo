@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>COVID-19 Hyogo</h1>
     <ChartByDateContainer/>
     <ChartByCity/>
   </div>
@@ -26,5 +27,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.muted {
+  color: #333;
+  margin-bottom: 40px;
 }
 </style>

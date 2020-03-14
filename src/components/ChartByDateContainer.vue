@@ -1,24 +1,30 @@
 <template>
   <div class="container">
     <h2>Daily new confirmed cases</h2>
+    <p class="muted">Last updated: <br/> {{lastUpdated}}</p>
+    <loading :active.sync="loading"></loading>
     <chart-by-date
       class="chart"
       v-if="loaded"
       :chartdata="chartdata"
-      :options="options"/>
+      :options="options"
+    />
   </div>
 </template>
 
 <script>
-import ChartByDate from './ChartByDate.vue'
 import axios from 'axios'
+import ChartByDate from './ChartByDate.vue'
+import Loading from 'vue-loading-overlay'
 
 export default {
   name: 'ChartByDateContainer',
-  components: { ChartByDate },
+  components: { ChartByDate, Loading },
   data: () => ({
+    loading: true,
     loaded: false,
-    chartdata: null
+    chartdata: null,
+    lastUpdated: null
   }),
   async mounted () {
     this.loaded = false
@@ -29,7 +35,7 @@ export default {
       axios.get('https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/2/public/basic?alt=json')
         .then(response => {
           const responseData = response.data
-
+          const lastUpdated = new Date(responseData['feed']['updated']['$t'])
           let dateLabels = []
           let excludedRowIds = []
           let dailyF=[]
@@ -89,7 +95,9 @@ export default {
               }]
             }
           }
+          this.lastUpdated = lastUpdated
           this.loaded = true
+          this.loading = false
         }).catch(error => {
           console.log(error)
       });
@@ -101,7 +109,6 @@ export default {
 <style scoped>
 .container {
   background-color: #fcfcfc;
-  padding: 20px 0 100px 0;
   margin: 0;
 }
 
@@ -112,7 +119,7 @@ export default {
 
 @media only screen and (max-width: 800px) {
   .container {
-    height: 300px;
+    min-height: 300px;
   }
 
   .chart {
@@ -123,7 +130,7 @@ export default {
 
 @media only screen and (min-width: 800px) {
   .container {
-    height: 50vh;
+    min-height: 50vh;
   }
 
   .chart {
