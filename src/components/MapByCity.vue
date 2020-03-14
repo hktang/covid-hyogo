@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="map-container">
     <h2>Accumulated cases by city</h2>
     <p class="muted">
       Hover or tap on a circle marker in the map to view details.
@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       zoom: isMobile ? 9 : 11,
-      center: [34.833439, 134.993893],
+      center: [34.75, 135.05],
       url:
         "https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png",
       attribution:
@@ -116,24 +116,18 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.map-container {
   margin: 0 auto;
   padding: 60px 0;
-  width: 100%;
-  height: 100vh;
 }
 
 .map {
   margin: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 .tooltip {
   font-size: 16px;
-}
-
-@media only screen and (max-width: 800px) {
-}
-
-@media only screen and (min-width: 800px) {
 }
 </style>
