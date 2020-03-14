@@ -66,13 +66,11 @@ export default {
               {
                 label: 'Female',
                 backgroundColor: '#42b983',
-                //data: dailyConfirmed,
                 data: dailyF,
               },
               {
                 label: 'Male',
                 backgroundColor: '#423383',
-                //data: dailyConfirmed,
                 data: dailyM,
               }
             ]
@@ -102,6 +100,11 @@ export default {
 </script>
 
 <style>
+.container {
+  background-color: #fcfcfc;
+  padding: 20px 0;
+}
+
 @media only screen and (max-width: 800px) {
   .chart {
     width: 90vw;
