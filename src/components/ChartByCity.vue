@@ -18,7 +18,7 @@
         :radius="circle.radius"
         :color="circle.color"
       >
-        <l-tooltip>
+        <l-tooltip class="tooltip">
          {{circle.name}}
         </l-tooltip>
       </l-circle-marker>
@@ -43,8 +43,8 @@ export default {
     return {
       zoom: 9,
       center: [34.833439, 134.993893],
-      url: 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png',
-      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      url: 'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png',
+      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
       circles: [],
       options: {
         scrollWheelZoom:false, 
@@ -75,7 +75,7 @@ export default {
               center: [Number(city[0]['content']['$t']), 
                        Number(city[1]['content']['$t'])],
               radius: Number(city[3]['content']['$t']) * 1.5,
-              color: '#64b5c2',
+              color: '#00cdbb',
               name: city[2]['content']['$t'] + ': ' + city[3]['content']['$t']
             }
 
@@ -122,6 +122,10 @@ export default {
 
 .map {
   margin: 0;
+}
+
+.tooltip {
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 800px) {}
