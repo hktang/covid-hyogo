@@ -4,7 +4,7 @@
     <l-map
       :zoom="zoom"
       :center="center"
-      :options="{scrollWheelZoom:false}"
+      :options="{scrollWheelZoom:false, dragging:false, touchZoom:true}"
       class="map"
     >
       <l-tile-layer
