@@ -23,7 +23,13 @@
       >
     </p>
     <p>
-      Graphic by Taylor LJ via
+      Inspired by
+      <a href="https://blog.datawrapper.de/coronaviruscharts/">
+        17 responsible live visualizations about the coronavirus</a
+      >
+    </p>
+    <p>
+      Hands graphic by Taylor LJ via
       <a
         href="https://flowingdata.com/2020/02/18/most-often-missed-areas-while-washing-hands/"
         >Flowing Data</a

@@ -118,7 +118,7 @@ export default {
 <style scoped>
 .map-container {
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .map {

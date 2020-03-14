@@ -1,5 +1,24 @@
 <template>
   <div class="container">
+    <dl>
+      <dt>Total confirmed cases</dt>
+      <dd>
+        <strong>{{ total }}</strong
+        ><br />
+        <span class="muted">
+          (1 in {{ Math.round(5460482 / 67).toLocaleString() }} residents of
+          Hyogo Prefecture)</span
+        >
+      </dd>
+      <dt>Total deaths</dt>
+      <dd>
+        <strong>1</strong><br />
+        <span class="muted">
+          (1 in {{ Math.round(5460482 / 1).toLocaleString() }} residents of
+          Hyogo Prefecture)</span
+        >
+      </dd>
+    </dl>
     <h2>Daily new confirmed cases</h2>
     <p class="muted">
       Last updated: <br />
@@ -27,7 +46,8 @@ export default {
     loading: true,
     loaded: false,
     chartdata: null,
-    lastUpdated: null
+    lastUpdated: null,
+    total: null
   }),
   async mounted() {
     this.loaded = false;
@@ -46,6 +66,7 @@ export default {
           let excludedRowIds = [];
           let dailyF = [];
           let dailyM = [];
+
           for (let i = 0; i < responseData.feed.entry.length; i++) {
             if (
               responseData.feed.entry[i]["title"]["$t"].substring(0, 1) == "A"
@@ -120,6 +141,9 @@ export default {
               ]
             }
           };
+          this.total =
+            dailyF.reduce((a, b) => Number(a) + Number(b), 0) +
+            dailyM.reduce((a, b) => Number(a) + Number(b), 0);
           this.lastUpdated = lastUpdated;
           this.loaded = true;
           this.loading = false;
@@ -134,8 +158,9 @@ export default {
 
 <style scoped>
 .container {
-  background-color: #fcfcfc;
-  margin: 0;
+  background-color: #fafafa;
+  margin: 20px auto;
+  padding: 20px 0 50px;
 }
 
 .chart {

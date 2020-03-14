@@ -29,13 +29,23 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .muted {
-  color: #333;
+  color: #aaa;
   margin-bottom: 40px;
+  font-size: 15px;
 }
 .footer {
   padding-bottom: 40px;
+}
+dt {
+  padding-top: 20px;
+  color: #42b983;
+  font-weight: 900;
+}
+dd {
+  margin-left: 0;
+  font-size: 26px;
 }
 </style>
