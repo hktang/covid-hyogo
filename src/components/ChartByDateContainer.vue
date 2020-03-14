@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h2>Daily new confirmed cases</h2>
     <chart-by-date
       class="chart"
       v-if="loaded"
@@ -31,7 +32,8 @@ export default {
 
           let dateLabels = []
           let excludedRowIds = []
-          let dailyConfirmed=[]
+          let dailyF=[]
+          let dailyM=[]
           for (let i=0; i<responseData.feed.entry.length; i++){
             if(responseData.feed.entry[i]['title']['$t'].substring(0,1) == "A"){
               if (responseData.feed.entry[i]['content']['$t'].substring(0,4) == "2020"){
@@ -43,19 +45,35 @@ export default {
           }
           console.log(excludedRowIds)
           for (let i=0; i<responseData.feed.entry.length; i++){
-            if(responseData.feed.entry[i]['title']['$t'].substring(0,1) == "D"){
-              if (!excludedRowIds.includes(responseData.feed.entry[i]['title']['$t'].substring(1))){
-                dailyConfirmed.push(responseData.feed.entry[i]['content']['$t'])
-              }
+            switch(responseData.feed.entry[i]['title']['$t'].substring(0,1)){
+              case "B":
+                if (!excludedRowIds.includes(responseData.feed.entry[i]['title']['$t'].substring(1))){
+                  dailyF.push(responseData.feed.entry[i]['content']['$t'])
+                }
+                break
+              case "C":
+                if (!excludedRowIds.includes(responseData.feed.entry[i]['title']['$t'].substring(1))){
+                  dailyM.push(responseData.feed.entry[i]['content']['$t'])
+                }
+                break
+              default:
+                break
             }
           }
           this.chartdata = {
             labels: dateLabels,
             datasets: [
               {
-                label: 'Daily confirmed cases',
+                label: 'Female',
                 backgroundColor: '#42b983',
-                data: dailyConfirmed,
+                //data: dailyConfirmed,
+                data: dailyF,
+              },
+              {
+                label: 'Male',
+                backgroundColor: '#423383',
+                //data: dailyConfirmed,
+                data: dailyM,
               }
             ]
           }
@@ -63,10 +81,14 @@ export default {
             maintainAspectRatio: false,
             responsive: true,
             scales: {
+              xAxes: [{
+                  stacked: true
+              }],
               yAxes: [{
                   ticks: {
                       beginAtZero: true
-                  }
+                  },
+                  stacked: true
               }]
             }
           }
@@ -80,9 +102,20 @@ export default {
 </script>
 
 <style>
-.chart {
-  width: 75vw;
-  height: 50vh;
-  margin: 0 auto;
+@media only screen and (max-width: 800px) {
+  .chart {
+    width: 90vw;
+    height: 300px;
+    margin: 0 auto;
+  }
 }
+
+@media only screen and (min-width: 800px) {
+  .chart {
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+  }
+}
+
 </style>
