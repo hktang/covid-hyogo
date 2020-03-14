@@ -4,12 +4,7 @@
     <l-map
       :zoom="zoom"
       :center="center"
-      :options="{
-        scrollWheelZoom:false, 
-        dragging:false, 
-        touchZoom:false,
-        zoomControl:false
-      }"
+      :options="options"
       class="map"
     >
       <l-tile-layer
@@ -32,6 +27,7 @@
 </template>
 
 <script>
+import L from 'leaflet'
 import {LMap, LTileLayer, LCircleMarker, LTooltip} from 'vue2-leaflet'
 import axios from 'axios'
 
@@ -50,6 +46,11 @@ export default {
       url: 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png',
       attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       circles: [],
+      options: {
+        scrollWheelZoom:false, 
+        dragging: !L.Browser.mobile, 
+        tap: !L.Browser.mobile
+      }
     }
   },
   methods: {
@@ -80,7 +81,6 @@ export default {
 
             this.circles.push(data)
           })
-          console.log(this.circles)
         }).catch(error => {
           console.log(error)
       });
