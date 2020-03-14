@@ -6,14 +6,8 @@
       class="hands"
       src="../assets/handwashing-missed.png"
     />
-    <h2>References</h2>
+    <h2>Data sources and references</h2>
 
-    <p>
-      Data from
-      <a href="https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html">
-        新型コロナウイルスに感染した患者の発生状況</a
-      >, Hyogo Prefectural Government
-    </p>
     <p>
       Data available as
       <a
@@ -21,6 +15,10 @@
       >
         Google Spreadsheet</a
       >
+      from
+      <a href="https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html">
+        新型コロナウイルスに感染した患者の発生状況</a
+      >, Hyogo Prefectural Government
     </p>
     <p>
       Inspired by
@@ -38,7 +36,15 @@
   </div>
 </template>
 <style scoped>
-.hands {
-  width: 40vw;
+@media only screen and (max-width: 800px) {
+  .hands {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .hands {
+    width: 40vw;
+  }
 }
 </style>

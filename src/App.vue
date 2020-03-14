@@ -3,11 +3,13 @@
     <h1>COVID-19 Hyogo</h1>
     <ChartByDateContainer />
     <MapByCity />
+    <ChartByAgeContainer />
     <Footer />
   </div>
 </template>
 
 <script>
+import ChartByAgeContainer from "./components/ChartByAgeContainer.vue";
 import ChartByDateContainer from "./components/ChartByDateContainer.vue";
 import MapByCity from "./components/MapByCity.vue";
 import Footer from "./components/Footer.vue";
@@ -15,6 +17,7 @@ import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: {
+    ChartByAgeContainer,
     ChartByDateContainer,
     MapByCity,
     Footer
@@ -33,19 +36,10 @@ export default {
 }
 .muted {
   color: #aaa;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 15px;
 }
 .footer {
   padding-bottom: 40px;
-}
-dt {
-  padding-top: 20px;
-  color: #42b983;
-  font-weight: 900;
-}
-dd {
-  margin-left: 0;
-  font-size: 26px;
 }
 </style>

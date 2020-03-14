@@ -1,28 +1,8 @@
 <template>
   <div class="container">
-    <p class="muted">Last updated: {{ lastUpdated }}</p>
-    <dl>
-      <dt>Total confirmed cases</dt>
-      <dd>
-        <strong>{{ total }}</strong
-        ><br />
-        <span class="muted">
-          (1 in {{ Math.round(5460482 / 67).toLocaleString() }} residents of
-          Hyogo Prefecture)</span
-        >
-      </dd>
-      <dt>Total deaths</dt>
-      <dd>
-        <strong>1</strong><br />
-        <span class="muted">
-          (1 in {{ Math.round(5460482 / 1).toLocaleString() }} residents of
-          Hyogo Prefecture)</span
-        >
-      </dd>
-    </dl>
-    <h3>Daily confirmed cases</h3>
+    <h2>Distribution by age group</h2>
     <loading :active.sync="loading"></loading>
-    <chart-by-date
+    <chart-by-age
       v-if="loaded"
       class="chart"
       :chartdata="chartdata"
@@ -33,18 +13,16 @@
 
 <script>
 import axios from "axios";
-import ChartByDate from "./BarChart.vue";
+import ChartByAge from "./BarChart.vue";
 import Loading from "vue-loading-overlay";
 
 export default {
   name: "ChartByDateContainer",
-  components: { ChartByDate, Loading },
+  components: { ChartByAge, Loading },
   data: () => ({
     loading: true,
     loaded: false,
-    chartdata: null,
-    lastUpdated: null,
-    total: null
+    chartdata: null
   }),
   async mounted() {
     this.loaded = false;
@@ -54,25 +32,25 @@ export default {
     getData: function() {
       axios
         .get(
-          "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/2/public/basic?alt=json"
+          "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/4/public/basic?alt=json"
         )
         .then(response => {
           const responseData = response.data;
-          const lastUpdated = new Date(responseData["feed"]["updated"]["$t"]);
-          let dateLabels = [];
+          let ageLabels = [];
           let excludedRowIds = [];
-          let dailyF = [];
-          let dailyM = [];
+          let count = [];
 
           for (let i = 0; i < responseData.feed.entry.length; i++) {
             if (
               responseData.feed.entry[i]["title"]["$t"].substring(0, 1) == "A"
             ) {
               if (
-                responseData.feed.entry[i]["content"]["$t"].substring(0, 4) ==
-                "2020"
+                responseData.feed.entry[i]["content"]["$t"].substring(0, 1) !=
+                "A"
               ) {
-                dateLabels.push(responseData.feed.entry[i]["content"]["$t"]);
+                ageLabels.push(
+                  "Age " + responseData.feed.entry[i]["content"]["$t"]
+                );
               } else {
                 excludedRowIds.push(
                   responseData.feed.entry[i]["title"]["$t"].substring(1)
@@ -88,16 +66,7 @@ export default {
                     responseData.feed.entry[i]["title"]["$t"].substring(1)
                   )
                 ) {
-                  dailyF.push(responseData.feed.entry[i]["content"]["$t"]);
-                }
-                break;
-              case "C":
-                if (
-                  !excludedRowIds.includes(
-                    responseData.feed.entry[i]["title"]["$t"].substring(1)
-                  )
-                ) {
-                  dailyM.push(responseData.feed.entry[i]["content"]["$t"]);
+                  count.push(responseData.feed.entry[i]["content"]["$t"]);
                 }
                 break;
               default:
@@ -105,17 +74,12 @@ export default {
             }
           }
           this.chartdata = {
-            labels: dateLabels,
+            labels: ageLabels,
             datasets: [
               {
-                label: "Female",
-                backgroundColor: "#42b983",
-                data: dailyF
-              },
-              {
-                label: "Male",
-                backgroundColor: "#423383",
-                data: dailyM
+                label: "Number of confirmed cases",
+                backgroundColor: "#b4e3ce",
+                data: count
               }
             ]
           };
@@ -123,25 +87,16 @@ export default {
             maintainAspectRatio: false,
             responsive: true,
             scales: {
-              xAxes: [
-                {
-                  stacked: true
-                }
-              ],
+              xAxes: [{}],
               yAxes: [
                 {
                   ticks: {
                     beginAtZero: true
-                  },
-                  stacked: true
+                  }
                 }
               ]
             }
           };
-          this.total =
-            dailyF.reduce((a, b) => Number(a) + Number(b), 0) +
-            dailyM.reduce((a, b) => Number(a) + Number(b), 0);
-          this.lastUpdated = lastUpdated;
           this.loaded = true;
           this.loading = false;
         })
@@ -155,28 +110,13 @@ export default {
 
 <style scoped>
 .container {
-  background-color: #fafafa;
   margin: 20px auto;
-  padding: 10px 0 50px;
+  padding: 20px 0 50px;
 }
 
 .chart {
   padding: 0;
   margin: 0 auto;
-}
-
-dt {
-  padding-top: 24px;
-  color: #42b983;
-  font-weight: 900;
-}
-dd {
-  margin: 12px 0 0 0;
-  font-size: 26px;
-  line-height: 20px;
-}
-h3 {
-  margin-top: 50px;
 }
 
 @media only screen and (max-width: 800px) {

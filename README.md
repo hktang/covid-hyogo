@@ -1,24 +1,7 @@
-# covid-hyogo
+# COVID-19 Hyogo
 
-## Project setup
-```
-yarn install
-```
+Tracking the COVID-19 outbreak in Hyogo Prefecture, Japan
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## License
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This project is licensed under the MIT License
