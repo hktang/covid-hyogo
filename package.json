@@ -11,8 +11,10 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
+    "leaflet": "^1.6.0",
     "vue": "^2.6.11",
-    "vue-chartjs": "^3.5.0"
+    "vue-chartjs": "^3.5.0",
+    "vue2-leaflet": "^2.5.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",

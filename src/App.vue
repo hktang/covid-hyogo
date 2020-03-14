@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <ChartByDateContainer/>
+    <ChartByCity/>
   </div>
 </template>
 
 <script>
 import ChartByDateContainer from './components/ChartByDateContainer.vue'
+import ChartByCity from './components/ChartByCity.vue'
 
 export default {
   name: 'App',
   components: {
-    ChartByDateContainer
+    ChartByDateContainer,
+    ChartByCity
   }
 }
 </script>

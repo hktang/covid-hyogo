@@ -43,7 +43,6 @@ export default {
               }
             }
           }
-          console.log(excludedRowIds)
           for (let i=0; i<responseData.feed.entry.length; i++){
             switch(responseData.feed.entry[i]['title']['$t'].substring(0,1)){
               case "B":
@@ -99,25 +98,37 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   background-color: #fcfcfc;
-  padding: 20px 0;
+  padding: 20px 0 100px 0;
+  margin: 0;
+}
+
+.chart{
+  padding: 0;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 800px) {
+  .container {
+    height: 300px;
+  }
+
   .chart {
     width: 90vw;
     height: 300px;
-    margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 800px) {
+  .container {
+    height: 50vh;
+  }
+
   .chart {
     width: 50vw;
     height: 50vh;
-    margin: 0 auto;
   }
 }
 
