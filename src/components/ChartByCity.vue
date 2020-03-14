@@ -40,10 +40,10 @@ export default {
   },
   data() {
     return {
-      zoom: 10,
+      zoom: 9,
       center: [34.833439, 134.993893],
-      url: 'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png',
-      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+      url: 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png',
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       circles: [],
     }
   },
@@ -111,25 +111,15 @@ export default {
 .container{
   margin: 0 auto;
   padding: 60px 0;
+  width: 100%;
+  height: 100vh;
 }
 
 .map {
   margin: 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {}
 
-  .container {
-    width: 100%;
-    height: 30vh;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-
-  .container {
-    width: 100%;
-    height: 100vh;
-  }
-}
+@media only screen and (min-width: 800px) {}
 </style>
