@@ -2,22 +2,30 @@
   <div class="container">
     <p class="muted">Last updated: {{ lastUpdated }}</p>
     <dl>
-      <dt>Total confirmed cases out of the 744 tested</dt>
+      <dt>Total confirmed cases out of the {{ totalTested }} tested</dt>
       <dd>
-        <strong>{{ total }}</strong
+        <strong>{{ totalConfirmed }}</strong
         ><br />
         <span class="muted">
-          (1 in {{ Math.round(5460482 / 67).toLocaleString() }} residents of
-          Hyogo Prefecture; 1 in {{ Math.round(744 / 67).toLocaleString() }} of
-          patients tested.)</span
+          ...that is 1 in
+          {{ Math.round(population / totalConfirmed).toLocaleString() }}
+          residents of Hyogo Prefecture; <br />
+          or 1 in
+          {{ Math.round(totalTested / totalConfirmed).toLocaleString() }} of
+          patients tested so far.</span
         >
       </dd>
       <dt>Total deaths</dt>
       <dd>
-        <strong>1</strong><br />
+        <strong>{{ totalDeaths }}</strong
+        ><br />
         <span class="muted">
-          (1 in {{ Math.round(5460482 / 1).toLocaleString() }} residents of
-          Hyogo Prefecture; 1 in 744 of patients tested.)</span
+          ... that is 1 in
+          {{ Math.round(population / totalDeaths).toLocaleString() }} residents
+          of Hyogo Prefecture; <br />
+          or 1 in
+          {{ Math.round(totalTested / totalDeaths).toLocaleString() }} of
+          patients tested so far.</span
         >
       </dd>
     </dl>
@@ -45,22 +53,24 @@ export default {
     loaded: false,
     chartdata: null,
     lastUpdated: null,
-    total: null
+    totalConfirmed: null,
+    totalTested: null,
+    totalDeaths: null,
+    population: 5460482 // As of 2020/1/1
   }),
   async mounted() {
     this.loaded = false;
-    this.getData();
+    this.getDailyData();
+    this.getDailyTests();
   },
   methods: {
-    getData: function() {
+    getDailyData: function() {
       axios
         .get(
           "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/2/public/basic?alt=json"
         )
         .then(response => {
           const responseData = response.data;
-          console.log(responseData);
-          const lastUpdated = new Date("2020-03-14T22:32:00.00Z");
           let dateLabels = [];
           let excludedRowIds = [];
           let dailyF = [];
@@ -102,6 +112,12 @@ export default {
                   dailyM.push(responseData.feed.entry[i]["content"]["$t"]);
                 }
                 break;
+              case "D":
+                if (responseData.feed.entry[i]["title"]["$t"] == "D1") {
+                  this.lastUpdated =
+                    responseData.feed.entry[i]["content"]["$t"];
+                }
+                break;
               default:
                 break;
             }
@@ -140,12 +156,36 @@ export default {
               ]
             }
           };
-          this.total =
+          this.totalConfirmed =
             dailyF.reduce((a, b) => Number(a) + Number(b), 0) +
             dailyM.reduce((a, b) => Number(a) + Number(b), 0);
-          this.lastUpdated = lastUpdated;
           this.loaded = true;
           this.loading = false;
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
+    getDailyTests: function() {
+      axios
+        .get(
+          "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/5/public/basic?alt=json"
+        )
+        .then(response => {
+          const responseData = response.data;
+
+          //B2: Tests conducted
+          let tests = responseData.feed.entry.filter(entry => {
+            return entry["title"]["$t"] === "B2";
+          });
+
+          //G2: Deaths
+          let deaths = responseData.feed.entry.filter(entry => {
+            return entry["title"]["$t"] === "G2";
+          });
+
+          this.totalTested = Number(tests[0]["content"]["$t"]);
+          this.totalDeaths = Number(deaths[0]["content"]["$t"]);
         })
         .catch(error => {
           console.log(error);

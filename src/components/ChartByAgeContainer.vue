@@ -78,7 +78,7 @@ export default {
             datasets: [
               {
                 label: "Number of confirmed cases",
-                backgroundColor: "#b4e3ce",
+                backgroundColor: "#00cdbb",
                 data: count
               }
             ]
