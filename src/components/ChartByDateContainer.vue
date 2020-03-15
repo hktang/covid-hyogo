@@ -58,7 +58,8 @@ export default {
         )
         .then(response => {
           const responseData = response.data;
-          const lastUpdated = new Date(responseData["feed"]["updated"]["$t"]);
+          console.log(responseData);
+          const lastUpdated = new Date("2020-03-14T22:32:00.00Z");
           let dateLabels = [];
           let excludedRowIds = [];
           let dailyF = [];
