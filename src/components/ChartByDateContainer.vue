@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p class="muted">Last updated: {{ lastUpdated }}</p>
+    <p class="muted">Last updated: {{ new Date(lastUpdated) }}</p>
     <dl>
       <dt>Total confirmed cases out of the {{ totalTested }} tested</dt>
       <dd>
