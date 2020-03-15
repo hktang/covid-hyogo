@@ -17,7 +17,7 @@
         <strong>1</strong><br />
         <span class="muted">
           (1 in {{ Math.round(5460482 / 1).toLocaleString() }} residents of
-          Hyogo Prefecture, 1 in 744 of patients tested.)</span
+          Hyogo Prefecture; 1 in 744 of patients tested.)</span
         >
       </dd>
     </dl>
