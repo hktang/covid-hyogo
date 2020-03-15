@@ -2,13 +2,14 @@
   <div class="container">
     <p class="muted">Last updated: {{ lastUpdated }}</p>
     <dl>
-      <dt>Total confirmed cases</dt>
+      <dt>Total confirmed cases out of the 744 tested</dt>
       <dd>
         <strong>{{ total }}</strong
         ><br />
         <span class="muted">
           (1 in {{ Math.round(5460482 / 67).toLocaleString() }} residents of
-          Hyogo Prefecture)</span
+          Hyogo Prefecture; 1 in {{ Math.round(744 / 67).toLocaleString() }} of
+          patients tested.)</span
         >
       </dd>
       <dt>Total deaths</dt>
@@ -16,7 +17,7 @@
         <strong>1</strong><br />
         <span class="muted">
           (1 in {{ Math.round(5460482 / 1).toLocaleString() }} residents of
-          Hyogo Prefecture)</span
+          Hyogo Prefecture, 1 in 744 of patients tested.)</span
         >
       </dd>
     </dl>
