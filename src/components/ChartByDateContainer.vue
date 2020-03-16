@@ -69,7 +69,9 @@ export default {
     getDailyData: function() {
       axios
         .get(
-          "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/2/public/basic?alt=json"
+          "https://spreadsheets.google.com/feeds/cells/" +
+            process.env.VUE_APP_GOOGLE_SPREADSHEET_ID +
+            "/2/public/basic?alt=json"
         )
         .then(response => {
           const responseData = response.data;
@@ -171,7 +173,9 @@ export default {
     getDailyTests: function() {
       axios
         .get(
-          "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/5/public/basic?alt=json"
+          "https://spreadsheets.google.com/feeds/cells/" +
+            process.env.VUE_APP_GOOGLE_SPREADSHEET_ID +
+            "/5/public/basic?alt=json"
         )
         .then(response => {
           const responseData = response.data;
