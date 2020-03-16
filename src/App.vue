@@ -4,7 +4,6 @@
     <ChartByDateContainer />
     <MapByCity />
     <ChartByAgeContainer />
-    <Clusters />
     <Footer />
   </div>
 </template>
@@ -13,7 +12,6 @@
 import ChartByAgeContainer from "./components/ChartByAgeContainer.vue";
 import ChartByDateContainer from "./components/ChartByDateContainer.vue";
 import MapByCity from "./components/MapByCity.vue";
-import Clusters from "./components/Clusters.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
@@ -22,7 +20,6 @@ export default {
     ChartByAgeContainer,
     ChartByDateContainer,
     MapByCity,
-    Clusters,
     Footer
   }
 };
