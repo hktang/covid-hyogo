@@ -32,7 +32,7 @@ export default {
       axios
         .get(
           "https://spreadsheets.google.com/feeds/cells/" +
-            process.env.VUE_APP_GOOGLE_SPREADSHEET_ID +
+            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
             "/4/public/basic?alt=json"
         )
         .then(response => {
