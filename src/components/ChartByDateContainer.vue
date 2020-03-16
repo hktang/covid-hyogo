@@ -8,11 +8,11 @@
         ><br />
         <span class="muted">
           ...that is 1 in
-          {{ Math.round(population / totalConfirmed).toLocaleString() }}
-          residents of Hyogo Prefecture; <br />
+          {{ Math.round(totalTested / totalConfirmed).toLocaleString() }}
+          patients tested so far.<br />
           or 1 in
-          {{ Math.round(totalTested / totalConfirmed).toLocaleString() }} of
-          patients tested so far.</span
+          {{ Math.round(population / totalConfirmed).toLocaleString() }}
+          residents of Hyogo Prefecture;</span
         >
       </dd>
       <dt>Total deaths</dt>
@@ -21,11 +21,14 @@
         ><br />
         <span class="muted">
           ... that is 1 in
-          {{ Math.round(population / totalDeaths).toLocaleString() }} residents
-          of Hyogo Prefecture; <br />
+          {{ Math.round(totalConfirmed / totalDeaths).toLocaleString() }}
+          confirmed cases; <br />
           or 1 in
-          {{ Math.round(totalTested / totalDeaths).toLocaleString() }} of
-          patients tested so far.</span
+          {{ Math.round(totalTested / totalDeaths).toLocaleString() }}
+          patients tested so far.<br />
+          or 1 in
+          {{ Math.round(population / totalDeaths).toLocaleString() }} residents
+          of Hyogo Prefecture;</span
         >
       </dd>
     </dl>
