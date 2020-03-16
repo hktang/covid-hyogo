@@ -25,7 +25,6 @@ export default {
     chartdata: null
   }),
   async mounted() {
-    this.loaded = false;
     this.getData();
   },
   methods: {

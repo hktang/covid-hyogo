@@ -62,7 +62,6 @@ export default {
     population: 5460482 // As of 2020/1/1
   }),
   async mounted() {
-    this.loaded = false;
     this.getDailyData();
     this.getDailyTests();
   },
