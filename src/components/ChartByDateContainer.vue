@@ -9,10 +9,10 @@
         <span class="muted">
           ...that is 1 in
           {{ Math.round(totalTested / totalConfirmed).toLocaleString() }}
-          patients tested so far.<br />
+          patients tested so far;<br />
           or 1 in
           {{ Math.round(population / totalConfirmed).toLocaleString() }}
-          residents of Hyogo Prefecture;</span
+          residents of Hyogo Prefecture.</span
         >
       </dd>
       <dt>Total deaths</dt>
@@ -25,10 +25,10 @@
           confirmed cases; <br />
           or 1 in
           {{ Math.round(totalTested / totalDeaths).toLocaleString() }}
-          patients tested so far.<br />
+          patients tested so far;<br />
           or 1 in
           {{ Math.round(population / totalDeaths).toLocaleString() }} residents
-          of Hyogo Prefecture;</span
+          of Hyogo Prefecture.</span
         >
       </dd>
     </dl>
