@@ -59,6 +59,7 @@ export default {
           this.yLabels.splice(0, 1);
 
           const caseData = [];
+          let pointRadiusList = [];
 
           for (let i = 0; i < cases.length; i++) {
             const label = cases[i]["title"]["$t"];
@@ -73,14 +74,21 @@ export default {
               return entry["title"]["$t"] === colAlpha + "1";
             });
 
-            caseData.push(
-              this.mapDataPoint(
-                theLabel[0]["content"]["$t"],
-                theDate[0]["content"]["$t"]
-              )
-            );
-          }
+            const theCase = {
+              x: this.xLabels.indexOf(theLabel[0]["content"]["$t"]),
+              y: this.yLabels.indexOf(theDate[0]["content"]["$t"])
+            };
 
+            if (isNaN(pointRadiusList[i])) {
+              pointRadiusList[i] = 1;
+            }
+
+            if (this.containsCase(theCase, caseData)) {
+              pointRadiusList[caseData.length - 1] += 1;
+            } else {
+              caseData.push(theCase);
+            }
+          }
           this.chartdata = {
             datasets: [
               {
@@ -88,7 +96,7 @@ export default {
                 fill: false,
                 showLine: false,
                 opacity: 0.5,
-                pointRadius: 4,
+                pointRadius: pointRadiusList.map(x => x * 2),
                 borderWidth: 2,
                 borderColor: "#809399",
                 backgroundColor: "rgba(255, 255, 255, 0)"
@@ -97,8 +105,7 @@ export default {
           };
           this.options = {
             responsive: true,
-            maintainAspectRatio: true,
-            aspectRatio: 0.2,
+            maintainAspectRatio: false,
             title: {
               display: false
             },
@@ -113,15 +120,14 @@ export default {
                 {
                   type: "linear",
                   position: "top",
-                  scaleLabel: {
-                    display: false
-                  },
                   ticks: {
                     min: 0,
-                    max: this.xLabels.length - 1,
+                    max: this.xLabels.length,
                     callback: value => {
                       return this.xLabels[value];
-                    }
+                    },
+                    minRotation: 75,
+                    autoSkip: false
                   }
                 }
               ],
@@ -137,7 +143,7 @@ export default {
                   ticks: {
                     reverse: false,
                     min: 0,
-                    max: this.yLabels.length + 1,
+                    max: this.yLabels.length,
                     callback: i => {
                       return this.yLabels[i];
                     }
@@ -152,12 +158,16 @@ export default {
           console.log(error);
         });
     },
-    // Courtesy of https://stackoverflow.com/questions/43090102/chartjs-mapping-non-numeric-y-and-x
-    mapDataPoint: function(xValue, yValue) {
-      return {
-        x: this.xLabels.indexOf(xValue),
-        y: this.yLabels.indexOf(yValue)
-      };
+    containsCase: function(object, list) {
+      var i;
+      for (i = 0; i < list.length; i++) {
+        if (list[i].x === object.x) {
+          if (list[i].y === object.y) {
+            return true;
+          }
+        }
+      }
+      return false;
     }
   }
 };
