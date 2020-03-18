@@ -7,6 +7,27 @@
       :chartdata="chartdata"
       :options="options"
     />
+    <ul class="legend muted">
+      <li>
+        <strong>認定こども園</strong>: An early childhood education and care
+        center, Kobe
+      </li>
+      <li>
+        <strong>北播磨医療センター</strong>: Kita-Harima Medical Center, Ono
+      </li>
+      <li>
+        <strong>グリーンアルス</strong>: A geriatric health services facility,
+        Itami
+      </li>
+      <li>
+        <strong>宝塚第一病院</strong>: Takarazuka Daiichi Hospital, Takarazuka
+      </li>
+      <li><strong>仁恵病院</strong>: Jinkei hospital, Himeji</li>
+      <li>
+        <strong>ライブ関係</strong>: Cases related to live houses in Osaka
+      </li>
+      <li><strong>不明</strong>: Unknown</li>
+    </ul>
   </div>
 </template>
 
@@ -179,7 +200,14 @@ export default {
   padding-bottom: 40px;
 }
 
-.chart {
+.legend {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+ul.legend li {
+  text-align: left;
+  list-style-type: square;
 }
 
 @media only screen and (max-width: 800px) {
