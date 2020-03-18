@@ -21,7 +21,7 @@
       >
         Google Spreadsheet</a
       >
-      from
+      , compiled from
       <a href="https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html">
         新型コロナウイルスに感染した患者の発生状況</a
       >, Hyogo Prefectural Government

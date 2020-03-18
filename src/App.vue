@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <img src="../public/hyogo.svg" />
     <h1>COVID-19 Hyogo</h1>
+    <p class="muted">Visualizing COVID-19 in Hyogo Prefecture, Japan</p>
     <ChartByDateContainer />
     <MapByCity />
     <ChartByAgeContainer />
