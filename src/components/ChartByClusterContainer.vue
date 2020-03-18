@@ -143,7 +143,7 @@ export default {
                   position: "top",
                   ticks: {
                     min: 0,
-                    max: this.xLabels.length,
+                    max: this.xLabels.length - 1,
                     callback: value => {
                       return this.xLabels[value];
                     },

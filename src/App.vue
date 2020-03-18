@@ -4,9 +4,9 @@
     <h1>COVID-19 Hyogo</h1>
     <p class="muted">Visualizing COVID-19 in Hyogo Prefecture, Japan</p>
     <ChartByDateContainer />
+    <ChartByClusterContainer />
     <MapByCity />
     <ChartByAgeContainer />
-    <ChartByClusterContainer />
     <Footer />
   </div>
 </template>
