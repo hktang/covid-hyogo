@@ -39,61 +39,82 @@ export default {
           const responseData = response.data;
           let ageLabels = [];
           let excludedRowIds = [];
-          let count = [];
+          let counts = [];
+          let deathCounts = [];
+          const entries = responseData.feed.entry;
 
-          for (let i = 0; i < responseData.feed.entry.length; i++) {
-            if (
-              responseData.feed.entry[i]["title"]["$t"].substring(0, 1) == "A"
-            ) {
-              if (
-                responseData.feed.entry[i]["content"]["$t"].substring(0, 1) !=
-                "A"
-              ) {
-                ageLabels.push(
-                  "Age " + responseData.feed.entry[i]["content"]["$t"]
-                );
+          for (let i = 0; i < entries.length; i++) {
+            if (entries[i]["title"]["$t"].substring(0, 1) == "A") {
+              if (entries[i]["content"]["$t"].substring(0, 1) != "A") {
+                ageLabels.push("Age " + entries[i]["content"]["$t"]);
               } else {
-                excludedRowIds.push(
-                  responseData.feed.entry[i]["title"]["$t"].substring(1)
-                );
+                excludedRowIds.push(entries[i]["title"]["$t"].substring(1));
               }
             }
           }
-          for (let i = 0; i < responseData.feed.entry.length; i++) {
-            switch (responseData.feed.entry[i]["title"]["$t"].substring(0, 1)) {
+
+          for (let i = 0; i < entries.length; i++) {
+            switch (entries[i]["title"]["$t"].substring(0, 1)) {
               case "B":
                 if (
                   !excludedRowIds.includes(
-                    responseData.feed.entry[i]["title"]["$t"].substring(1)
+                    entries[i]["title"]["$t"].substring(1)
                   )
                 ) {
-                  count.push(responseData.feed.entry[i]["content"]["$t"]);
+                  counts.push(Number(entries[i]["content"]["$t"]));
+                  deathCounts.push(0);
+                }
+                break;
+              case "C":
+                if (
+                  !excludedRowIds.includes(
+                    entries[i]["title"]["$t"].substring(1)
+                  )
+                ) {
+                  deathCounts[deathCounts.length - 1] += Number(
+                    entries[i]["content"]["$t"]
+                  );
+                  counts[deathCounts.length - 1] -= Number(
+                    entries[i]["content"]["$t"]
+                  );
                 }
                 break;
               default:
                 break;
             }
           }
+
           this.chartdata = {
             labels: ageLabels,
             datasets: [
               {
-                label: "Number of confirmed cases",
+                label: "Under treatment or discharged",
                 backgroundColor: "#00cdbb",
-                data: count
+                data: counts
+              },
+              {
+                label: "Deaths",
+                backgroundColor: "#7f9492",
+                data: deathCounts
               }
             ]
           };
+
           this.options = {
             maintainAspectRatio: false,
             responsive: true,
             scales: {
-              xAxes: [{}],
+              xAxes: [
+                {
+                  stacked: true
+                }
+              ],
               yAxes: [
                 {
                   ticks: {
                     beginAtZero: true
-                  }
+                  },
+                  stacked: true
                 }
               ]
             }
