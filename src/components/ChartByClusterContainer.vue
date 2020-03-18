@@ -9,7 +9,7 @@
     />
     <ul class="legend muted">
       <li>
-        <strong>認定こども園</strong>: An early childhood education and care
+        <strong>認定こども園</strong>: An early childhood education &amp; care
         center, Kobe
       </li>
       <li>
@@ -23,10 +23,12 @@
         <strong>宝塚第一病院</strong>: Takarazuka Daiichi Hospital, Takarazuka
       </li>
       <li><strong>仁恵病院</strong>: Jinkei hospital, Himeji</li>
+      <li><strong>介護保険通所事業所</strong>: A daycare provider in Kobe</li>
+      <li><strong>海外渡航者</strong>: Travelers from abroad</li>
       <li>
         <strong>ライブ関係</strong>: Cases related to live houses in Osaka
       </li>
-      <li><strong>不明</strong>: Unknown</li>
+      <li><strong>不明</strong>: Unknown/under investigation</li>
     </ul>
   </div>
 </template>
@@ -117,10 +119,10 @@ export default {
                 fill: false,
                 showLine: false,
                 opacity: 0.5,
-                pointRadius: pointRadiusList.map(x => x * 2),
-                borderWidth: 2,
-                borderColor: "#809399",
-                backgroundColor: "rgba(255, 255, 255, 0)"
+                pointRadius: pointRadiusList.map(x => x * 4),
+                borderWidth: 1,
+                borderColor: "#006767",
+                backgroundColor: "rgba(255, 255, 255, 0.2)"
               }
             ]
           };
@@ -134,7 +136,15 @@ export default {
               display: false
             },
             tooltips: {
-              enabled: false
+              enabled: true,
+              callbacks: {
+                label: function(tooltipItem, data) {
+                  return (
+                    "Case No. " +
+                    (data.datasets[0].data.length - tooltipItem.index)
+                  );
+                }
+              }
             },
             scales: {
               xAxes: [
