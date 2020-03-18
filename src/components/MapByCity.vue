@@ -48,11 +48,19 @@ export default {
         scrollWheelZoom: false,
         dragging: !L.Browser.mobile,
         tap: !L.Browser.mobile
+      },
+      window: {
+        height: 0,
+        width: 0
       }
     };
   },
   computed: {},
-  async mounted() {
+  created() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  mounted() {
     this.getData();
   },
   methods: {
@@ -82,7 +90,8 @@ export default {
                 Number(city[0]["content"]["$t"]),
                 Number(city[1]["content"]["$t"])
               ],
-              radius: Number(city[3]["content"]["$t"]) * 1.5,
+              radius:
+                (this.window.width * Number(city[3]["content"]["$t"])) / 800,
               color: "#00cdbb",
               name: city[2]["content"]["$t"] + ": " + city[3]["content"]["$t"]
             };
@@ -112,6 +121,11 @@ export default {
       rowCount = entries.length / colCount;
 
       return { rowCount, colCount };
+    },
+    handleResize() {
+      this.window.width = window.innerWidth;
+      this.window.height = window.innerHeight;
+      console.log(this.window.width, this.window.height);
     }
   }
 };
