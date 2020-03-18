@@ -90,8 +90,7 @@ export default {
                 Number(city[0]["content"]["$t"]),
                 Number(city[1]["content"]["$t"])
               ],
-              radius:
-                (this.window.width * Number(city[3]["content"]["$t"])) / 800,
+              radius: this.calculateRadius(Number(city[3]["content"]["$t"])),
               color: "#00cdbb",
               name: city[2]["content"]["$t"] + ": " + city[3]["content"]["$t"]
             };
@@ -122,10 +121,16 @@ export default {
 
       return { rowCount, colCount };
     },
+    calculateRadius(data) {
+      if (this.window.width < 800) {
+        return (this.window.width * data) / 800;
+      } else {
+        return (this.window.width * data) / 1200;
+      }
+    },
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
-      console.log(this.window.width, this.window.height);
     }
   }
 };
