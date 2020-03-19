@@ -8,27 +8,10 @@
       :options="options"
     />
     <ul class="legend muted">
-      <li>
-        <strong>認定こども園</strong>: An early childhood education &amp; care
-        center, Kobe
+      <li v-for="legend in legends" :key="legend.id">
+        <strong>{{ legend[0] }}</strong
+        >: {{ legend[1] }}
       </li>
-      <li>
-        <strong>北播磨医療センター</strong>: Kita-Harima Medical Center, Ono
-      </li>
-      <li>
-        <strong>グリーンアルス</strong>: A geriatric health services facility,
-        Itami
-      </li>
-      <li>
-        <strong>宝塚第一病院</strong>: Takarazuka Daiichi Hospital, Takarazuka
-      </li>
-      <li><strong>仁恵病院</strong>: Jinkei hospital, Himeji</li>
-      <li><strong>介護保険通所事業所</strong>: A daycare provider in Kobe</li>
-      <li><strong>海外渡航者</strong>: Travelers from abroad</li>
-      <li>
-        <strong>ライブ関係</strong>: Cases related to live houses in Osaka
-      </li>
-      <li><strong>不明</strong>: Unknown/under investigation</li>
     </ul>
   </div>
 </template>
@@ -44,10 +27,12 @@ export default {
     loaded: false,
     chartdata: null,
     xLabels: [],
-    yLabels: []
+    yLabels: [],
+    legends: []
   }),
   async mounted() {
     this.getData();
+    this.getLegends();
   },
   methods: {
     getData: function() {
@@ -89,17 +74,18 @@ export default {
             const rowNum = label.substring(1);
             const colAlpha = label.substring(0, 1);
 
-            const theDate = responseData.feed.entry.filter(entry => {
+            const theCaseNumberCell = responseData.feed.entry.filter(entry => {
               return entry["title"]["$t"] === "B" + rowNum;
             });
 
-            const theLabel = responseData.feed.entry.filter(entry => {
+            const theCluster = responseData.feed.entry.filter(entry => {
               return entry["title"]["$t"] === colAlpha + "1";
             });
 
             const theCase = {
-              x: this.xLabels.indexOf(theLabel[0]["content"]["$t"]),
-              y: this.yLabels.indexOf(theDate[0]["content"]["$t"])
+              x: this.xLabels.indexOf(theCluster[0]["content"]["$t"]),
+              y: this.yLabels.indexOf(theCaseNumberCell[0]["content"]["$t"]),
+              toolTip: theCaseNumberCell[0]["content"]["$t"]
             };
 
             if (isNaN(pointRadiusList[i])) {
@@ -139,10 +125,8 @@ export default {
               enabled: true,
               callbacks: {
                 label: function(tooltipItem, data) {
-                  return (
-                    "Case No. " +
-                    (data.datasets[0].data.length - tooltipItem.index)
-                  );
+                  console.log(tooltipItem, data);
+                  return data.datasets[0].data[tooltipItem.index].toolTip;
                 }
               }
             },
@@ -184,6 +168,36 @@ export default {
             }
           };
           this.loaded = true;
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
+    getLegends: function() {
+      axios
+        .get(
+          "https://spreadsheets.google.com/feeds/cells/" +
+            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
+            "/7/public/basic?alt=json"
+        )
+        .then(response => {
+          const responseData = response.data;
+
+          const jaStrings = responseData.feed.entry.filter(entry => {
+            return entry["title"]["$t"].substring(0, 1) === "A";
+          });
+
+          const enStrings = responseData.feed.entry.filter(entry => {
+            return entry["title"]["$t"].substring(0, 1) === "B";
+          });
+
+          for (let i = 0; i < jaStrings.length; i++) {
+            this.legends.push([
+              jaStrings[i]["content"]["$t"],
+              enStrings[i]["content"]["$t"]
+            ]);
+          }
+          console.log(this.legends);
         })
         .catch(error => {
           console.log(error);
