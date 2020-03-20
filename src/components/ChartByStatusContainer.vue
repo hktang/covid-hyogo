@@ -42,6 +42,7 @@ export default {
           let nonCritical = [];
           let critical = [];
           let deaths = [];
+          let discharged = [];
 
           const entries = responseData.feed.entry;
 
@@ -77,6 +78,12 @@ export default {
           deaths = deathCases.map(c => c["content"]["$t"]);
           deaths.shift();
 
+          const dischargedCases = entries.filter(entry => {
+            return entry["title"]["$t"].substring(0, 1) == "G";
+          });
+          discharged = dischargedCases.map(c => c["content"]["$t"]);
+          discharged.shift();
+
           this.chartdata = {
             labels: dateLabels,
             datasets: [
@@ -94,6 +101,11 @@ export default {
                 label: "Deaths",
                 backgroundColor: "#7c7f7e",
                 data: deaths
+              },
+              {
+                label: "Discharged from hospital",
+                backgroundColor: "#b98342",
+                data: discharged
               },
               {
                 label: "Accumulated confirmed",

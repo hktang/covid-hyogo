@@ -5,7 +5,7 @@
     <p class="muted">Visualizing COVID-19 in Hyogo Prefecture, Japan</p>
     <ChartByDateContainer />
     <ChartByClusterContainer />
-    <ChartByTestContainer />
+    <ChartByStatusContainer />
     <MapByCity />
     <ChartByAgeContainer />
     <Footer />
@@ -16,7 +16,7 @@
 import ChartByAgeContainer from "./components/ChartByAgeContainer.vue";
 import ChartByDateContainer from "./components/ChartByDateContainer.vue";
 import ChartByClusterContainer from "./components/ChartByClusterContainer.vue";
-import ChartByTestContainer from "./components/ChartByTestContainer.vue";
+import ChartByStatusContainer from "./components/ChartByStatusContainer.vue";
 import MapByCity from "./components/MapByCity.vue";
 import Footer from "./components/Footer.vue";
 
@@ -26,7 +26,7 @@ export default {
     ChartByAgeContainer,
     ChartByDateContainer,
     ChartByClusterContainer,
-    ChartByTestContainer,
+    ChartByStatusContainer,
     MapByCity,
     Footer
   }
