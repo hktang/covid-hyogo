@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import * as Sentry from "@sentry/browser";
-import VueAnalytics from "vue-analytics";
+import VueGtag from "vue-gtag";
 import * as Integrations from "@sentry/integrations";
 import "vue-loading-overlay/dist/vue-loading.css";
 import "leaflet/dist/leaflet.css";
@@ -11,8 +11,8 @@ new Vue({
   render: h => h(App)
 }).$mount("#app");
 
-Vue.use(VueAnalytics, {
-  id: "UA-160715980-1"
+Vue.use(VueGtag, {
+  config: { id: "UA-160715980-1" }
 });
 
 Sentry.init({

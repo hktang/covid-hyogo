@@ -21,8 +21,8 @@
     "mobile-device-detect": "^0.3.3",
     "prettier": "^1.19.1",
     "vue": "^2.6.11",
-    "vue-analytics": "^5.22.1",
     "vue-chartjs": "^3.5.0",
+    "vue-gtag": "^1.6.2",
     "vue-loading-overlay": "^3.3.2",
     "vue2-leaflet": "^2.5.2"
   },
