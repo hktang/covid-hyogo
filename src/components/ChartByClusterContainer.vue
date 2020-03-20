@@ -141,7 +141,7 @@ export default {
                     callback: value => {
                       return this.xLabels[value];
                     },
-                    minRotation: 75,
+                    minRotation: 85,
                     autoSkip: false
                   }
                 }
@@ -235,7 +235,7 @@ ul.legend li {
 
 @media only screen and (max-width: 800px) {
   .container {
-    width: 95vw;
+    width: 98vw;
   }
 }
 
