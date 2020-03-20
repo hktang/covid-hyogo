@@ -197,7 +197,6 @@ export default {
               enStrings[i]["content"]["$t"]
             ]);
           }
-          console.log(this.legends);
         })
         .catch(error => {
           console.log(error);
