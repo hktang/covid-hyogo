@@ -2,9 +2,12 @@
   <div class="container">
     <p class="muted">Last updated: {{ new Date(lastUpdated) }}</p>
     <dl>
-      <dt>Total confirmed cases out of the {{ totalTested }} tested</dt>
+      <dt>
+        Total confirmed cases out of the
+        {{ totalTested.toLocaleString() }} tested
+      </dt>
       <dd>
-        <strong>{{ totalConfirmed }}</strong
+        <strong>{{ totalConfirmed.toLocaleString() }}</strong
         ><br />
         <span class="muted">
           ...that is 1 in
