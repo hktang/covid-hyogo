@@ -44,7 +44,7 @@ yarn build
 Lint and fix your code before building:
 
 ```sh
-yarn build
+yarn format
 ```
 
 ## Contributing
