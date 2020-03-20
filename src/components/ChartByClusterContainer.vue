@@ -107,7 +107,7 @@ export default {
                 opacity: 0.5,
                 pointRadius: pointRadiusList.map(x => x * 4),
                 borderWidth: 1,
-                borderColor: "#006767",
+                borderColor: "#42b983",
                 backgroundColor: "rgba(255, 255, 255, 0.2)"
               }
             ]

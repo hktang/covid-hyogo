@@ -89,12 +89,12 @@ export default {
             datasets: [
               {
                 label: "Under treatment or discharged",
-                backgroundColor: "#00cdbb",
+                backgroundColor: "#42b983",
                 data: counts
               },
               {
                 label: "Deaths",
-                backgroundColor: "#7f9492",
+                backgroundColor: "#7c7f7e",
                 data: deathCounts
               }
             ]
