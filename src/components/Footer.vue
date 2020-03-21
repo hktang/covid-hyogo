@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <h2>Wait, did you wash your hands?</h2>
+    <h2>Wait, did you wash your hands properly?</h2>
     <img
       alt="Often missed"
       class="hands"
@@ -17,7 +17,7 @@
     <p>
       Data available as
       <a
-        href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTM9vP7fGowD3SKSGDGpIWBpbGHLclWW2TmbGyejLM5e3h9CwWvz9sP8a7I0C-F98bL6L-grr7bF6X5/pubhtml"
+        href="https://docs.google.com/spreadsheets/d/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/edit?usp=sharing"
       >
         Google Spreadsheet</a
       >
