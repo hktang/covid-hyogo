@@ -79,7 +79,7 @@ export default {
           deaths.shift();
 
           const dischargedCases = entries.filter(entry => {
-            return entry["title"]["$t"].substring(0, 1) == "G";
+            return entry["title"]["$t"].substring(0, 1) == "H";
           });
           discharged = dischargedCases.map(c => c["content"]["$t"]);
           discharged.shift();
