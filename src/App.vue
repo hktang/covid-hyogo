@@ -3,7 +3,9 @@
     <img alt="Hyogo logo" src="./assets/hyogo.svg" />
     <h1>COVID-19 Hyogo</h1>
     <p class="muted">Visualizing COVID-19 in Hyogo Prefecture, Japan</p>
-    <ChartByDateContainer />
+    <div class="chart-by-date">
+      <ChartByDateContainer />
+    </div>
     <ChartByClusterContainer />
     <ChartByStatusContainer />
     <MapByCity />
@@ -49,5 +51,8 @@ export default {
 }
 .footer {
   padding-bottom: 40px;
+}
+.chart-by-date {
+  min-height: 50vh;
 }
 </style>
