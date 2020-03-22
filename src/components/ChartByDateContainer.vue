@@ -190,7 +190,6 @@ export default {
           });
 
           this.totalTested = Number(tests[0]["content"]["$t"]);
-          
         })
         .catch(error => {
           console.log(error);
@@ -216,7 +215,6 @@ export default {
           }
 
           this.totalDeaths = deathCount;
-
         })
         .catch(error => {
           console.log(error);
