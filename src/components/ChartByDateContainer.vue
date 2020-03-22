@@ -59,14 +59,16 @@ export default {
     loaded: false,
     chartdata: null,
     lastUpdated: null,
-    totalConfirmed: null,
-    totalTested: null,
-    totalDeaths: null,
+    totalConfirmed: 0,
+    totalTested: 0,
+    totalDeaths: 0,
     population: 5460482 // As of 2020/1/1
   }),
   async mounted() {
-    this.getDailyData();
     this.getDailyTests();
+    this.getDeathCount();
+    this.getDailyData();
+    this.loading = false;
   },
   methods: {
     getDailyData: function() {
@@ -167,7 +169,6 @@ export default {
             dailyF.reduce((a, b) => Number(a) + Number(b), 0) +
             dailyM.reduce((a, b) => Number(a) + Number(b), 0);
           this.loaded = true;
-          this.loading = false;
         })
         .catch(error => {
           console.log(error);
@@ -188,13 +189,34 @@ export default {
             return entry["title"]["$t"] === "B2";
           });
 
-          //G2: Deaths
-          let deaths = responseData.feed.entry.filter(entry => {
-            return entry["title"]["$t"] === "G2";
-          });
-
           this.totalTested = Number(tests[0]["content"]["$t"]);
-          this.totalDeaths = Number(deaths[0]["content"]["$t"]);
+          
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
+    getDeathCount: function() {
+      axios
+        .get(
+          "https://spreadsheets.google.com/feeds/cells/" +
+            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
+            "/4/public/basic?alt=json"
+        )
+        .then(response => {
+          const entries = response.data.feed.entry;
+          let deathCount = 0;
+
+          for (let i = 0; i < entries.length; i++) {
+            if (entries[i]["title"]["$t"].substring(0, 1) == "C") {
+              if (!isNaN(entries[i]["content"]["$t"])) {
+                deathCount += Number(entries[i]["content"]["$t"]);
+              }
+            }
+          }
+
+          this.totalDeaths = deathCount;
+
         })
         .catch(error => {
           console.log(error);
