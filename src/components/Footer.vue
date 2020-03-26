@@ -1,5 +1,9 @@
 <template>
   <div class="footer">
+    <div class="share">
+      <h2>Share this page</h2>
+      <AddThis public-id="ra-5e7cafe6d8afe9ba" />
+    </div>
     <h2>Wait, did you wash your hands properly?</h2>
     <img
       alt="Often missed"
@@ -45,7 +49,22 @@
     </p>
   </div>
 </template>
+<script>
+import AddThis from "vue-simple-addthis-share";
+
+export default {
+  name: "Footer",
+  components: {
+    AddThis
+  }
+};
+</script>
 <style scoped>
+.share {
+  background-color: #f3f3f3;
+  padding: 10px 0 30px;
+  margin-bottom: 60px;
+}
 @media only screen and (max-width: 800px) {
   .hands {
     width: 70vw;

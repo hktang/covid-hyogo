@@ -8021,6 +8021,11 @@ vue-loading-overlay@^3.3.2:
   resolved "https://registry.yarnpkg.com/vue-loading-overlay/-/vue-loading-overlay-3.3.2.tgz#9853c90d9583ac2ec322da29bb90942bf65449af"
   integrity sha512-5nBsaeb3quOBVXCgbSu9VNWkBVEsbDCupahv8dqkgbtJ00uKoNOPyw38+reWGHKNDBDl+x7x8wT8u3dV7ali7g==
 
+vue-simple-addthis-share@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/vue-simple-addthis-share/-/vue-simple-addthis-share-0.1.4.tgz#bcb3deb44a6fc3db38de35f5e8cf43ae76ad8f0c"
+  integrity sha512-savc1OXGKWFTZ2WmrhF3/GOEjIJh+T/hOI1NW31bB1Hq0Bju6KozkIrSq5GTHgvvJ2wfy0syWC1oysnjZRrY6g==
+
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
