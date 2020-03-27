@@ -19,6 +19,7 @@
 <script>
 import axios from "axios";
 import ChartByCluster from "./ScatterPlot.vue";
+import { isMobile } from "mobile-device-detect";
 
 export default {
   name: "ChartByDateContainer",
@@ -52,7 +53,7 @@ export default {
             );
           });
 
-          const dateColumn = responseData.feed.entry.filter(entry => {
+          const caseNumberColumn = responseData.feed.entry.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) === "B";
           });
 
@@ -61,10 +62,12 @@ export default {
           });
 
           this.header = headerRow.map(item => item["content"]["$t"]);
-          this.xLabels = headerRow.map(item => item["content"]["$t"]);
-          this.xLabels.splice(0, 2);
-          this.yLabels = dateColumn.map(item => item["content"]["$t"]);
-          this.yLabels.splice(0, 1);
+          this.yLabels = isMobile
+            ? headerRow.map(item => item["content"]["$t"].substring(0, 1))
+            : headerRow.map(item => item["content"]["$t"]);
+          this.yLabels.splice(0, 2);
+          this.xLabels = caseNumberColumn.map(item => item["content"]["$t"]);
+          this.xLabels.splice(0, 1);
 
           const caseData = [];
           let pointRadiusList = [];
@@ -82,9 +85,18 @@ export default {
               return entry["title"]["$t"] === colAlpha + "1";
             });
 
+            const xValue = this.xLabels.indexOf(
+              theCaseNumberCell[0]["content"]["$t"]
+            );
+            const yValue = isMobile
+              ? this.yLabels.indexOf(
+                  theCluster[0]["content"]["$t"].substring(0, 1)
+                )
+              : this.yLabels.indexOf(theCluster[0]["content"]["$t"]);
+
             const theCase = {
-              x: this.xLabels.indexOf(theCluster[0]["content"]["$t"]),
-              y: this.yLabels.indexOf(theCaseNumberCell[0]["content"]["$t"]),
+              x: xValue,
+              y: yValue,
               toolTip: theCaseNumberCell[0]["content"]["$t"]
             };
 
@@ -104,7 +116,6 @@ export default {
                 data: caseData,
                 fill: false,
                 showLine: false,
-                opacity: 0.5,
                 pointRadius: pointRadiusList.map(x => x * 4),
                 borderWidth: 1,
                 borderColor: "#42b983",
@@ -135,13 +146,20 @@ export default {
                 {
                   type: "linear",
                   position: "top",
+                  gridLines: {
+                    display: false
+                  },
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Case No."
+                  },
                   ticks: {
                     min: 0,
-                    max: this.xLabels.length - 1,
+                    reverse: true,
+                    max: this.xLabels.length,
                     callback: value => {
                       return this.xLabels[value];
                     },
-                    minRotation: 85,
                     autoSkip: false
                   }
                 }
@@ -150,15 +168,13 @@ export default {
                 {
                   type: "linear",
                   scaleLabel: {
-                    display: false
-                  },
-                  gridLines: {
-                    display: false
+                    display: true,
+                    labelString: "Cluster"
                   },
                   ticks: {
-                    reverse: false,
+                    reverse: true,
                     min: 0,
-                    max: this.yLabels.length,
+                    max: this.yLabels.length - 1,
                     callback: i => {
                       return this.yLabels[i];
                     }
@@ -226,7 +242,7 @@ export default {
 
 .legend {
   font-size: 12px;
-  padding-left: 20px;
+  margin: 20px 0 0 -10px;
 }
 
 ul.legend li {
@@ -242,7 +258,7 @@ ul.legend li {
 
 @media only screen and (min-width: 800px) {
   .container {
-    width: 50vw;
+    width: 66vw;
   }
 }
 </style>
