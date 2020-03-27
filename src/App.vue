@@ -8,8 +8,8 @@
     </div>
     <ChartByClusterContainer />
     <ChartByStatusContainer />
-    <MapByCity />
     <ChartByAgeContainer />
+    <MapByCity />
     <Footer />
   </div>
 </template>

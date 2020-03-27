@@ -61,7 +61,6 @@ export default {
 </script>
 <style scoped>
 .share {
-  background-color: #f3f3f3;
   padding: 10px 0 30px;
   margin-bottom: 60px;
 }
