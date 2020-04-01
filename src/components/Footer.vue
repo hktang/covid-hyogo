@@ -4,6 +4,7 @@
       <h2>Share this page</h2>
       <AddThis public-id="ra-5e7cafe6d8afe9ba" />
     </div>
+    <h2>In celebration of the human brain, and pasta</h2>
     <img
       alt="Pathogen resistance"
       class="webcomic"
