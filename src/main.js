@@ -5,7 +5,7 @@ import VueGtag from "vue-gtag";
 import * as Integrations from "@sentry/integrations";
 import "vue-loading-overlay/dist/vue-loading.css";
 import "leaflet/dist/leaflet.css";
-import i18n from './i18n'
+import i18n from "./i18n";
 Vue.config.productionTip = false;
 
 new Vue({
