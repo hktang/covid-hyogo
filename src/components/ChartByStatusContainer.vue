@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Patient status (accumulative)</h2>
+    <h2>Patient status (cumulative)</h2>
     <loading :active.sync="loading"></loading>
     <chart-by-test
       v-if="loaded"
@@ -39,8 +39,8 @@ export default {
           const responseData = response.data;
           let dateLabels = [];
           let totalPositive = [];
-          let nonCritical = [];
-          let critical = [];
+          let nonSevere = [];
+          let severe = [];
           let deaths = [];
           let discharged = [];
 
@@ -60,17 +60,17 @@ export default {
           totalPositive = totalPositiveCases.map(c => c["content"]["$t"]);
           totalPositive.shift();
 
-          const nonCriticalCases = entries.filter(entry => {
+          const nonSevereCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "E";
           });
-          nonCritical = nonCriticalCases.map(c => c["content"]["$t"]);
-          nonCritical.shift();
+          nonSevere = nonSevereCases.map(c => c["content"]["$t"]);
+          nonSevere.shift();
 
-          const criticalCases = entries.filter(entry => {
+          const severeCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "F";
           });
-          critical = criticalCases.map(c => c["content"]["$t"]);
-          critical.shift();
+          severe = severeCases.map(c => c["content"]["$t"]);
+          severe.shift();
 
           const deathCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "G";
@@ -88,14 +88,14 @@ export default {
             labels: dateLabels,
             datasets: [
               {
-                label: "Non-critical",
+                label: "Non-severe",
                 backgroundColor: "#42b983",
-                data: nonCritical
+                data: nonSevere
               },
               {
-                label: "Critical",
+                label: "Severe",
                 backgroundColor: "#194531",
-                data: critical
+                data: severe
               },
               {
                 label: "Deaths",

@@ -4,13 +4,12 @@
       <h2>Share this page</h2>
       <AddThis public-id="ra-5e7cafe6d8afe9ba" />
     </div>
-    <h2>Wait, did you wash your hands properly?</h2>
     <img
-      alt="Often missed"
-      class="hands"
-      src="../assets/handwashing-missed.png"
+      alt="Pathogen resistance"
+      class="webcomic"
+      src="https://imgs.xkcd.com/comics/pathogen_resistance_2x.png"
     />
-    <h2>Data sources and references</h2>
+    <h2 class="references">Data sources and references</h2>
 
     <p>
       Inspired by
@@ -36,13 +35,7 @@
         >Wikipedia</a
       >.
     </p>
-    <p>
-      Hands graphic by Taylor LJ via
-      <a
-        href="https://flowingdata.com/2020/02/18/most-often-missed-areas-while-washing-hands/"
-        >Flowing Data</a
-      >
-    </p>
+    <p>Webcomic from <a href="https://xkcd.com/2287/">XKCD</a></p>
     <p>
       View project on
       <a href="https://github.com/hktang/covid-hyogo/">Github</a>
@@ -62,17 +55,20 @@ export default {
 <style scoped>
 .share {
   padding: 10px 0 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+}
+.references {
+  margin-top: 40px;
 }
 @media only screen and (max-width: 800px) {
-  .hands {
-    width: 70vw;
+  .webcomic {
+    width: 100vw;
   }
 }
 
 @media only screen and (min-width: 800px) {
-  .hands {
-    width: 40vw;
+  .webcomic {
+    width: 60vw;
   }
 }
 </style>
