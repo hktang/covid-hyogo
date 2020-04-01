@@ -1,6 +1,6 @@
 <template>
   <div class="map-container">
-    <h2>Accumulated cases by city</h2>
+    <h2>Cumulative cases by city</h2>
     <p class="muted">
       Hover or tap on a circle marker in the map to view details.
     </p>
