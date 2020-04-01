@@ -4,6 +4,7 @@
       <h2>Share this page</h2>
       <AddThis public-id="ra-5e7cafe6d8afe9ba" />
     </div>
+    <h2 class="celebration">In celebration of the human brain, and pasta</h2>
     <img
       alt="Pathogen resistance"
       class="webcomic"
@@ -56,6 +57,9 @@ export default {
 .share {
   padding: 10px 0 30px;
   margin-bottom: 40px;
+}
+.celebration {
+  margin-bottom: 30px;
 }
 .references {
   margin-top: 40px;
