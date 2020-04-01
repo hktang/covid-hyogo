@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Distribution by age group</h2>
+    <h2>{{ $t("age.title") }}</h2>
     <loading :active.sync="loading"></loading>
     <chart-by-age
       v-if="loaded"
@@ -28,6 +28,10 @@ export default {
     this.getData();
   },
   methods: {
+    getLabels: function() {
+      const labels = this.$t("age.labels");
+      return Object.values(labels);
+    },
     getData: function() {
       axios
         .get(
@@ -37,21 +41,10 @@ export default {
         )
         .then(response => {
           const responseData = response.data;
-          let ageLabels = [];
-          let excludedRowIds = [];
+          let excludedRowIds = ["1"];
           let counts = [];
           let deathCounts = [];
           const entries = responseData.feed.entry;
-
-          for (let i = 0; i < entries.length; i++) {
-            if (entries[i]["title"]["$t"].substring(0, 1) == "A") {
-              if (entries[i]["content"]["$t"].substring(0, 1) != "A") {
-                ageLabels.push("Age " + entries[i]["content"]["$t"]);
-              } else {
-                excludedRowIds.push(entries[i]["title"]["$t"].substring(1));
-              }
-            }
-          }
 
           for (let i = 0; i < entries.length; i++) {
             switch (entries[i]["title"]["$t"].substring(0, 1)) {
@@ -85,15 +78,15 @@ export default {
           }
 
           this.chartdata = {
-            labels: ageLabels,
+            labels: this.getLabels(),
             datasets: [
               {
-                label: "Under treatment or discharged",
+                label: this.$t("age.hospitalizedOrDischarged"),
                 backgroundColor: "#42b983",
                 data: counts
               },
               {
-                label: "Deaths",
+                label: this.$t("age.deceased"),
                 backgroundColor: "#7c7f7e",
                 data: deathCounts
               }

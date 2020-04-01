@@ -1,46 +1,52 @@
 <template>
   <div class="footer">
     <div class="share">
-      <h2>Share this page</h2>
+      <h2>{{ $t("footer.share") }}</h2>
       <AddThis public-id="ra-5e7cafe6d8afe9ba" />
     </div>
-    <h2 class="celebration">In celebration of the human brain, and pasta</h2>
+
+    <h2 class="celebration">{{ $t("footer.caption") }}</h2>
+
     <img
       alt="Pathogen resistance"
       class="webcomic"
       src="https://imgs.xkcd.com/comics/pathogen_resistance_2x.png"
     />
+
     <h2 class="references">Data sources and references</h2>
 
-    <p>
-      Inspired by
-      <a href="https://blog.datawrapper.de/coronaviruscharts/">
-        17 responsible live visualizations about the coronavirus</a
-      >
-    </p>
-    <p>
-      Data available as
-      <a
-        href="https://docs.google.com/spreadsheets/d/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/edit?usp=sharing"
-      >
-        Google Spreadsheet</a
-      >
-      , compiled from
-      <a href="https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html">
-        新型コロナウイルスに感染した患者の発生状況</a
-      >, Hyogo Prefectural Government
-    </p>
-    <p>
-      Population data from
-      <a href="https://ja.wikipedia.org/wiki/%E5%85%B5%E5%BA%AB%E7%9C%8C"
-        >Wikipedia</a
-      >.
-    </p>
-    <p>Webcomic from <a href="https://xkcd.com/2287/">XKCD</a></p>
-    <p>
-      View project on
-      <a href="https://github.com/hktang/covid-hyogo/">Github</a>
-    </p>
+    <i18n path="footer.inspiredBy.text" tag="p">
+      <template v-slot:title>
+        <a :href="urls.blog">{{ $t("footer.inspiredBy.blogTitle") }}</a>
+      </template>
+    </i18n>
+
+    <i18n path="footer.dataFrom.text" tag="p">
+      <template v-slot:spreadsheet>
+        <a :href="urls.spreadsheet">{{ $t("footer.dataFrom.spreadsheet") }}</a>
+      </template>
+      <template v-slot:page>
+        <a :href="urls.hyogo">{{ $t("footer.dataFrom.hyogoPage") }}</a>
+      </template>
+    </i18n>
+
+    <i18n path="footer.population.text" tag="p">
+      <template v-slot:source>
+        <a :href="urls.wikipedia">{{ $t("footer.population.wikipedia") }}</a>
+      </template>
+    </i18n>
+
+    <i18n path="footer.xkcd.text" tag="p">
+      <template v-slot:source>
+        <a :href="urls.xkcd">{{ $t("footer.xkcd.xkcd") }}</a>
+      </template>
+    </i18n>
+
+    <i18n path="footer.github.text" tag="p">
+      <template v-slot:source>
+        <a :href="urls.github">{{ $t("footer.github.github") }}</a>
+      </template>
+    </i18n>
   </div>
 </template>
 <script>
@@ -50,7 +56,18 @@ export default {
   name: "Footer",
   components: {
     AddThis
-  }
+  },
+  data: () => ({
+    urls: {
+      blog: "https://blog.datawrapper.de/coronaviruscharts/",
+      spreadsheet:
+        "https://docs.google.com/spreadsheets/d/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/edit?usp=sharing",
+      hyogo: "https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html",
+      wikipedia: "https://ja.wikipedia.org/wiki/%E5%85%B5%E5%BA%AB%E7%9C%8C",
+      xkcd: "https://xkcd.com/2287/",
+      github: "https://github.com/hktang/covid-hyogo/"
+    }
+  })
 };
 </script>
 <style scoped>

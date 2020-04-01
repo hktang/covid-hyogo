@@ -1,41 +1,55 @@
 <template>
   <div class="container">
-    <p class="muted">Last updated: {{ new Date(lastUpdated) }}</p>
+    <p class="muted">
+      {{ $t("overview.lastUpdated") }} {{ new Date(lastUpdated) }}
+    </p>
     <dl>
-      <dt>
-        Total confirmed cases out of the
-        {{ totalTested.toLocaleString() }} tested
-      </dt>
+      <i18n path="overview.confirmedCases" tag="dt">
+        <template v-slot:total>
+          {{ totalTested.toLocaleString() }}
+        </template>
+      </i18n>
       <dd>
         <strong>{{ totalConfirmed.toLocaleString() }}</strong
         ><br />
         <span class="muted">
-          ...that is 1 in
-          {{ Math.round(totalTested / totalConfirmed).toLocaleString() }}
-          people tested so far;<br />
-          or 1 in
-          {{ Math.round(population / totalConfirmed).toLocaleString() }}
-          residents of Hyogo Prefecture.</span
-        >
+          <i18n path="overview.confirmedInTested" tag="span">
+            <template v-slot:d>
+              {{ Math.round(totalTested / totalConfirmed).toLocaleString() }}
+            </template>
+          </i18n>
+          <br />
+          <i18n path="overview.oneInPopulation" tag="span">
+            <template v-slot:d>
+              {{ Math.round(population / totalConfirmed).toLocaleString() }}
+            </template>
+          </i18n>
+        </span>
       </dd>
-      <dt>Total deaths</dt>
+      <dt>{{ $t("overview.totalDeaths") }}</dt>
       <dd>
-        <strong>{{ totalDeaths }}</strong
+        <strong>{{ totalDeaths.toLocaleString() }}</strong
         ><br />
         <span class="muted">
-          ... that is 1 in
-          {{ Math.round(totalConfirmed / totalDeaths).toLocaleString() }}
-          confirmed cases; <br />
-          or 1 in
-          {{ Math.round(totalTested / totalDeaths).toLocaleString() }}
-          people tested so far;<br />
-          or 1 in
-          {{ Math.round(population / totalDeaths).toLocaleString() }} residents
-          of Hyogo Prefecture.</span
+          <i18n path="overview.totalDeathsInConfirmed" tag="span">
+            <template v-slot:d>
+              {{ Math.round(totalConfirmed / totalDeaths).toLocaleString() }}
+            </template> </i18n
+          ><br />
+          <i18n path="overview.totalDeathsInTested" tag="span">
+            <template v-slot:d>
+              {{ Math.round(totalTested / totalDeaths).toLocaleString() }}
+            </template> </i18n
+          ><br />
+          <i18n path="overview.oneInPopulation" tag="span">
+            <template v-slot:d>
+              {{ Math.round(population / totalDeaths).toLocaleString() }}
+            </template>
+          </i18n></span
         >
       </dd>
     </dl>
-    <h3>Daily confirmed cases</h3>
+    <h3>{{ $t("daily.title") }}</h3>
     <loading :active.sync="loading"></loading>
     <chart-by-date
       v-if="loaded"
@@ -135,12 +149,12 @@ export default {
             labels: dateLabels,
             datasets: [
               {
-                label: "Female",
+                label: this.$t("daily.female"),
                 backgroundColor: "#42b983",
                 data: dailyF
               },
               {
-                label: "Male",
+                label: this.$t("daily.male"),
                 backgroundColor: "#423383",
                 data: dailyM
               }

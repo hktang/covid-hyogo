@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Patient status (cumulative)</h2>
+    <h2>{{ $t("status.title") }}</h2>
     <loading :active.sync="loading"></loading>
     <chart-by-test
       v-if="loaded"
@@ -88,27 +88,27 @@ export default {
             labels: dateLabels,
             datasets: [
               {
-                label: "Non-severe",
+                label: this.$t("status.labels.nonSevere"),
                 backgroundColor: "#42b983",
                 data: nonSevere
               },
               {
-                label: "Severe",
+                label: this.$t("status.labels.severe"),
                 backgroundColor: "#194531",
                 data: severe
               },
               {
-                label: "Deaths",
+                label: this.$t("status.labels.deaths"),
                 backgroundColor: "#7c7f7e",
                 data: deaths
               },
               {
-                label: "Discharged from hospital",
+                label: this.$t("status.labels.discharged"),
                 backgroundColor: "#b98342",
                 data: discharged
               },
               {
-                label: "Accumulated confirmed",
+                label: this.$t("status.labels.confirmed"),
                 backgroundColor: "#c2ead7",
                 borderColor: "#42b983",
                 borderWidth: 1,

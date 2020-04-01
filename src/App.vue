@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <img alt="Hyogo logo" src="./assets/hyogo.svg" />
-    <h1>COVID-19 Hyogo</h1>
-    <p class="muted">Visualizing COVID-19 in Hyogo Prefecture, Japan</p>
+    <h1>{{ $t("siteTitle") }}</h1>
+    <p class="muted">{{ $t("siteTagline") }}</p>
     <div class="chart-by-date">
       <ChartByDateContainer />
     </div>

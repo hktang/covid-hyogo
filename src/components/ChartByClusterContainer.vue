@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Clusters</h2>
+    <h2>{{ $t("clusters.title") }}</h2>
     <chart-by-cluster
       v-if="loaded"
       class="chart"
@@ -8,9 +8,9 @@
       :options="options"
     />
     <ul class="legend muted">
-      <li v-for="legend in legends" :key="legend.id">
-        <strong>{{ legend[0] }}</strong
-        >: {{ legend[1] }}
+      <li v-for="(legend, key) in legends" :key="legend">
+        <strong>{{ key }}</strong
+        >: {{ legend }}
       </li>
     </ul>
   </div>
@@ -136,7 +136,6 @@ export default {
               enabled: true,
               callbacks: {
                 label: function(tooltipItem, data) {
-                  console.log(tooltipItem, data);
                   return data.datasets[0].data[tooltipItem.index].toolTip;
                 }
               }
@@ -151,7 +150,7 @@ export default {
                   },
                   scaleLabel: {
                     display: true,
-                    labelString: "Case No."
+                    labelString: this.$t("clusters.caseNumber")
                   },
                   ticks: {
                     min: 0,
@@ -169,7 +168,7 @@ export default {
                   type: "linear",
                   scaleLabel: {
                     display: true,
-                    labelString: "Cluster"
+                    labelString: this.$t("clusters.cluster")
                   },
                   ticks: {
                     reverse: true,
@@ -190,33 +189,7 @@ export default {
         });
     },
     getLegends: function() {
-      axios
-        .get(
-          "https://spreadsheets.google.com/feeds/cells/" +
-            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
-            "/7/public/basic?alt=json"
-        )
-        .then(response => {
-          const responseData = response.data;
-
-          const jaStrings = responseData.feed.entry.filter(entry => {
-            return entry["title"]["$t"].substring(0, 1) === "A";
-          });
-
-          const enStrings = responseData.feed.entry.filter(entry => {
-            return entry["title"]["$t"].substring(0, 1) === "B";
-          });
-
-          for (let i = 0; i < jaStrings.length; i++) {
-            this.legends.push([
-              jaStrings[i]["content"]["$t"],
-              enStrings[i]["content"]["$t"]
-            ]);
-          }
-        })
-        .catch(error => {
-          console.log(error);
-        });
+      this.legends = this.$t("clusters.labels");
     },
     containsCase: function(object, list) {
       var i;

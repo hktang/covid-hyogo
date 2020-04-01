@@ -1,9 +1,7 @@
 <template>
   <div class="map-container">
-    <h2>Cumulative cases by city</h2>
-    <p class="muted">
-      Hover or tap on a circle marker in the map to view details.
-    </p>
+    <h2>{{ $t("city.title") }}</h2>
+    <p class="muted">{{ $t("city.tip") }}</p>
     <l-map :zoom="zoom" :center="center" :options="options" class="map">
       <l-tile-layer :url="url" :attribution="attribution" />
       <l-circle-marker
@@ -139,7 +137,7 @@ export default {
 <style scoped>
 .map-container {
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0 40px 0;
 }
 
 .map {

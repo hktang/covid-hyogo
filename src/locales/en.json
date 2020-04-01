@@ -1,3 +1,94 @@
 {
-  "message": "hello i18n !!"
+  "siteTitle": "COVID-19 Hyogo",
+  "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
+  "overview": {
+    "lastUpdated": "Last updated:",
+    "confirmedCases": "Total confirmed cases out of the {total} tested",
+    "confirmedInTested": "...that is 1 in {d} people tested so far;",
+    "oneInPopulation": "or 1 in {d} residents of Hyogo Prefecture.",
+    "totalDeaths": "Total deaths",
+    "totalDeathsInConfirmed": "... that is 1 in {d} confirmed cases;",
+    "totalDeathsInTested": "or 1 in {d} people tested so far;"
+  },
+  "daily": {
+    "title": "Daily confirmed cases",
+    "female": "Female",
+    "male": "Male"
+  },
+  "clusters": {
+    "title": "Clusters",
+    "caseNumber": "Case number",
+    "cluster": "Cluster",
+    "labels": {
+      "A": "An early childhood education and care center, Kobe",
+      "B": "Kita-Harima Medical Center, Ono",
+      "C": "Takarazuka Daiichi Hospital, Takarazuka",
+      "D": "Jinkei hospital, Himeji",
+      "E": "A geriatric health services facility, Itami",
+      "F": "A daycare provider in Kobe",
+      "G": "Cases related to live houses in Osaka",
+      "H": "People travelling from abroad ",
+      "I": "Others",
+      "J": "Unknown"
+    }
+  },
+  "status": {
+    "title": "Patient status (cumulative)",
+    "labels": {
+      "nonSevere": "Non-severe",
+      "severe": "Severe",
+      "deaths": "Deaths",
+      "discharged": "Discharged",
+      "confirmed": "Cumulative confirmed"
+    }
+  },
+  "age": {
+    "title": "Distribution by age group",
+    "hospitalizedOrDischarged": "Hospitalized or discharged",
+    "deceased": "Deceased",
+    "labels": {
+      "0": "Age < 10",
+      "10": "Age 10-19",
+      "20": "Age 20-29",
+      "30": "Age 30-39",
+      "40": "Age 40-49",
+      "50": "Age 50-59",
+      "60": "Age 60-69",
+      "70": "Age 70-79",
+      "80": "Age 80-89",
+      "90": "Age 90-99",
+      "100": "Age > 99"
+    }
+  },
+  "city": {
+    "title": "Cumulative cases by city",
+    "tip": "Hover or tap on a circle marker in the map to view details."
+  },
+  "footer": {
+    "share": "Share this page",
+    "caption": "In celebration of the human brain, and pasta",
+    "references": "Data sources and references",
+    "inspiredBy": {
+      "text": "Inspired by {title}.",
+      "url": "https://blog.datawrapper.de/coronaviruscharts/",
+      "blogTitle": "17 responsible live visualizations about the coronavirus"
+    },
+    "dataFrom": {
+      "text": "Data available as {spreadsheet}, compiled from {page}, Hyogo Prefectural Government.",
+      "spreadsheet": "Google Spreadsheet",
+      "hyogoPage": "新型コロナウイルスに感染した患者の発生状況"
+    },
+    "population": {
+      "text": "Population data from {source}",
+      "wikipedia": "Wikipedia"
+    },
+    "xkcd": {
+      "text": "Webcomic from {source}",
+      "xkcd": "XKCD"
+    },
+    "github": {
+      "text": "View project on {source}",
+      "github": "GitHub"
+    }
+  }
 }
