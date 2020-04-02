@@ -1,12 +1,12 @@
 {
   "lang": {
-	"en": "English",
-	"ja": "日本語"
+    "en": "English",
+    "ja": "日本語"
   },
-  "siteTitle": "COVID-19 Hyogo",
+  "siteTitle": "兵庫県 コロナウイルス感染状況",
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
   "overview": {
-    "lastUpdated": "Last updated:",
+    "lastUpdated": "最終 updated:",
     "confirmedCases": "Total confirmed cases out of the {0} tested",
     "confirmedInTested": "...that is 1 in {0} people tested so far;",
     "oneInPopulation": "or 1 in {0} residents of Hyogo Prefecture.",
