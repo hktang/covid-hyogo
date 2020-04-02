@@ -8,7 +8,8 @@
     "oneInPopulation": "or 1 in {0} residents of Hyogo Prefecture.",
     "totalDeaths": "Total deaths",
     "totalDeathsInConfirmed": "... that is 1 in {0} confirmed cases;",
-    "totalDeathsInTested": "or 1 in {0} people tested so far;"
+    "totalDeathsInTested": "or 1 in {0} people tested so far;",
+    "oneDeathInPopulation": "or 1 in {0} residents of Hyogo Prefecture."
   },
   "daily": {
     "title": "Daily confirmed cases",

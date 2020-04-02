@@ -3,6 +3,7 @@
     <img alt="Hyogo logo" src="./assets/hyogo.svg" />
     <h1>{{ $t("siteTitle") }}</h1>
     <p class="muted">{{ $t("siteTagline") }}</p>
+    <LocaleSwitch />
     <div class="chart-by-date">
       <ChartByDateContainer />
     </div>
@@ -19,6 +20,7 @@ import ChartByAgeContainer from "./components/ChartByAgeContainer.vue";
 import ChartByDateContainer from "./components/ChartByDateContainer.vue";
 import ChartByClusterContainer from "./components/ChartByClusterContainer.vue";
 import ChartByStatusContainer from "./components/ChartByStatusContainer.vue";
+import LocaleSwitch from "./components/LocaleSwitch.vue";
 import MapByCity from "./components/MapByCity.vue";
 import Footer from "./components/Footer.vue";
 
@@ -29,6 +31,7 @@ export default {
     ChartByDateContainer,
     ChartByClusterContainer,
     ChartByStatusContainer,
+    LocaleSwitch,
     MapByCity,
     Footer
   }
