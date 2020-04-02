@@ -30,15 +30,15 @@ Are you a translator? Please help translate the page! Machine translation
 is being set up at [Transifex][5] and I am looking for translators to
 review and finalize the texts, particularly in the following languages:
 
-- [] Chinese (Hong Kong)
-- [] Chinese (Taiwan)
-- [] Indonesian
-- [] Japanese
-- [] Korean
-- [] Nepali
-- [] Portuguese
-- [] Thai
-- [] Vietnamese
+- [ ] Chinese (Hong Kong)
+- [ ] Chinese (Taiwan)
+- [ ] Indonesian
+- [ ] Japanese
+- [ ] Korean
+- [ ] Nepali
+- [ ] Portuguese
+- [ ] Thai
+- [ ] Vietnamese
 
 This will be pro bono work, but let me buy you a bear if you locate in Hyogo!
 
