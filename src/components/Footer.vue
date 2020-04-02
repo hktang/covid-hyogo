@@ -16,34 +16,34 @@
     <h2 class="references">Data sources and references</h2>
 
     <i18n path="footer.inspiredBy.text" tag="p">
-      <template v-slot:title>
+      <template v-slot:0>
         <a :href="urls.blog">{{ $t("footer.inspiredBy.blogTitle") }}</a>
       </template>
     </i18n>
 
     <i18n path="footer.dataFrom.text" tag="p">
-      <template v-slot:spreadsheet>
+      <template v-slot:0>
         <a :href="urls.spreadsheet">{{ $t("footer.dataFrom.spreadsheet") }}</a>
       </template>
-      <template v-slot:page>
+      <template v-slot:1>
         <a :href="urls.hyogo">{{ $t("footer.dataFrom.hyogoPage") }}</a>
       </template>
     </i18n>
 
     <i18n path="footer.population.text" tag="p">
-      <template v-slot:source>
+      <template v-slot:0>
         <a :href="urls.wikipedia">{{ $t("footer.population.wikipedia") }}</a>
       </template>
     </i18n>
 
     <i18n path="footer.xkcd.text" tag="p">
-      <template v-slot:source>
+      <template v-slot:0>
         <a :href="urls.xkcd">{{ $t("footer.xkcd.xkcd") }}</a>
       </template>
     </i18n>
 
     <i18n path="footer.github.text" tag="p">
-      <template v-slot:source>
+      <template v-slot:0>
         <a :href="urls.github">{{ $t("footer.github.github") }}</a>
       </template>
     </i18n>
@@ -83,7 +83,7 @@ export default {
 }
 @media only screen and (max-width: 800px) {
   .webcomic {
-    width: 100vw;
+    width: 95vw;
   }
 }
 

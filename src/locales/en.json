@@ -3,12 +3,12 @@
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
   "overview": {
     "lastUpdated": "Last updated:",
-    "confirmedCases": "Total confirmed cases out of the {total} tested",
-    "confirmedInTested": "...that is 1 in {d} people tested so far;",
-    "oneInPopulation": "or 1 in {d} residents of Hyogo Prefecture.",
+    "confirmedCases": "Total confirmed cases out of the {0} tested",
+    "confirmedInTested": "...that is 1 in {0} people tested so far;",
+    "oneInPopulation": "or 1 in {0} residents of Hyogo Prefecture.",
     "totalDeaths": "Total deaths",
-    "totalDeathsInConfirmed": "... that is 1 in {d} confirmed cases;",
-    "totalDeathsInTested": "or 1 in {d} people tested so far;"
+    "totalDeathsInConfirmed": "... that is 1 in {0} confirmed cases;",
+    "totalDeathsInTested": "or 1 in {0} people tested so far;"
   },
   "daily": {
     "title": "Daily confirmed cases",
@@ -69,25 +69,25 @@
     "caption": "In celebration of the human brain, and pasta",
     "references": "Data sources and references",
     "inspiredBy": {
-      "text": "Inspired by {title}.",
+      "text": "Inspired by {0}.",
       "url": "https://blog.datawrapper.de/coronaviruscharts/",
       "blogTitle": "17 responsible live visualizations about the coronavirus"
     },
     "dataFrom": {
-      "text": "Data available as {spreadsheet}, compiled from {page}, Hyogo Prefectural Government.",
+      "text": "Data available as {0}, compiled from {1}, Hyogo Prefectural Government.",
       "spreadsheet": "Google Spreadsheet",
       "hyogoPage": "新型コロナウイルスに感染した患者の発生状況"
     },
     "population": {
-      "text": "Population data from {source}",
+      "text": "Population data from {0}",
       "wikipedia": "Wikipedia"
     },
     "xkcd": {
-      "text": "Webcomic from {source}",
+      "text": "Webcomic from {0}",
       "xkcd": "XKCD"
     },
     "github": {
-      "text": "View project on {source}",
+      "text": "View project on {0}",
       "github": "GitHub"
     }
   }

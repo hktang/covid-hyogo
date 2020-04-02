@@ -5,7 +5,7 @@
     </p>
     <dl>
       <i18n path="overview.confirmedCases" tag="dt">
-        <template v-slot:total>
+        <template v-slot:0>
           {{ totalTested.toLocaleString() }}
         </template>
       </i18n>
@@ -14,13 +14,13 @@
         ><br />
         <span class="muted">
           <i18n path="overview.confirmedInTested" tag="span">
-            <template v-slot:d>
+            <template v-slot:0>
               {{ Math.round(totalTested / totalConfirmed).toLocaleString() }}
             </template>
           </i18n>
           <br />
           <i18n path="overview.oneInPopulation" tag="span">
-            <template v-slot:d>
+            <template v-slot:0>
               {{ Math.round(population / totalConfirmed).toLocaleString() }}
             </template>
           </i18n>
@@ -32,17 +32,17 @@
         ><br />
         <span class="muted">
           <i18n path="overview.totalDeathsInConfirmed" tag="span">
-            <template v-slot:d>
+            <template v-slot:0>
               {{ Math.round(totalConfirmed / totalDeaths).toLocaleString() }}
             </template> </i18n
           ><br />
           <i18n path="overview.totalDeathsInTested" tag="span">
-            <template v-slot:d>
+            <template v-slot:0>
               {{ Math.round(totalTested / totalDeaths).toLocaleString() }}
             </template> </i18n
           ><br />
           <i18n path="overview.oneInPopulation" tag="span">
-            <template v-slot:d>
+            <template v-slot:0>
               {{ Math.round(population / totalDeaths).toLocaleString() }}
             </template>
           </i18n></span
