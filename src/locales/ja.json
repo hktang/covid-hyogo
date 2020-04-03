@@ -1,7 +1,8 @@
 {
+  "displayLanguage": "Language",
   "lang": {
     "en": "English",
-    "ja": "日本語"
+    "ja": "Japanese"
   },
   "siteTitle": "兵庫県 コロナウイルス感染状況",
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",

@@ -1,7 +1,8 @@
 {
+  "displayLanguage": "Language",
   "lang": {
 	"en": "English",
-	"ja": "日本語"
+	"ja": "Japanese"
   },
   "siteTitle": "COVID-19 Hyogo",
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
