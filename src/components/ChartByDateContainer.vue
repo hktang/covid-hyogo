@@ -37,11 +37,6 @@
               {{ Math.round(totalConfirmed / totalDeaths).toLocaleString() }}
             </template> </i18n
           ><br />
-          <i18n path="overview.totalDeathsInTested" tag="span">
-            <template v-slot:0>
-              {{ Math.round(totalTested / totalDeaths).toLocaleString() }}
-            </template> </i18n
-          ><br />
           <i18n path="overview.oneDeathInPopulation" tag="span">
             <template v-slot:0>
               {{ Math.round(population / totalDeaths).toLocaleString() }}
