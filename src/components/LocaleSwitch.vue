@@ -6,7 +6,7 @@
       :value="key"
       class="btn"
       type="submit"
-      @click="$i18n.locale = key"
+      @click="setLocale(key)"
     >
       {{ lang }}
     </button>
@@ -16,8 +16,26 @@
 <script>
 export default {
   name: "LocaleSwitch",
+  metaInfo() {
+    return {
+      title: this.$t("siteTagline"),
+      titleTemplate: "COVID-19 in Hyogo: %s",
+      htmlAttrs: {
+        lang: this.currentLang
+      }
+    };
+  },
   data() {
-    return { langs: this.$t("lang") };
+    return {
+      langs: this.$t("lang"),
+      currentLang: this.$i18n.locale
+    };
+  },
+  methods: {
+    setLocale: function(key) {
+      this.$i18n.locale = key;
+      this.currentLang = this.$i18n.locale;
+    }
   }
 };
 </script>
