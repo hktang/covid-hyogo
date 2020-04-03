@@ -13,6 +13,9 @@
       src="https://imgs.xkcd.com/comics/pathogen_resistance_2x.png"
     />
 
+    <h2 class="references">{{ $t("thanks.text") }}</h2>
+    <p>{{ $t("thanks.translators") }} Adhura Husna</p>
+
     <h2 class="references">{{ $t("footer.references") }}</h2>
 
     <i18n path="footer.inspiredBy.text" tag="p">
