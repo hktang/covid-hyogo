@@ -71,7 +71,6 @@
     "references": "Data sources and references",
     "inspiredBy": {
       "text": "Inspired by {0}.",
-      "url": "https://blog.datawrapper.de/coronaviruscharts/",
       "blogTitle": "17 responsible live visualizations about the coronavirus"
     },
     "dataFrom": {
