@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <p class="muted">
-      {{ $t("overview.lastUpdated") }} {{ new Date(lastUpdated) }}
+      {{ $t("overview.lastUpdated") }}
+      {{ new Date(lastUpdated) | moment("YYYY-M-D H:m:s") }} (JST)
     </p>
     <dl>
       <i18n path="overview.confirmedCases" tag="dt">

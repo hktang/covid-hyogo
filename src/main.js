@@ -7,6 +7,7 @@ import "vue-loading-overlay/dist/vue-loading.css";
 import "leaflet/dist/leaflet.css";
 import i18n from "./i18n";
 Vue.config.productionTip = false;
+Vue.use(require("vue-moment"));
 
 new Vue({
   i18n,

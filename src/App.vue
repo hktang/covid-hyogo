@@ -1,9 +1,9 @@
 <template>
   <div id="app">
+    <LocaleSwitch />
     <img alt="Hyogo logo" src="./assets/hyogo.svg" />
     <h1>{{ $t("siteTitle") }}</h1>
     <p class="muted">{{ $t("siteTagline") }}</p>
-    <LocaleSwitch />
     <div class="chart-by-date">
       <ChartByDateContainer />
     </div>
@@ -39,13 +39,17 @@ export default {
 </script>
 
 <style>
+body {
+  margin-top: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 40px;
+  margin-top: 0;
+  padding-top: 0;
 }
 .muted {
   color: #aaa;
