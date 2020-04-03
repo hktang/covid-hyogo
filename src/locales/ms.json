@@ -21,7 +21,8 @@
     "oneInPopulation": "atau 1 daripada {0} penduduk di wilayah Hyogo.",
     "totalDeaths": "Jumlah kematian",
     "totalDeathsInConfirmed": "... iaitu 1 daripada {0} jumlah kes yang telah disahkan;",
-    "totalDeathsInTested": "atau 1 daripada {0} orang yang diuji setakat ini;"
+    "totalDeathsInTested": "atau 1 daripada {0} orang yang diuji setakat ini;",
+    "oneDeathInPopulation": "atau 1 daripada {0} penduduk di wilayah Hyogo."
   },
   "daily": {
     "title": "Kes-kes yang telah disahkan setiap hari",
