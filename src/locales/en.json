@@ -1,4 +1,13 @@
 {
+  "lang": {
+    "en": "English",
+    "ja": "日本語",
+    "zh_CN": "中文"
+  },
+  "Announcement": {
+    "title": "Help translate this page at {0}.",
+    "platform": "transifex.com"
+  },
   "siteTitle": "COVID-19 Hyogo",
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
   "overview": {
@@ -30,7 +39,8 @@
       "G": "Cases related to live houses in Osaka",
       "H": "People travelling from abroad ",
       "I": "Others",
-      "J": "Unknown"
+      "J": "Under investigation",
+      "K": "Unknown"
     }
   },
   "status": {
@@ -71,7 +81,6 @@
     "references": "Data sources and references",
     "inspiredBy": {
       "text": "Inspired by {0}.",
-      "url": "https://blog.datawrapper.de/coronaviruscharts/",
       "blogTitle": "17 responsible live visualizations about the coronavirus"
     },
     "dataFrom": {
