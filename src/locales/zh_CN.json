@@ -1,18 +1,26 @@
 {
+  "lang": {
+    "en": "English",
+    "ja": "日本語",
+    "zh_CN": "中文"
+  },
+  "Announcement": {
+    "title": "帮助翻译本页面，请移步{0}。",
+    "platform": "transifex.com"
+  },
   "siteTitle": "COVID-19 Hyogo",
   "siteTagline": "日本兵库县新型冠状病毒感染症发生情况图表集",
   "overview": {
     "lastUpdated": "最近更新时间：",
-    "confirmedCases": "已检测{0}人，其中确诊人数",
-    "confirmedInTested": "...相当于每{0}位接受检测者中有1人确诊；",
+    "confirmedCases": "已检测{0}人，其中确诊者人数",
+    "confirmedInTested": "...相当于每{0}个接受检测的人中有1人确诊；",
     "oneInPopulation": "或每{0}位兵库县居民中有1人确诊。",
     "totalDeaths": "死亡人数",
-    "totalDeathsInConfirmed": "...相当于每{0}位确诊者中有1人死亡；",
-    "totalDeathsInTested": "或每{0}位接受测试者中有1人死亡；",
-    "oneDeathInPopulation": "或每{0}位兵库县居民中有1人死亡。"
+    "totalDeathsInConfirmed": "...相当于每{0}个确诊病例中有1人死亡；",
+    "totalDeathsInTested": "或每{0}位接受测试者中有1人死亡；"
   },
   "daily": {
-    "title": "每日确诊感染者概况",
+    "title": "每日确诊病例概况",
     "female": "女",
     "male": "男"
   },
@@ -30,7 +38,8 @@
       "G": "大阪市现场音乐厅",
       "H": "海外旅行者",
       "I": "其他",
-      "J": "不明"
+      "J": "调查中",
+      "K": "不明"
     }
   },
   "status": {
@@ -70,12 +79,11 @@
     "caption": "我们有脑，还有面条",
     "references": "数据来源和参考资料",
     "inspiredBy": {
-      "text": "受该网页启发：{0}。",
-      "url": "https://blog.datawrapper.de/coronaviruscharts/",
+      "text": "受{0}启发。",
       "blogTitle": "17 responsible live visualizations about the coronavirus"
     },
     "dataFrom": {
-      "text": "数据均载于{0}，编自兵库县政府网页{1}。",
+      "text": "数据载于{0}，编自兵库县政府网页{1}。",
       "spreadsheet": "谷歌表格",
       "hyogoPage": "新型コロナウイルスに感染した患者の発生状况"
     },
