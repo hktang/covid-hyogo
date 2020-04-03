@@ -1,5 +1,14 @@
 <template>
   <div class="footer">
+    <h2 class="references">{{ $t("thanks.text") }}</h2>
+    <p>{{ $t("thanks.translators") }} Adhura Husna</p>
+
+    <i18n path="announcement.title" tag="p">
+      <template v-slot:0>
+        <a :href="urls.translate">{{ $t("announcement.platform") }}</a>
+      </template>
+    </i18n>
+
     <div class="share">
       <h2>{{ $t("footer.share") }}</h2>
       <AddThis public-id="ra-5e7cafe6d8afe9ba" />
@@ -12,15 +21,6 @@
       class="webcomic"
       src="https://imgs.xkcd.com/comics/pathogen_resistance_2x.png"
     />
-
-    <h2 class="references">{{ $t("thanks.text") }}</h2>
-    <p>{{ $t("thanks.translators") }} Adhura Husna</p>
-
-    <i18n path="announcement.title" tag="p">
-      <template v-slot:0>
-        <a :href="urls.translate">{{ $t("announcement.platform") }}</a>
-      </template>
-    </i18n>
 
     <h2 class="references">{{ $t("footer.references") }}</h2>
 
