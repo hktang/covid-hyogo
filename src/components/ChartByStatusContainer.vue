@@ -2,10 +2,10 @@
   <div class="container">
     <h2>{{ $t("status.title") }}</h2>
     <loading :active.sync="loading"></loading>
-    <chart-by-test
+    <chart-by-status
       v-if="loaded"
       class="chart"
-      :chartdata="chartdata"
+      :chart-data="chartdata"
       :options="options"
     />
   </div>
@@ -13,21 +13,67 @@
 
 <script>
 import axios from "axios";
-import ChartByTest from "./BarChart.vue";
+import ChartByStatus from "./BarChart.vue";
 import Loading from "vue-loading-overlay";
 
 export default {
   name: "ChartByDateContainer",
-  components: { ChartByTest, Loading },
+  components: { ChartByStatus, Loading },
   data: () => ({
-    loading: true,
+    chartdata: null,
+    dateLabels: [],
+    nonSevere: [],
+    severe: [],
+    deaths: [],
+    discharged: [],
+    totalPositive: [],
     loaded: false,
-    chartdata: null
+    loading: true
   }),
+  watch: {
+    "$i18n.locale": function() {
+      this.setChartData();
+    }
+  },
   async mounted() {
     this.getData();
   },
   methods: {
+    setChartData: function() {
+      this.chartdata = {
+        labels: this.dateLabels,
+        datasets: [
+          {
+            label: this.$t("status.labels.nonSevere"),
+            backgroundColor: "#42b983",
+            data: this.nonSevere
+          },
+          {
+            label: this.$t("status.labels.severe"),
+            backgroundColor: "#194531",
+            data: this.severe
+          },
+          {
+            label: this.$t("status.labels.deaths"),
+            backgroundColor: "#7c7f7e",
+            data: this.deaths
+          },
+          {
+            label: this.$t("status.labels.discharged"),
+            backgroundColor: "#b98342",
+            data: this.discharged
+          },
+          {
+            label: this.$t("status.labels.confirmed"),
+            backgroundColor: "#c2ead7",
+            borderColor: "#42b983",
+            borderWidth: 1,
+            data: this.totalPositive,
+            type: "line"
+          }
+        ]
+      };
+    },
     getData: function() {
       axios
         .get(
@@ -37,19 +83,13 @@ export default {
         )
         .then(response => {
           const responseData = response.data;
-          let dateLabels = [];
-          let totalPositive = [];
-          let nonSevere = [];
-          let severe = [];
-          let deaths = [];
-          let discharged = [];
 
           const entries = responseData.feed.entry;
 
           for (let i = 0; i < entries.length; i++) {
             if (entries[i]["title"]["$t"].substring(0, 1) == "A") {
               if (!isNaN(entries[i]["content"]["$t"].substring(0, 4))) {
-                dateLabels.push(entries[i]["content"]["$t"]);
+                this.dateLabels.push(entries[i]["content"]["$t"]);
               }
             }
           }
@@ -57,66 +97,34 @@ export default {
           const totalPositiveCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "C";
           });
-          totalPositive = totalPositiveCases.map(c => c["content"]["$t"]);
-          totalPositive.shift();
+          this.totalPositive = totalPositiveCases.map(c => c["content"]["$t"]);
+          this.totalPositive.shift();
 
           const nonSevereCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "E";
           });
-          nonSevere = nonSevereCases.map(c => c["content"]["$t"]);
-          nonSevere.shift();
+          this.nonSevere = nonSevereCases.map(c => c["content"]["$t"]);
+          this.nonSevere.shift();
 
           const severeCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "F";
           });
-          severe = severeCases.map(c => c["content"]["$t"]);
-          severe.shift();
+          this.severe = severeCases.map(c => c["content"]["$t"]);
+          this.severe.shift();
 
           const deathCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "G";
           });
-          deaths = deathCases.map(c => c["content"]["$t"]);
-          deaths.shift();
+          this.deaths = deathCases.map(c => c["content"]["$t"]);
+          this.deaths.shift();
 
           const dischargedCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "H";
           });
-          discharged = dischargedCases.map(c => c["content"]["$t"]);
-          discharged.shift();
+          this.discharged = dischargedCases.map(c => c["content"]["$t"]);
+          this.discharged.shift();
 
-          this.chartdata = {
-            labels: dateLabels,
-            datasets: [
-              {
-                label: this.$t("status.labels.nonSevere"),
-                backgroundColor: "#42b983",
-                data: nonSevere
-              },
-              {
-                label: this.$t("status.labels.severe"),
-                backgroundColor: "#194531",
-                data: severe
-              },
-              {
-                label: this.$t("status.labels.deaths"),
-                backgroundColor: "#7c7f7e",
-                data: deaths
-              },
-              {
-                label: this.$t("status.labels.discharged"),
-                backgroundColor: "#b98342",
-                data: discharged
-              },
-              {
-                label: this.$t("status.labels.confirmed"),
-                backgroundColor: "#c2ead7",
-                borderColor: "#42b983",
-                borderWidth: 1,
-                data: totalPositive,
-                type: "line"
-              }
-            ]
-          };
+          this.setChartData();
 
           this.options = {
             maintainAspectRatio: false,
