@@ -16,6 +16,12 @@
     <h2 class="references">{{ $t("thanks.text") }}</h2>
     <p>{{ $t("thanks.translators") }} Adhura Husna</p>
 
+    <i18n path="announcement.title" tag="p">
+      <template v-slot:0>
+        <a :href="urls.translate">{{ $t("announcement.platform") }}</a>
+      </template>
+    </i18n>
+
     <h2 class="references">{{ $t("footer.references") }}</h2>
 
     <i18n path="footer.inspiredBy.text" tag="p">
@@ -62,6 +68,7 @@ export default {
   },
   data: () => ({
     urls: {
+      translate: "https://www.transifex.com/covid-19-hyogo/covid-19-in-hyogo/",
       blog: "https://blog.datawrapper.de/coronaviruscharts/",
       spreadsheet:
         "https://docs.google.com/spreadsheets/d/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/edit?usp=sharing",
