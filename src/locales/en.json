@@ -1,7 +1,7 @@
 {
   "lang": {
     "en": "English",
-    "ja": "日本語",
+    "ms": "Bahasa Melayu",
     "zh_CN": "中文"
   },
   "Announcement": {
@@ -10,6 +10,10 @@
   },
   "siteTitle": "COVID-19 Hyogo",
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
+  "thanks": {
+    "text": "Special thanks",
+    "translators": "Translators: "
+  },
   "overview": {
     "lastUpdated": "Last updated:",
     "confirmedCases": "Total confirmed cases out of the {0} tested",

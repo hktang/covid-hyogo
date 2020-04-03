@@ -1,0 +1,107 @@
+{
+  "lang": {
+    "en": "English",
+    "ms": "Bahasa Melayu",
+    "zh_CN": "中文"
+  },
+  "Announcement": {
+    "title": "Bantu terjemahkan halaman ini di {0}.",
+    "platform": "transifex.com"
+  },
+  "siteTitle": "COVID-19 Hyogo",
+  "siteTagline": "Menggambarkan COVID-19 di wilayah Hyogo, Jepun",
+  "thanks": {
+    "text": "Terima kasih yang istimewa",
+    "translators": "Penterjemah: "
+  },
+  "overview": {
+    "lastUpdated": "Kali terakhir diikemaskinikan pada:",
+    "confirmedCases": "Jumlah kes yang disahkan daripada {0} yang diuji",
+    "confirmedInTested": "... iaitu 1 daripada {0} orang yang telah diuji setakat ini;",
+    "oneInPopulation": "atau 1 daripada {0} penduduk di wilayah Hyogo.",
+    "totalDeaths": "Jumlah kematian",
+    "totalDeathsInConfirmed": "... iaitu 1 daripada {0} jumlah kes yang telah disahkan;",
+    "totalDeathsInTested": "atau 1 daripada {0} orang yang diuji setakat ini;"
+  },
+  "daily": {
+    "title": "Kes-kes yang telah disahkan setiap hari",
+    "female": "Perempuan",
+    "male": "Lelaki"
+  },
+  "clusters": {
+    "title": "Kelompok",
+    "caseNumber": "Nombor kes",
+    "cluster": "Kluster",
+    "labels": {
+      "A": "Pusat pendidikan dan penjagaan awal  kanak-kanak, Kobe",
+      "B": "Pusat Perubatan Kita-Harima, Ono",
+      "C": "Hospital Takarazuka Daiichi, Takarazuka",
+      "D": "Hospital Jinkei, Himeji",
+      "E": "Kemudahan perkhidmatan kesihatan geriatrik, Itami",
+      "F": "Pusat penjagaan kanak-kanak di Kobe",
+      "G": "Kes yang berkaitan dengan perumahan di Osaka",
+      "H": "Orang yang melancong dari luar negara",
+      "I": "Lain-lain",
+      "J": "Dalam siasatan",
+      "K": "Tidak diketahui"
+    }
+  },
+  "status": {
+    "title": "Status pesakit (kumulatif)",
+    "labels": {
+      "nonSevere": "Bukan parah",
+      "severe": "Parah",
+      "deaths": "Kematian",
+      "discharged": "discaj",
+      "confirmed": "Kumulatif disahkan"
+    }
+  },
+  "age": {
+    "title": "Pengagihan mengikut kumpulan umur",
+    "hospitalizedOrDischarged": "Dimasukkan ke hospital atau discaj",
+    "deceased": "Mati",
+    "labels": {
+      "0": "Umur <10",
+      "10": "Umur 10-19",
+      "20": "Umur 20-29",
+      "30": "Umur 30-39",
+      "40": "Umur 40-49",
+      "50": "Umur 50-59",
+      "60": "Umur 60-69",
+      "70": "Umur 70-79",
+      "80": "Umur 80-89",
+      "90": "Umur 90-99",
+      "100": "Umur> 99"
+    }
+  },
+  "city": {
+    "title": "Kes kumulatif berdasarkan bandar",
+    "tip": "Apungkan  atau ketik pada penanda bulatan di peta untuk melihat butiran."
+  },
+  "footer": {
+    "share": "Kongsi halaman ini",
+    "caption": "Dalam meraikan kebijaksanaan, kehidupan, dan pasta",
+    "references": "Sumber dan rujukan data",
+    "inspiredBy": {
+      "text": "Diilhamkan oleh {0}.",
+      "blogTitle": "17 visualisasi langsung mengenai koronavirus"
+    },
+    "dataFrom": {
+      "text": "Data tersedia sebagai {0}, disusun daripada {1}, Kerajaan Wilayah Hyogo.",
+      "spreadsheet": "Google Spreadsheet",
+      "hyogoPage": "新型コロナウイルスに感染した患者の発生状況 "
+    },
+    "population": {
+      "text": "Populasi data daripada {0}",
+      "wikipedia": "Wikipedia"
+    },
+    "xkcd": {
+      "text": "komik atas talian daripada {0}",
+      "xkcd": "XKCD"
+    },
+    "github": {
+      "text": "Lihat projek di {0}",
+      "github": "GitHub"
+    }
+  }
+}
