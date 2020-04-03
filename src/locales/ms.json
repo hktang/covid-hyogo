@@ -4,7 +4,7 @@
     "ms": "Bahasa Melayu",
     "zh_CN": "中文"
   },
-  "Announcement": {
+  "announcement": {
     "title": "Bantu terjemahkan halaman ini di {0}.",
     "platform": "transifex.com"
   },
