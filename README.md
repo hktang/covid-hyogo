@@ -35,6 +35,7 @@ review and finalize the texts, particularly in the following languages:
 - [ ] Indonesian
 - [ ] Japanese
 - [ ] Korean
+- [x] Malay
 - [ ] Nepali
 - [ ] Portuguese
 - [ ] Thai
