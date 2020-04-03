@@ -1,4 +1,13 @@
 {
+  "lang": {
+    "en": "English",
+    "ja": "日本語",
+    "zh_CN": "中文"
+  },
+  "Announcement": {
+    "title": "Help translate this page at {0}.",
+    "platform": "transifex.com"
+  },
   "siteTitle": "COVID-19 Hyogo",
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
   "overview": {
