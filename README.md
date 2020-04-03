@@ -40,7 +40,7 @@ review and finalize the texts, particularly in the following languages:
 - [ ] Thai
 - [ ] Vietnamese
 
-This will be pro bono work, but let me buy you a bear if you locate in Hyogo!
+This will be pro bono work, but let me buy you a beer if you locate in Hyogo. :)
 
 ## Usage
 
