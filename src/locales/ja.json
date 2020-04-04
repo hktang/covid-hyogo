@@ -2,7 +2,9 @@
   "displayLanguage": "Language",
   "lang": {
     "en": "English",
-    "ja": "Japanese"
+    "ja": "Japanese",
+    "ms": "Bahasa Melayu",
+    "zh": "中文"
   },
   "siteTitle": "兵庫県 COVID-19 感染状況",
   "siteTagline": "兵庫県内の感染状況ビジュアライゼーション",
@@ -13,7 +15,7 @@
     "oneInPopulation": "兵庫県居住者 {0} 人に1人",
     "totalDeaths": "死亡者総計",
     "totalDeathsInConfirmed": "感染確認者 {0} 人に1人",
-    "totalDeathsInTested": "検査実施者 {0} 人に1人"
+    "oneDeathInPopulation": "検査実施者 {0} 人に1人"
   },
   "daily": {
     "title": "感染確認者数（日別）",
