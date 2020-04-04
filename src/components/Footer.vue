@@ -3,7 +3,8 @@
     <h2 class="references">{{ $t("thanks.text") }}</h2>
     <p>
       {{ $t("thanks.translators") }} Adhura Husna,
-      <a href="https://github.com/akiya64">akiya64</a>, Jeeban panthi
+      <a href="https://github.com/akiya64">akiya64</a>, Jeeban panthi, Nafesa
+      Ismail,
     </p>
 
     <i18n path="announcement.title" tag="p">

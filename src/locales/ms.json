@@ -11,14 +11,14 @@
     "platform": "transifex.com"
   },
   "siteTitle": "COVID-19 Hyogo",
-  "siteTagline": "Menggambarkan COVID-19 di wilayah Hyogo, Jepun",
+  "siteTagline": "Memaparkan COVID-19 di wilayah Hyogo, Jepun",
   "thanks": {
-    "text": "Terima kasih yang istimewa",
+    "text": "Penghargaan",
     "translators": "Penterjemah: "
   },
   "overview": {
-    "lastUpdated": "Kali terakhir diikemaskinikan pada:",
-    "confirmedCases": "Jumlah kes yang disahkan daripada {0} yang diuji",
+    "lastUpdated": "Kali terakhir dikemaskini pada:",
+    "confirmedCases": "Jumlah kes positif COVID-19 daripada {0} yang diuji",
     "confirmedInTested": "... iaitu 1 daripada {0} orang yang telah diuji setakat ini;",
     "oneInPopulation": "atau 1 daripada {0} penduduk di wilayah Hyogo.",
     "totalDeaths": "Jumlah kematian",
@@ -32,18 +32,18 @@
     "male": "Lelaki"
   },
   "clusters": {
-    "title": "Kelompok",
+    "title": "Kluster",
     "caseNumber": "Nombor kes",
     "cluster": "Kluster",
     "labels": {
-      "A": "Pusat pendidikan dan penjagaan awal  kanak-kanak, Kobe",
+      "A": "Pusat pendidikan awal dan penjagaan kanak-kanak, Kobe",
       "B": "Pusat Perubatan Kita-Harima, Ono",
       "C": "Hospital Takarazuka Daiichi, Takarazuka",
       "D": "Hospital Jinkei, Himeji",
       "E": "Kemudahan perkhidmatan kesihatan geriatrik, Itami",
       "F": "Pusat penjagaan kanak-kanak di Kobe",
       "G": "Kes yang berkaitan dengan perumahan di Osaka",
-      "H": "Orang yang melancong dari luar negara",
+      "H": "Penduduk/Rakyat Jepun yang kembali dari melancong ke luar negara",
       "I": "Lain-lain",
       "J": "Dalam siasatan",
       "K": "Tidak diketahui"
@@ -55,14 +55,14 @@
       "nonSevere": "Bukan parah",
       "severe": "Parah",
       "deaths": "Kematian",
-      "discharged": "discaj",
+      "discharged": "Discaj",
       "confirmed": "Kumulatif disahkan"
     }
   },
   "age": {
     "title": "Pengagihan mengikut kumpulan umur",
     "hospitalizedOrDischarged": "Dimasukkan ke hospital atau discaj",
-    "deceased": "Mati",
+    "deceased": "Meninggal dunia",
     "labels": {
       "0": "Umur <10",
       "10": "Umur 10-19",
