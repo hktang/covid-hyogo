@@ -43,7 +43,7 @@ export default {
         labels: this.dateLabels,
         datasets: [
           {
-            label: this.$t("capacity.labels.totalBed"),
+            label: this.$t("capacity.labels.beds"),
             backgroundColor: "#ffffff",
             fill: false,
             borderColor: "#77aaff",
@@ -53,7 +53,7 @@ export default {
             data: this.capacity
           },
           {
-            label: this.$t("capacity.labels.nonsevere"),
+            label: this.$t("capacity.labels.nonSevere"),
             backgroundColor: "#42b983",
             data: this.nonSevere
           },
