@@ -1,8 +1,7 @@
 {
-  "displayLanguage": "Language",
   "lang": {
     "en": "English",
-    "ja": "Japanese",
+    "ja": "日本語",
     "ms": "Bahasa Melayu",
     "zh": "中文"
   },
@@ -15,7 +14,7 @@
     "oneInPopulation": "兵庫県居住者 {0} 人に1人",
     "totalDeaths": "死亡者総計",
     "totalDeathsInConfirmed": "感染確認者 {0} 人に1人",
-    "oneDeathInPopulation": "検査実施者 {0} 人に1人"
+    "oneDeathInPopulation": "兵庫県居住者 {0} 人に1人"
   },
   "daily": {
     "title": "感染確認者数（日別）",
