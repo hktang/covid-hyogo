@@ -1,11 +1,19 @@
 {
-  "displayLanguage": "Language",
   "lang": {
-	"en": "English",
-	"ja": "Japanese"
+    "en": "English",
+    "ms": "Bahasa Melayu",
+    "zh": "中文"
+  },
+  "announcement": {
+    "title": "Help translate this page at {0}.",
+    "platform": "transifex.com"
   },
   "siteTitle": "COVID-19 Hyogo",
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
+  "thanks": {
+    "text": "Special thanks",
+    "translators": "Translators: "
+  },
   "overview": {
     "lastUpdated": "Last updated:",
     "confirmedCases": "Total confirmed cases out of the {0} tested",
@@ -13,7 +21,8 @@
     "oneInPopulation": "or 1 in {0} residents of Hyogo Prefecture.",
     "totalDeaths": "Total deaths",
     "totalDeathsInConfirmed": "... that is 1 in {0} confirmed cases;",
-    "totalDeathsInTested": "or 1 in {0} people tested so far;"
+    "totalDeathsInTested": "or 1 in {0} people tested so far;",
+    "oneDeathInPopulation": "or 1 in {0} residents of Hyogo Prefecture."
   },
   "daily": {
     "title": "Daily confirmed cases",
@@ -34,7 +43,8 @@
       "G": "Cases related to live houses in Osaka",
       "H": "People travelling from abroad ",
       "I": "Others",
-      "J": "Unknown"
+      "J": "Under investigation",
+      "K": "Unknown"
     }
   },
   "status": {
@@ -70,13 +80,11 @@
     "tip": "Hover or tap on a circle marker in the map to view details."
   },
   "footer": {
-    "caption": "In celebration of the human brain, and pasta",
     "share": "Share this page",
-    "dataSourcesReferences": "Data sources and references",
+    "caption": "In celebration of the human brain, and pasta",
     "references": "Data sources and references",
     "inspiredBy": {
       "text": "Inspired by {0}.",
-      "url": "https://blog.datawrapper.de/coronaviruscharts/",
       "blogTitle": "17 responsible live visualizations about the coronavirus"
     },
     "dataFrom": {

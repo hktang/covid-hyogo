@@ -1,0 +1,108 @@
+{
+  "lang": {
+    "en": "English",
+    "ms": "Bahasa Melayu",
+    "zh": "中文"
+  },
+  "announcement": {
+    "title": "帮助翻译本页面，请移步{0}。",
+    "platform": "transifex.com"
+  },
+  "siteTitle": "COVID-19 Hyogo",
+  "siteTagline": "日本兵库县新型冠状病毒感染症发生情况图表集",
+  "thanks": {
+    "text": "特别感谢",
+    "translators": "翻译："
+  },
+  "overview": {
+    "lastUpdated": "最近更新时间：",
+    "confirmedCases": "已检测{0}人，其中确诊人数",
+    "confirmedInTested": "...相当于每{0}个受检测者中有1人确诊；",
+    "oneInPopulation": "或每{0}位兵库县居民中有1人确诊。",
+    "totalDeaths": "死亡人数",
+    "totalDeathsInConfirmed": "...相当于每{0}个确诊病例中有1人死亡；",
+    "totalDeathsInTested": "或每{0}位受检测者中有1人死亡；",
+    "oneDeathInPopulation": "或每{0}位兵库县居民中有1人死亡。"
+  },
+  "daily": {
+    "title": "每日确诊病例概况",
+    "female": "女",
+    "male": "男"
+  },
+  "clusters": {
+    "title": "聚集性感染",
+    "caseNumber": "编号",
+    "cluster": "群聚史",
+    "labels": {
+      "A": "神户市某幼儿保育设施",
+      "B": "小野市的北播磨医疗中心",
+      "C": "宝塚市第一医院",
+      "D": "姬路市仁惠医院",
+      "E": "伊丹市某老年保健服务设施",
+      "F": "神户市某日托中心",
+      "G": "大阪市现场音乐厅",
+      "H": "海外旅行者",
+      "I": "其他",
+      "J": "调查中",
+      "K": "不明"
+    }
+  },
+  "status": {
+    "title": "感染者情况（累计）",
+    "labels": {
+      "nonSevere": "非重症",
+      "severe": "重症",
+      "deaths": "死亡",
+      "discharged": "出院",
+      "confirmed": "累计确诊"
+    }
+  },
+  "age": {
+    "title": "年龄段分布",
+    "hospitalizedOrDischarged": "住院中或已出院",
+    "deceased": "死亡",
+    "labels": {
+      "0": "10岁以下",
+      "10": "10-19岁",
+      "20": "20-29岁",
+      "30": "30-39岁",
+      "40": "40-49岁",
+      "50": "50-59岁",
+      "60": "60-69岁",
+      "70": "70-79岁",
+      "80": "80-89岁",
+      "90": "90-99岁",
+      "100": "99岁以上"
+    }
+  },
+  "city": {
+    "title": "各市累计感染者数",
+    "tip": "将鼠标悬停或轻按地图上的圆圈标记可查看详细信息。"
+  },
+  "footer": {
+    "share": "分享此页面",
+    "caption": "我们有脑，还有面条",
+    "references": "数据来源和参考资料",
+    "inspiredBy": {
+      "text": "受该网页启发：{0}。",
+      "blogTitle": "17 responsible live visualizations about the coronavirus"
+    },
+    "dataFrom": {
+      "text": "数据载于{0}，编自兵库县政府网页{1}。",
+      "spreadsheet": "谷歌表格",
+      "hyogoPage": "新型コロナウイルスに感染した患者の発生状况"
+    },
+    "population": {
+      "text": "人口数据来自{0}",
+      "wikipedia": "维基百科"
+    },
+    "xkcd": {
+      "text": "网络漫画来自{0}",
+      "xkcd": "XKCD"
+    },
+    "github": {
+      "text": "查看{0}项目",
+      "github": "GitHub"
+    }
+  }
+}

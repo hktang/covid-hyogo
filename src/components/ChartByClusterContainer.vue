@@ -4,7 +4,7 @@
     <chart-by-cluster
       v-if="loaded"
       class="chart"
-      :chartdata="chartdata"
+      :chart-data="chartdata"
       :options="options"
     />
     <ul class="legend muted">
@@ -26,16 +26,37 @@ export default {
   components: { ChartByCluster },
   data: () => ({
     loaded: false,
+    caseData: [],
     chartdata: null,
     xLabels: [],
     yLabels: [],
     legends: []
   }),
+  watch: {
+    "$i18n.locale": function() {
+      this.getLegends();
+    }
+  },
   async mounted() {
     this.getData();
     this.getLegends();
   },
   methods: {
+    setChartData: function() {
+      this.chartdata = {
+        datasets: [
+          {
+            data: this.caseData,
+            fill: false,
+            showLine: false,
+            pointRadius: 4,
+            borderWidth: 1,
+            borderColor: "#42b983",
+            backgroundColor: "rgba(255, 255, 255, 0.2)"
+          }
+        ]
+      };
+    },
     getData: function() {
       axios
         .get(
@@ -69,9 +90,6 @@ export default {
           this.xLabels = caseNumberColumn.map(item => item["content"]["$t"]);
           this.xLabels.splice(0, 1);
 
-          const caseData = [];
-          let pointRadiusList = [];
-
           for (let i = 0; i < cases.length; i++) {
             const label = cases[i]["title"]["$t"];
             const rowNum = label.substring(1);
@@ -100,29 +118,13 @@ export default {
               toolTip: theCaseNumberCell[0]["content"]["$t"]
             };
 
-            if (isNaN(pointRadiusList[i])) {
-              pointRadiusList[i] = 1;
-            }
-
-            if (this.containsCase(theCase, caseData)) {
-              pointRadiusList[caseData.length - 1] += 1;
-            } else {
-              caseData.push(theCase);
+            if (!this.containsCase(theCase, this.caseData)) {
+              this.caseData.push(theCase);
             }
           }
-          this.chartdata = {
-            datasets: [
-              {
-                data: caseData,
-                fill: false,
-                showLine: false,
-                pointRadius: pointRadiusList.map(x => x * 4),
-                borderWidth: 1,
-                borderColor: "#42b983",
-                backgroundColor: "rgba(255, 255, 255, 0.2)"
-              }
-            ]
-          };
+
+          this.setChartData();
+
           this.options = {
             responsive: true,
             maintainAspectRatio: false,
@@ -149,8 +151,7 @@ export default {
                     display: false
                   },
                   scaleLabel: {
-                    display: true,
-                    labelString: this.$t("clusters.caseNumber")
+                    display: false
                   },
                   ticks: {
                     min: 0,
@@ -167,8 +168,7 @@ export default {
                 {
                   type: "linear",
                   scaleLabel: {
-                    display: true,
-                    labelString: this.$t("clusters.cluster")
+                    display: false
                   },
                   ticks: {
                     reverse: true,

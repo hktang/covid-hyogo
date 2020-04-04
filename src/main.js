@@ -2,11 +2,14 @@ import Vue from "vue";
 import App from "./App.vue";
 import * as Sentry from "@sentry/browser";
 import VueGtag from "vue-gtag";
+import VueMeta from "vue-meta";
 import * as Integrations from "@sentry/integrations";
 import "vue-loading-overlay/dist/vue-loading.css";
 import "leaflet/dist/leaflet.css";
 import i18n from "./i18n";
 Vue.config.productionTip = false;
+Vue.use(require("vue-moment"));
+Vue.use(VueMeta);
 
 new Vue({
   i18n,

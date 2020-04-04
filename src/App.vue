@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <LocaleSwitch />
     <img alt="Hyogo logo" src="./assets/hyogo.svg" />
     <h1>{{ $t("siteTitle") }}</h1>
     <SwitchLocale />
@@ -20,6 +21,7 @@ import ChartByAgeContainer from "./components/ChartByAgeContainer.vue";
 import ChartByDateContainer from "./components/ChartByDateContainer.vue";
 import ChartByClusterContainer from "./components/ChartByClusterContainer.vue";
 import ChartByStatusContainer from "./components/ChartByStatusContainer.vue";
+import LocaleSwitch from "./components/LocaleSwitch.vue";
 import MapByCity from "./components/MapByCity.vue";
 import Footer from "./components/Footer.vue";
 
@@ -31,6 +33,7 @@ export default {
     ChartByDateContainer,
     ChartByClusterContainer,
     ChartByStatusContainer,
+    LocaleSwitch,
     MapByCity,
     Footer
   }
@@ -38,13 +41,17 @@ export default {
 </script>
 
 <style>
+body {
+  margin-top: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 40px;
+  margin-top: 0;
+  padding-top: 0;
 }
 .muted {
   color: #aaa;

@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <p class="muted">
-      {{ $t("overview.lastUpdated") }} {{ new Date(lastUpdated) }}
+      {{ $t("overview.lastUpdated") }}
+      {{ new Date(lastUpdated) | moment("YYYY-M-D H:m:s") }} (JST)
     </p>
     <dl>
       <i18n path="overview.confirmedCases" tag="dt">
@@ -36,12 +37,7 @@
               {{ Math.round(totalConfirmed / totalDeaths).toLocaleString() }}
             </template> </i18n
           ><br />
-          <i18n path="overview.totalDeathsInTested" tag="span">
-            <template v-slot:0>
-              {{ Math.round(totalTested / totalDeaths).toLocaleString() }}
-            </template> </i18n
-          ><br />
-          <i18n path="overview.oneInPopulation" tag="span">
+          <i18n path="overview.oneDeathInPopulation" tag="span">
             <template v-slot:0>
               {{ Math.round(population / totalDeaths).toLocaleString() }}
             </template>
@@ -54,7 +50,7 @@
     <chart-by-date
       v-if="loaded"
       class="chart"
-      :chartdata="chartdata"
+      :chart-data="chartdata"
       :options="options"
     />
   </div>
@@ -72,12 +68,20 @@ export default {
     loading: true,
     loaded: false,
     chartdata: null,
+    dailyF: [],
+    dailyM: [],
+    dateLabels: [],
     lastUpdated: null,
     totalConfirmed: 0,
     totalTested: 0,
     totalDeaths: 0,
     population: 5460482 // As of 2020/1/1
   }),
+  watch: {
+    "$i18n.locale": function() {
+      this.setChartData();
+    }
+  },
   async mounted() {
     this.getDailyTests();
     this.getDeathCount();
@@ -94,10 +98,7 @@ export default {
         )
         .then(response => {
           const responseData = response.data;
-          let dateLabels = [];
           let excludedRowIds = [];
-          let dailyF = [];
-          let dailyM = [];
 
           for (let i = 0; i < responseData.feed.entry.length; i++) {
             if (
@@ -107,7 +108,9 @@ export default {
                 responseData.feed.entry[i]["content"]["$t"].substring(0, 4) ==
                 "2020"
               ) {
-                dateLabels.push(responseData.feed.entry[i]["content"]["$t"]);
+                this.dateLabels.push(
+                  responseData.feed.entry[i]["content"]["$t"]
+                );
               } else {
                 excludedRowIds.push(
                   responseData.feed.entry[i]["title"]["$t"].substring(1)
@@ -123,7 +126,7 @@ export default {
                     responseData.feed.entry[i]["title"]["$t"].substring(1)
                   )
                 ) {
-                  dailyF.push(responseData.feed.entry[i]["content"]["$t"]);
+                  this.dailyF.push(responseData.feed.entry[i]["content"]["$t"]);
                 }
                 break;
               case "C":
@@ -132,7 +135,7 @@ export default {
                     responseData.feed.entry[i]["title"]["$t"].substring(1)
                   )
                 ) {
-                  dailyM.push(responseData.feed.entry[i]["content"]["$t"]);
+                  this.dailyM.push(responseData.feed.entry[i]["content"]["$t"]);
                 }
                 break;
               case "D":
@@ -145,21 +148,9 @@ export default {
                 break;
             }
           }
-          this.chartdata = {
-            labels: dateLabels,
-            datasets: [
-              {
-                label: this.$t("daily.female"),
-                backgroundColor: "#42b983",
-                data: dailyF
-              },
-              {
-                label: this.$t("daily.male"),
-                backgroundColor: "#423383",
-                data: dailyM
-              }
-            ]
-          };
+
+          this.setChartData();
+
           this.options = {
             maintainAspectRatio: false,
             responsive: true,
@@ -180,13 +171,30 @@ export default {
             }
           };
           this.totalConfirmed =
-            dailyF.reduce((a, b) => Number(a) + Number(b), 0) +
-            dailyM.reduce((a, b) => Number(a) + Number(b), 0);
+            this.dailyF.reduce((a, b) => Number(a) + Number(b), 0) +
+            this.dailyM.reduce((a, b) => Number(a) + Number(b), 0);
           this.loaded = true;
         })
         .catch(error => {
           console.log(error);
         });
+    },
+    setChartData: function() {
+      this.chartdata = {
+        labels: this.dateLabels,
+        datasets: [
+          {
+            label: this.$t("daily.female"),
+            backgroundColor: "#42b983",
+            data: this.dailyF
+          },
+          {
+            label: this.$t("daily.male"),
+            backgroundColor: "#423383",
+            data: this.dailyM
+          }
+        ]
+      };
     },
     getDailyTests: function() {
       axios

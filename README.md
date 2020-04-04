@@ -24,6 +24,25 @@ Hyogo Prefectural Government, particularly:
 1. [新型コロナウイルスに感染した患者の状況][3]
 1. [新型コロナウイルス感染症の県内検査状況について][4]
 
+## Help translate COVID-19 in Hyogo
+
+Are you a translator? Please help translate the page! Machine translation
+is being set up at [Transifex][5] and I am looking for translators to
+review and finalize the texts, particularly in the following languages:
+
+- [ ] Chinese (Hong Kong)
+- [ ] Chinese (Taiwan)
+- [ ] Indonesian
+- [ ] Japanese
+- [ ] Korean
+- [x] Malay
+- [ ] Nepali
+- [ ] Portuguese
+- [ ] Thai
+- [ ] Vietnamese
+
+This will be pro bono work, but let me buy you a beer if you locate in Hyogo. :)
+
 ## Usage
 
 This project uses [node](http://nodejs.org) and [npm](https://npmjs.com).
@@ -49,17 +68,17 @@ yarn format
 
 ## Contributing
 
-Comments and contributions welcome! Please [submit an issue][5] or send a
+Comments and contributions welcome! Please [submit an issue][6] or send a
 pull request directly.
 
 ## Built with
 
-* [Vue.js](https://vuejs.org/index.html) - The Progressive JavaScript Framework
-* [Chart.js](https://www.chartjs.org/) - Simple yet flexible JavaScript
+- [Vue.js](https://vuejs.org/index.html) - The Progressive JavaScript Framework
+- [Chart.js](https://www.chartjs.org/) - Simple yet flexible JavaScript
   charting for designers & developers
-* [Leaflet](https://leafletjs.com/) - An open-source JavaScript library
+- [Leaflet](https://leafletjs.com/) - An open-source JavaScript library
    for mobile-friendly interactive maps
-* And many great open source software.
+- And many great open source software.
 
 ## License
 
@@ -70,4 +89,5 @@ This project is licensed under the MIT License
 [2]: https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html
 [3]: https://web.pref.hyogo.lg.jp/kk03/corona_kanjyajyokyo.html
 [4]: https://web.pref.hyogo.lg.jp/kf16/singatakoronakensa.html
-[5]: https://github.com/hktang/covid-hyogo/issues
+[5]: https://www.transifex.com/covid-19-hyogo/covid-19-in-hyogo/
+[6]: https://github.com/hktang/covid-hyogo/issues

@@ -1,5 +1,14 @@
 <template>
   <div class="footer">
+    <h2 class="references">{{ $t("thanks.text") }}</h2>
+    <p>{{ $t("thanks.translators") }} Adhura Husna</p>
+
+    <i18n path="announcement.title" tag="p">
+      <template v-slot:0>
+        <a :href="urls.translate">{{ $t("announcement.platform") }}</a>
+      </template>
+    </i18n>
+
     <div class="share">
       <h2>{{ $t("footer.share") }}</h2>
       <AddThis public-id="ra-5e7cafe6d8afe9ba" />
@@ -13,7 +22,7 @@
       src="https://imgs.xkcd.com/comics/pathogen_resistance_2x.png"
     />
 
-    <h2 class="references">{{ $t("footer.dataSourcesReferences") }}</h2>
+    <h2 class="references">{{ $t("footer.references") }}</h2>
 
     <i18n path="footer.inspiredBy.text" tag="p">
       <template v-slot:0>
@@ -59,6 +68,7 @@ export default {
   },
   data: () => ({
     urls: {
+      translate: "https://www.transifex.com/covid-19-hyogo/covid-19-in-hyogo/",
       blog: "https://blog.datawrapper.de/coronaviruscharts/",
       spreadsheet:
         "https://docs.google.com/spreadsheets/d/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/edit?usp=sharing",

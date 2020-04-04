@@ -5,7 +5,7 @@
     <chart-by-age
       v-if="loaded"
       class="chart"
-      :chartdata="chartdata"
+      :chart-data="chartdata"
       :options="options"
     />
   </div>
@@ -20,10 +20,17 @@ export default {
   name: "ChartByDateContainer",
   components: { ChartByAge, Loading },
   data: () => ({
-    loading: true,
+    chartdata: null,
+    counts: [],
+    deathCounts: [],
     loaded: false,
-    chartdata: null
+    loading: true
   }),
+  watch: {
+    "$i18n.locale": function() {
+      this.setChartData();
+    }
+  },
   async mounted() {
     this.getData();
   },
@@ -31,6 +38,23 @@ export default {
     getLabels: function() {
       const labels = this.$t("age.labels");
       return Object.values(labels);
+    },
+    setChartData: function() {
+      this.chartdata = {
+        labels: this.getLabels(),
+        datasets: [
+          {
+            label: this.$t("age.hospitalizedOrDischarged"),
+            backgroundColor: "#42b983",
+            data: this.counts
+          },
+          {
+            label: this.$t("age.deceased"),
+            backgroundColor: "#7c7f7e",
+            data: this.deathCounts
+          }
+        ]
+      };
     },
     getData: function() {
       axios
@@ -42,8 +66,6 @@ export default {
         .then(response => {
           const responseData = response.data;
           let excludedRowIds = ["1"];
-          let counts = [];
-          let deathCounts = [];
           const entries = responseData.feed.entry;
 
           for (let i = 0; i < entries.length; i++) {
@@ -54,8 +76,8 @@ export default {
                     entries[i]["title"]["$t"].substring(1)
                   )
                 ) {
-                  counts.push(Number(entries[i]["content"]["$t"]));
-                  deathCounts.push(0);
+                  this.counts.push(Number(entries[i]["content"]["$t"]));
+                  this.deathCounts.push(0);
                 }
                 break;
               case "C":
@@ -64,10 +86,10 @@ export default {
                     entries[i]["title"]["$t"].substring(1)
                   )
                 ) {
-                  deathCounts[deathCounts.length - 1] += Number(
+                  this.deathCounts[this.deathCounts.length - 1] += Number(
                     entries[i]["content"]["$t"]
                   );
-                  counts[deathCounts.length - 1] -= Number(
+                  this.counts[this.deathCounts.length - 1] -= Number(
                     entries[i]["content"]["$t"]
                   );
                 }
@@ -76,23 +98,7 @@ export default {
                 break;
             }
           }
-
-          this.chartdata = {
-            labels: this.getLabels(),
-            datasets: [
-              {
-                label: this.$t("age.hospitalizedOrDischarged"),
-                backgroundColor: "#42b983",
-                data: counts
-              },
-              {
-                label: this.$t("age.deceased"),
-                backgroundColor: "#7c7f7e",
-                data: deathCounts
-              }
-            ]
-          };
-
+          this.setChartData();
           this.options = {
             maintainAspectRatio: false,
             responsive: true,
