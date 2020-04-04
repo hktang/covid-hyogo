@@ -4,6 +4,7 @@
     <p>
       {{ $t("thanks.translators") }} Adhura Husna,
       <a href="https://github.com/akiya64">akiya64</a>
+      Jeeban panthi
     </p>
 
     <i18n path="announcement.title" tag="p">
