@@ -3,7 +3,6 @@
     <LocaleSwitch />
     <img alt="Hyogo logo" src="./assets/hyogo.svg" />
     <h1>{{ $t("siteTitle") }}</h1>
-    <SwitchLocale />
     <p class="muted">{{ $t("siteTagline") }}</p>
     <div class="chart-by-date">
       <ChartByDateContainer />
