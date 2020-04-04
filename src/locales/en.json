@@ -14,7 +14,8 @@
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
   "thanks": {
     "text": "Special thanks",
-    "translators": "Translators: "
+    "developers": "Development: ",
+    "translators": "Translation: "
   },
   "overview": {
     "lastUpdated": "Last updated:",
