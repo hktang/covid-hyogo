@@ -13,7 +13,7 @@
       src="https://imgs.xkcd.com/comics/pathogen_resistance_2x.png"
     />
 
-    <h2 class="references">Data sources and references</h2>
+    <h2 class="references">{{ $t("footer.dataSourcesReferences") }}</h2>
 
     <i18n path="footer.inspiredBy.text" tag="p">
       <template v-slot:0>

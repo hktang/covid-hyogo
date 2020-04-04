@@ -70,8 +70,9 @@
     "tip": "Hover or tap on a circle marker in the map to view details."
   },
   "footer": {
-    "share": "Share this page",
     "caption": "In celebration of the human brain, and pasta",
+    "share": "Share this page",
+    "dataSourcesReferences": "Data sources and references",
     "references": "Data sources and references",
     "inspiredBy": {
       "text": "Inspired by {0}.",

@@ -4,95 +4,97 @@
     "en": "English",
     "ja": "Japanese"
   },
-  "siteTitle": "兵庫県 コロナウイルス感染状況",
-  "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
+  "siteTitle": "兵庫県 COVID-19 感染状況",
+  "siteTagline": "兵庫県内の感染状況ビジュアライゼーション",
   "overview": {
-    "lastUpdated": "最終 updated:",
-    "confirmedCases": "Total confirmed cases out of the {0} tested",
-    "confirmedInTested": "...that is 1 in {0} people tested so far;",
-    "oneInPopulation": "or 1 in {0} residents of Hyogo Prefecture.",
-    "totalDeaths": "Total deaths",
-    "totalDeathsInConfirmed": "... that is 1 in {0} confirmed cases;",
-    "totalDeathsInTested": "or 1 in {0} people tested so far;"
+    "lastUpdated": "最終更新:",
+    "confirmedCases": "総検査数 {0} 件中 感染者",
+    "confirmedInTested": "検査数に対する感染者は {0} 件に1人",
+    "oneInPopulation": "兵庫県居住者 {0} 人に1人",
+    "totalDeaths": "死亡者総計",
+    "totalDeathsInConfirmed": "感染確認者 {0} 人に1人",
+    "totalDeathsInTested": "検査実施者 {0} 人に1人"
   },
   "daily": {
-    "title": "Daily confirmed cases",
-    "female": "Female",
-    "male": "Male"
+    "title": "感染確認者数（日別）",
+    "female": "女性",
+    "male": "男性"
   },
   "clusters": {
-    "title": "Clusters",
-    "caseNumber": "Case number",
-    "cluster": "Cluster",
+    "title": "感染経路",
+    "caseNumber": "症例番号",
+    "cluster": "クラスター",
     "labels": {
-      "A": "An early childhood education and care center, Kobe",
-      "B": "Kita-Harima Medical Center, Ono",
-      "C": "Takarazuka Daiichi Hospital, Takarazuka",
-      "D": "Jinkei hospital, Himeji",
-      "E": "A geriatric health services facility, Itami",
-      "F": "A daycare provider in Kobe",
-      "G": "Cases related to live houses in Osaka",
-      "H": "People travelling from abroad ",
-      "I": "Others",
-      "J": "Unknown"
+      "A": "認定こども園（神戸市）",
+      "B": "北播磨医療センター（小野市）",
+      "C": "宝塚第一病院（宝塚市）",
+      "D": "仁恵病院（姫路市）",
+      "E": "会頃運保険施設グリーンアルス（伊丹市）",
+      "F": "デイケア施設（神戸市）",
+      "G": "大阪市ライブハウス関連",
+      "H": "海外帰国者",
+      "I": "その他",
+      "J": "行動歴調査中",
+      "K": "特定できず"
     }
   },
   "status": {
-    "title": "Patient status (cumulative)",
+    "title": "重症度別（累積）",
     "labels": {
-      "nonSevere": "Non-severe",
-      "severe": "Severe",
-      "deaths": "Deaths",
-      "discharged": "Discharged",
-      "confirmed": "Cumulative confirmed"
+      "nonSevere": "軽症",
+      "severe": "重症",
+      "deaths": "死亡",
+      "discharged": "退院",
+      "confirmed": "感染確認者数 総計"
     }
   },
   "age": {
-    "title": "Distribution by age group",
-    "hospitalizedOrDischarged": "Hospitalized or discharged",
-    "deceased": "Deceased",
+    "title": "年齢階層別",
+    "hospitalizedOrDischarged": "入院 または 退院",
+    "deceased": "死亡",
     "labels": {
-      "0": "Age < 10",
-      "10": "Age 10-19",
-      "20": "Age 20-29",
-      "30": "Age 30-39",
-      "40": "Age 40-49",
-      "50": "Age 50-59",
-      "60": "Age 60-69",
-      "70": "Age 70-79",
-      "80": "Age 80-89",
-      "90": "Age 90-99",
-      "100": "Age > 99"
+      "0": "10歳以下",
+      "10": "10代",
+      "20": "20代",
+      "30": "30代",
+      "40": "40代",
+      "50": "50代",
+      "60": "60代",
+      "70": "70代",
+      "80": "80代",
+      "90": "90代",
+      "100": "100歳以上"
     }
   },
   "city": {
-    "title": "Cumulative cases by city",
-    "tip": "Hover or tap on a circle marker in the map to view details."
+    "title": "自治体別総数",
+    "tip": "タップまたはカーソルを合わせると詳細が表示されます。"
   },
   "footer": {
-    "share": "Share this page",
     "caption": "In celebration of the human brain, and pasta",
-    "references": "Data sources and references",
+    "share": "このページをシェアする",
+    "dataSourcesReferences": "統計情報出典と参考サイト",
+    "references": "情報元と参考サイト",
     "inspiredBy": {
-      "text": "Inspired by {0}.",
+      "text": "{0} を参考として作成しました。",
       "url": "https://blog.datawrapper.de/coronaviruscharts/",
-      "blogTitle": "17 responsible live visualizations about the coronavirus"
+      "blogTitle": "コロナウイルスに関するレスポンシブな17のライブ・ビジュアライゼーション（英語サイト）"
     },
     "dataFrom": {
-      "text": "Data available as {0}, compiled from {1}, Hyogo Prefectural Government.",
-      "spreadsheet": "Google Spreadsheet",
+      "text": "兵庫県庁WEBサイト「{1}」の情報を集計しています。集計は {0} で行っています。",
+      "spreadsheet": "Google スプレッドシート",
       "hyogoPage": "新型コロナウイルスに感染した患者の発生状況"
     },
     "population": {
-      "text": "Population data from {0}",
+      "text": "人口数 出典 {0}",
       "wikipedia": "Wikipedia"
     },
     "xkcd": {
-      "text": "Webcomic from {0}",
+      "text": "コミック 出典 {0}",
       "xkcd": "XKCD"
     },
     "github": {
-      "text": "View project on {0}",
+      "text": "プロジェクトを{0}で見る",
       "github": "GitHub"
     }
   }
