@@ -16,7 +16,6 @@
   </div>
 </template>
 <script>
-import SwitchLocale from "./components/SwitchLocale.vue";
 import ChartByAgeContainer from "./components/ChartByAgeContainer.vue";
 import ChartByDateContainer from "./components/ChartByDateContainer.vue";
 import ChartByClusterContainer from "./components/ChartByClusterContainer.vue";
@@ -28,7 +27,6 @@ import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: {
-    SwitchLocale,
     ChartByAgeContainer,
     ChartByDateContainer,
     ChartByClusterContainer,
