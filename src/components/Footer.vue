@@ -1,7 +1,10 @@
 <template>
   <div class="footer">
     <h2 class="references">{{ $t("thanks.text") }}</h2>
-    <p>{{ $t("thanks.translators") }} Adhura Husna</p>
+    <p>
+      {{ $t("thanks.translators") }} Adhura Husna,
+      <a href="https://github.com/akiya64">akiya64</a>
+    </p>
 
     <i18n path="announcement.title" tag="p">
       <template v-slot:0>
