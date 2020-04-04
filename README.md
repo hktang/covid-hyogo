@@ -27,16 +27,16 @@ Hyogo Prefectural Government, particularly:
 ## Help translate COVID-19 in Hyogo
 
 Are you a translator? Please help translate the page! Machine translation
-is being set up at [Transifex][5] and I am looking for translators to
+is [set up at Transifex][5] and I am looking for translators to
 review and finalize the texts, particularly in the following languages:
 
 - [ ] Chinese (Hong Kong)
 - [ ] Chinese (Taiwan)
 - [ ] Indonesian
-- [ ] Japanese
+- [x] Japanese
 - [ ] Korean
 - [x] Malay
-- [ ] Nepali
+- [x] Nepali
 - [ ] Portuguese
 - [ ] Thai
 - [ ] Vietnamese
