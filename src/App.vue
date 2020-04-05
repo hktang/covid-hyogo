@@ -20,7 +20,6 @@ import ChartByAgeContainer from "./components/ChartByAgeContainer.vue";
 import ChartByDateContainer from "./components/ChartByDateContainer.vue";
 import ChartByClusterContainer from "./components/ChartByClusterContainer.vue";
 import ChartByStatusContainer from "./components/ChartByStatusContainer.vue";
-import ChartByCapacityContainer from "./components/ChartByCapacityContainer.vue";
 import LocaleSwitch from "./components/LocaleSwitch.vue";
 import MapByCity from "./components/MapByCity.vue";
 import Footer from "./components/Footer.vue";
@@ -32,7 +31,6 @@ export default {
     ChartByDateContainer,
     ChartByClusterContainer,
     ChartByStatusContainer,
-    ChartByCapacityContainer,
     LocaleSwitch,
     MapByCity,
     Footer

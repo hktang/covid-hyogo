@@ -21,6 +21,7 @@ export default {
   components: { ChartByStatus, Loading },
   data: () => ({
     chartdata: null,
+    capacity: [],
     dateLabels: [],
     nonSevere: [],
     severe: [],
@@ -54,22 +55,33 @@ export default {
             data: this.severe
           },
           {
-            label: this.$t("status.labels.deaths"),
+            label: this.$t("age.deceased"),
             backgroundColor: "#7c7f7e",
             data: this.deaths
           },
           {
             label: this.$t("status.labels.discharged"),
-            backgroundColor: "#b98342",
+            backgroundColor: "#aaddff",
             data: this.discharged
           },
           {
             label: this.$t("status.labels.confirmed"),
-            backgroundColor: "#c2ead7",
-            borderColor: "#42b983",
+            backgroundColor: "#f0f0f0",
+            borderColor: "#999",
             borderWidth: 1,
             data: this.totalPositive,
             type: "line"
+          },
+          {
+            label: this.$t("capacity.labels.beds"),
+            fill: false,
+            borderColor: "red",
+            borderWidth: 1,
+            pointRadius: 2,
+            type: "line",
+            lineTension: 0,
+            data: this.capacity,
+            yAxisID: "no-stack"
           }
         ]
       };
@@ -115,14 +127,20 @@ export default {
           const deathCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "G";
           });
-          this.deaths = deathCases.map(c => c["content"]["$t"]);
+          this.deaths = deathCases.map(c => c["content"]["$t"] * -1);
           this.deaths.shift();
 
           const dischargedCases = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "H";
           });
-          this.discharged = dischargedCases.map(c => c["content"]["$t"]);
+          this.discharged = dischargedCases.map(c => c["content"]["$t"] * -1);
           this.discharged.shift();
+
+          const capacityCount = entries.filter(entry => {
+            return entry["title"]["$t"].substring(0, 1) == "I";
+          });
+          this.capacity = capacityCount.map(c => c["content"]["$t"]);
+          this.capacity.shift();
 
           this.setChartData();
 
@@ -140,6 +158,9 @@ export default {
                   stacked: true,
                   ticks: {
                     reverse: true
+                  },
+                  gridLines: {
+                    display: false
                   }
                 }
               ],
@@ -147,8 +168,21 @@ export default {
                 {
                   stacked: true,
                   ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    min: -100,
+                    max: 280
                   }
+                },
+                {
+                  id: "no-stack",
+                  stacked: false,
+                  display: false,
+                  ticks: {
+                    beginAtZero: true,
+                    min: -100,
+                    max: 280
+                  },
+                  type: "linear"
                 }
               ]
             }
