@@ -74,6 +74,11 @@
     "title": "Kes kumulatif berdasarkan bandar",
     "tip": "Apungkan  atau ketik pada penanda bulatan di peta untuk melihat butiran."
   },
+  "capacity": {
+    "labels": {
+      "beds": "Jumlah katil tersedia untuk pesakit COVID-19"
+    }
+  },
   "footer": {
     "share": "Kongsi halaman ini",
     "caption": "Dalam meraikan kebijaksanaan, kehidupan, dan pasta",
