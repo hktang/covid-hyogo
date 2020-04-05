@@ -7,6 +7,7 @@
   "siteTagline": "日本兵库县新型冠状病毒感染症发生情况图表集",
   "thanks": {
     "text": "特别感谢",
+    "developers": "开发：",
     "translators": "翻译："
   },
   "overview": {
@@ -74,7 +75,7 @@
     "title": "各市累计感染者数",
     "tip": "将鼠标悬停或轻按地图上的圆圈标记可查看详细信息。"
   },
-  "capacity": {
+  "capacity":{
     "labels": {
       "beds": "可用于感染者治疗的病床数"
     }

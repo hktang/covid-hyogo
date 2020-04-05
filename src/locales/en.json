@@ -76,12 +76,8 @@
     "tip": "Hover or tap on a circle marker in the map to view details."
   },
   "capacity":{
-    "title": "Hospitalized patients and prepared beds",
     "labels": {
-      "beds": "Total beds available for COVID-19 patients",
-      "nonSevere": "Non-severe",
-      "severe": "Severe",
-      "discharged": "Discharged total"
+      "beds": "Total beds available for COVID-19 patients"
     }
   },
   "footer": {
