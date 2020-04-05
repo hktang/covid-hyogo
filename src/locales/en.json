@@ -44,7 +44,7 @@
     }
   },
   "status": {
-    "title": "Patient status (cumulative)",
+    "title": "Patient status (cumulative) and hospital capacity",
     "labels": {
       "nonSevere": "Non-severe",
       "severe": "Severe",
@@ -78,7 +78,7 @@
   "capacity":{
     "title": "Hospitalized patients and prepared beds",
     "labels": {
-      "beds": "Number of available beds for COVID-19",
+      "beds": "Total beds available for COVID-19",
       "nonSevere": "Non-severe",
       "severe": "Severe",
       "discharged": "Discharged total"

@@ -31,6 +31,19 @@ export default {
     loaded: false,
     loading: true
   }),
+  computed: {
+    maxY: function() {
+      const totalPositive = this.totalPositive.map(c => Number(c));
+      const maxPositive = Math.ceil(Math.max(...totalPositive) / 100) * 100;
+      const totalCapacity = this.capacity.map(c => Number(c));
+      const maxCapacity = Math.ceil(Math.max(...totalCapacity) / 100) * 100;
+
+      return maxPositive > maxCapacity ? maxPositive : maxCapacity;
+    },
+    maxOthers: function() {
+      return Math.floor((this.deaths[0] + this.discharged[0]) / 100) * 100;
+    }
+  },
   watch: {
     "$i18n.locale": function() {
       this.setChartData();
@@ -51,7 +64,7 @@ export default {
           },
           {
             label: this.$t("status.labels.severe"),
-            backgroundColor: "#194531",
+            backgroundColor: "#276a4c",
             data: this.severe
           },
           {
@@ -61,21 +74,22 @@ export default {
           },
           {
             label: this.$t("status.labels.discharged"),
-            backgroundColor: "#aaddff",
+            backgroundColor: "#addcf3",
             data: this.discharged
           },
           {
             label: this.$t("status.labels.confirmed"),
             backgroundColor: "#f0f0f0",
-            borderColor: "#999",
+            borderColor: "#42b983",
             borderWidth: 1,
+            pointRadius: 2,
             data: this.totalPositive,
             type: "line"
           },
           {
             label: this.$t("capacity.labels.beds"),
             fill: false,
-            borderColor: "red",
+            borderColor: "#423383",
             borderWidth: 1,
             pointRadius: 2,
             type: "line",
@@ -152,6 +166,25 @@ export default {
                 radius: 0
               }
             },
+            tooltips: {
+              enabled: true,
+              callbacks: {
+                label: function(tooltipItem, data) {
+                  const theLabel =
+                    data.datasets[tooltipItem.datasetIndex].label;
+
+                  const theNumber = Math.abs(
+                    Number(
+                      data.datasets[tooltipItem.datasetIndex].data[
+                        tooltipItem.index
+                      ]
+                    )
+                  );
+
+                  return theLabel + ": " + theNumber;
+                }
+              }
+            },
             scales: {
               xAxes: [
                 {
@@ -169,8 +202,8 @@ export default {
                   stacked: true,
                   ticks: {
                     beginAtZero: true,
-                    min: -100,
-                    max: 280
+                    min: this.maxOthers,
+                    max: this.maxY
                   }
                 },
                 {
@@ -179,8 +212,8 @@ export default {
                   display: false,
                   ticks: {
                     beginAtZero: true,
-                    min: -100,
-                    max: 280
+                    min: this.maxOthers,
+                    max: this.maxY
                   },
                   type: "linear"
                 }

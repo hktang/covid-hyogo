@@ -10,7 +10,6 @@
     <ChartByClusterContainer />
     <ChartByStatusContainer />
     <ChartByAgeContainer />
-    <ChartByCapacityContainer />
     <MapByCity />
     <Footer />
   </div>
