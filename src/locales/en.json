@@ -78,7 +78,7 @@
   "capacity":{
     "title": "Hospitalized patients and prepared beds",
     "labels": {
-      "beds": "Total beds available for COVID-19",
+      "beds": "Total beds available for COVID-19 patients",
       "nonSevere": "Non-severe",
       "severe": "Severe",
       "discharged": "Discharged total"

@@ -66,12 +66,8 @@
     "tip": "タップまたはカーソルを合わせると詳細が表示されます。"
   },
   "capacity":{
-    "title": "入院者数と対応病床数",
     "labels": {
-      "beds": "COVID-19対応ベッド数",
-      "nonSevere": "軽症",
-      "severe": "重症",
-      "discharged": "退院者 総計"
+      "beds": "COVID-19対応ベッド数"
     }
   },
   "footer": {
