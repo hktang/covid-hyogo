@@ -33,10 +33,10 @@ review and finalize the texts, particularly in the following languages:
 - [ ] Chinese (Hong Kong)
 - [ ] Chinese (Taiwan)
 - [ ] Indonesian
-- [x] Japanese
+- [ ] Japanese
 - [ ] Korean
-- [x] Malay
-- [x] Nepali
+- [ ] Malay
+- [ ] Nepali
 - [ ] Portuguese
 - [ ] Thai
 - [ ] Vietnamese
