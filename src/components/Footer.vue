@@ -64,15 +64,19 @@
         <a :href="urls.github">{{ $t("footer.github.github") }}</a>
       </template>
     </i18n>
+
+    <cookie-law />
   </div>
 </template>
 <script>
 import AddThis from "vue-simple-addthis-share";
+import CookieLaw from "vue-cookie-law";
 
 export default {
   name: "Footer",
   components: {
-    AddThis
+    AddThis,
+    CookieLaw
   },
   data: () => ({
     urls: {

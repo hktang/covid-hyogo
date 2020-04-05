@@ -23,6 +23,7 @@
     "prettier": "^1.19.1",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.0",
+    "vue-cookie-law": "^1.13.3",
     "vue-gtag": "^1.6.2",
     "vue-i18n": "^8.16.0",
     "vue-loading-overlay": "^3.3.2",
