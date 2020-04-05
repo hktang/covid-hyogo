@@ -41,6 +41,10 @@ review and finalize the texts, particularly in the following languages:
 - [ ] Thai
 - [ ] Vietnamese
 
+To translate, visit [the localization project at Transifex.com][5] and
+click `Help Translate "Covid-19 in Hyogo"`. A free Transifex account
+is needed.
+
 This will be pro bono work, but let me buy you a beer if you locate in Hyogo. :)
 
 ## Usage
