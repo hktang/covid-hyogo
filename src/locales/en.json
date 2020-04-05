@@ -1,11 +1,4 @@
 {
-  "lang": {
-    "en": "English",
-    "ja": "日本語",
-    "ms": "Bahasa Melayu",
-    "ne": "नेपाली",
-    "zh": "中文"
-  },
   "announcement": {
     "title": "Help translate this page at {0}.",
     "platform": "transifex.com"

@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import langs from "../langs";
+
 export default {
   name: "LocaleSwitch",
   metaInfo() {
@@ -27,7 +29,7 @@ export default {
   },
   data() {
     return {
-      langs: this.$t("lang"),
+      langs: langs,
       currentLang: this.$i18n.locale
     };
   },
