@@ -1,0 +1,109 @@
+{
+  "announcement": {
+    "title": "Tumulong sa pagsasalin ng pahinang ito sa {0}.",
+    "platform": "transifex.com"
+  },
+  "siteTitle": "COVID-19 Hyogo",
+  "siteTagline": "Paglalarawan ng COVID-19 sa Hyogo Prefecture, Japan",
+  "thanks": {
+    "text": "Espesyal na pasasalamat",
+    "developers": "Pagkabuo",
+    "translators": "Pagsasalin"
+  },
+  "overview": {
+    "lastUpdated": "Huling beses na nabago:",
+    "confirmedCases": "Kabuuang kumpirmadong kaso mula sa {0} na nasuri ",
+    "confirmedInTested": "... iyan ay 1 sa {0} mga taong nasuri sa ngayon;",
+    "oneInPopulation": "o 1 sa {0} residente ng Hyogo Prefecture.",
+    "totalDeaths": "Kabuuang bilang ng namatay",
+    "totalDeathsInConfirmed": "... iyan ay 1 sa {0} kumpirmadong mga kaso;",
+    "totalDeathsInTested": "o 1 sa {0} mga taong nasuri sa ngayon;",
+    "oneDeathInPopulation": "o 1 sa {0} residente ng Hyogo Prefecture."
+  },
+  "daily": {
+    "title": "Kumpirmadong mga kaso sa bawat araw",
+    "female": "Babae",
+    "male": "Lalaki"
+  },
+  "clusters": {
+    "title": "Mga kumpol",
+    "caseNumber": "Numero ng kaso",
+    "cluster": "Kumpol",
+    "labels": {
+      "A": "Isang sentro ng maagang edukasyon at pangangalaga sa mga bata, Kobe",
+      "B": "Kita-Harima Medical Center, Ono",
+      "C": "Takarazuka Daiichi Hospital, Takarazuka",
+      "D": "Jinkei Hospital, Himeji",
+      "E": "Isang pang-matandang pasilidad na pangkalusugan, Itami",
+      "F": "Isang tagapag-alaga sa Kobe",
+      "G": "Mga kasong nauugnay sa live houses sa Osaka",
+      "H": "Mga taong may rekord ng paglalakbay sa ibang bansa",
+      "I": "Iba pa",
+      "J": "Iniimbestigahan",
+      "K": "Di pa natutukoy"
+    }
+  },
+  "status": {
+    "title": "Estado ng pasyente (kabuuan) at kapasidad ng ospital",
+    "labels": {
+      "nonSevere": "Hindi malubha",
+      "severe": "Malubha",
+      "deaths": "Mga namatay",
+      "discharged": "Napalabas na ng ospital",
+      "confirmed": "Kabuuang bilang ng mga kumpirmado"
+    }
+  },
+  "age": {
+    "title": "Distribusyon ayon sa edad",
+    "hospitalizedOrDischarged": "Nasa ospital o napalabas na",
+    "deceased": "Namatay",
+    "labels": {
+      "0": "Edad < 10",
+      "10": "Edad 10-19",
+      "20": "Edad 20-29",
+      "30": "Edad 30-39",
+      "40": "Edad 40-49",
+      "50": "Edad 50-59",
+      "60": "Edad 60-69",
+      "70": "Edad 70-79",
+      "80": "Edad 80-89",
+      "90": "Edad 90-99",
+      "100": "Edad > 99"
+    }
+  },
+  "city": {
+    "title": "Kabuuang bilang ng mga kaso ayon sa siyudad",
+    "tip": "Tumungo o i-tap ang isang bilog na marker sa mapa upang makita ang mga detalye."
+  },
+  "capacity":{
+    "labels": {
+      "beds": "Kabuuang bilang ng higaan para sa COVID-19"
+    }
+  },
+  "footer": {
+    "share": "Ibahagi ang pahinang ito",
+    "caption": "Mayroon tayong utak at ispageti",
+    "references": "Mga pinagkunan ng impormasyon at sanggunian",
+    "inspiredBy": {
+      "text": "Inspirasyon mula sa {0}.",
+      "blogTitle": "17 responsableng biswalisasyon ukol sa coronavirus"
+    },
+    "dataFrom": {
+      "text": "Ang impormasyon ay bukas bilang {0}, inipon mula sa {1}, Pamahalaang Prefectural ng Hyogo.",
+      "spreadsheet": "Google Spreadsheet",
+      "hyogoPage": "新型コロナウイルスに感染した患者の発生状況 "
+    },
+    "population": {
+      "text": "Impormasyon ukol sa populasyon mula sa {0}",
+      "wikipedia": "Wikipedia"
+    },
+    "xkcd": {
+      "text": "Webcomic mula sa {0}",
+      "xkcd": "XKCD"
+    },
+    "github": {
+      "text": "Tingnan ang proyekto sa {0}",
+      "github": "GitHub"
+    }
+  }
+}
