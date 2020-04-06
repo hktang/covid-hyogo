@@ -2,7 +2,13 @@
   <div class="map-container">
     <h2>{{ $t("city.title") }}</h2>
     <p class="muted">{{ $t("city.tip") }}</p>
-    <l-map :zoom="zoom" :center="center" :options="options" class="map">
+    <l-map
+      :zoom="zoom"
+      :center="center"
+      :options="options"
+      class="map"
+      @update:zoom="zoomUpdated"
+    >
       <l-tile-layer :url="url" :attribution="attribution" />
       <l-circle-marker
         v-for="circle in circles"
@@ -129,6 +135,14 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
+    },
+    zoomUpdated(newZoom) {
+      if (Number(this.zoom - newZoom) > 0) {
+        this.circles.forEach(circle => (circle.radius /= 2));
+      } else if (Number(this.zoom - newZoom) < 0) {
+        this.circles.forEach(circle => (circle.radius *= 2));
+      }
+      this.zoom = newZoom;
     }
   }
 };
