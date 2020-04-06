@@ -108,7 +108,7 @@ export default {
         .get(
           "https://spreadsheets.google.com/feeds/cells/" +
             "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
-            "/7/public/basic?alt=json"
+            "/5/public/basic?alt=json"
         )
         .then(response => {
           const responseData = response.data;
