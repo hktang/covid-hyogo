@@ -97,7 +97,7 @@ export default {
             data: this.capacity,
             yAxisID: "no-stack",
             spanGaps: true,
-            //tension: 0,
+            tension: 0,
             borderDash: [2, 6]
           }
         ]
