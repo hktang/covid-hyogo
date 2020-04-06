@@ -88,14 +88,17 @@ export default {
           },
           {
             label: this.$t("capacity.labels.beds"),
-            fill: false,
+            fill: "rgba(25.9%,20%,51.4%,0)",
+            pointBackgroundColor: "#423383",
             borderColor: "#423383",
-            borderWidth: 1,
+            borderWidth: 2,
             pointRadius: 2,
             type: "line",
-            lineTension: 0,
             data: this.capacity,
-            yAxisID: "no-stack"
+            yAxisID: "no-stack",
+            spanGaps: true,
+            //tension: 0,
+            borderDash: [2, 6]
           }
         ]
       };
@@ -105,7 +108,7 @@ export default {
         .get(
           "https://spreadsheets.google.com/feeds/cells/" +
             "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
-            "/5/public/basic?alt=json"
+            "/7/public/basic?alt=json"
         )
         .then(response => {
           const responseData = response.data;
@@ -153,8 +156,15 @@ export default {
           const capacityCount = entries.filter(entry => {
             return entry["title"]["$t"].substring(0, 1) == "I";
           });
-          this.capacity = capacityCount.map(c => c["content"]["$t"]);
+
+          console.log(capacityCount);
+
+          this.capacity = capacityCount.map(c =>
+            isNaN(c["content"]["$t"]) ? null : c["content"]["$t"]
+          );
           this.capacity.shift();
+
+          console.log(this.capacity);
 
           this.setChartData();
 
