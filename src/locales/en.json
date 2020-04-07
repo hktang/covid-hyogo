@@ -44,7 +44,7 @@
     }
   },
   "status": {
-    "title": "Patient status (cumulative) and hospital capacity",
+    "title": "Patient status and hospital capacity",
     "labels": {
       "nonSevere": "Non-severe",
       "severe": "Severe",

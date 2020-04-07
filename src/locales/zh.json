@@ -44,7 +44,7 @@
     }
   },
   "status": {
-    "title": "感染者情况（累计）",
+    "title": "感染者情况及病床数量",
     "labels": {
       "nonSevere": "非重症",
       "severe": "重症",

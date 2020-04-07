@@ -44,7 +44,7 @@
     }
   },
   "status": {
-    "title": "Estado ng pasyente (kabuuan) at kapasidad ng ospital",
+    "title": "Estado ng pasyente at kapasidad ng ospital",
     "labels": {
       "nonSevere": "Hindi malubha",
       "severe": "Malubha",

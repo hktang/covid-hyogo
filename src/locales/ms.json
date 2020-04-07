@@ -43,7 +43,7 @@
     }
   },
   "status": {
-    "title": "Status pesakit (kumulatif)",
+    "title": "Status pesakit",
     "labels": {
       "nonSevere": "Bukan parah",
       "severe": "Parah",
