@@ -20,8 +20,18 @@ function loadLocaleMessages() {
   return messages;
 }
 
+function getBrowserLocale() {
+  if (navigator.language) {
+    return navigator.language.substr(0, 2);
+  } else if (navigator.userLanguage) {
+    return navigator.userLanguage.substr(0, 2);
+  } else {
+    return "en";
+  }
+}
+
 export default new VueI18n({
-  locale: navigator.language || navigator.userLanguage,
+  locale: getBrowserLocale(),
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "en",
   messages: loadLocaleMessages()
 });
