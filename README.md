@@ -24,25 +24,16 @@ Hyogo Prefectural Government, particularly:
 1. [新型コロナウイルスに感染した患者の状況][3]
 1. [新型コロナウイルス感染症の県内検査状況について][4]
 
+## Telegram bot
+A Telegram bot is set up to monitor the patient page and PCR summary page
+at 10 minute intervals. If you want to get notified when the page updates,
+please add [@covid19hyogo_bot][5].
+
 ## Help translate COVID-19 in Hyogo
 
-Are you a translator? Please help translate the page! Machine translation
-is [set up at Transifex][5] and I am looking for translators to
-review and finalize the texts, particularly in the following languages:
-
-- [ ] Chinese (Hong Kong)
-- [ ] Chinese (Taiwan)
-- [ ] Indonesian
-- [ ] Japanese
-- [ ] Korean
-- [ ] Malay
-- [ ] Nepali
-- [ ] Portuguese
-- [ ] Thai
-- [ ] Vietnamese
-
-To translate, visit [the localization project at Transifex.com][5] and
-click `Help Translate "Covid-19 in Hyogo"`. A free Transifex account
+Are you a translator? Please help translate the page! To translate,
+visit [the localization project at Transifex.com][6] and click
+`Help Translate "Covid-19 in Hyogo"`. A free Transifex account
 is needed.
 
 This will be pro bono work, but let me buy you a beer if you locate in Hyogo. :)
@@ -72,7 +63,7 @@ yarn format
 
 ## Contributing
 
-Comments and contributions welcome! Please [submit an issue][6] or send a
+Comments and contributions welcome! Please [submit an issue][7] or send a
 pull request directly.
 
 ## Built with
@@ -93,5 +84,6 @@ This project is licensed under the MIT License
 [2]: https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html
 [3]: https://web.pref.hyogo.lg.jp/kk03/corona_kanjyajyokyo.html
 [4]: https://web.pref.hyogo.lg.jp/kf16/singatakoronakensa.html
-[5]: https://www.transifex.com/covid-19-hyogo/covid-19-in-hyogo/
-[6]: https://github.com/hktang/covid-hyogo/issues
+[5]: https://t.me/covid19hyogo_bot
+[6]: https://www.transifex.com/covid-19-hyogo/covid-19-in-hyogo/
+[7]: https://github.com/hktang/covid-hyogo/issues
