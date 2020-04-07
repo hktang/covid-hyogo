@@ -1,4 +1,12 @@
 {
+  "lang": {
+    "en": "English",
+    "ja": "日本語",
+    "jaEasy": "やさしい にほんご",
+    "ms": "Bahasa Melayu",
+    "ne": "नेपाली",
+    "zh": "中文"
+  },
   "siteTitle": "兵庫県 COVID-19 感染状況",
   "siteTagline": "兵庫県内の感染状況ビジュアライゼーション",
   "overview": {
@@ -78,7 +86,7 @@
     "inspiredBy": {
       "text": "{0} を参考として作成しました。",
       "url": "https://blog.datawrapper.de/coronaviruscharts/",
-      "blogTitle": "コロナウイルスに関するレスポンシブな17のライブ・ビジュアライゼーション（英語サイト）"
+      "blogTitle": "コロナウイルスに関する確かな情報源による17のライブ・ビジュアライゼーション（英語サイト）"
     },
     "dataFrom": {
       "text": "兵庫県庁WEBサイト「{1}」の情報を集計しています。集計は {0} で行っています。",
