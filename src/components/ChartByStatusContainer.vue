@@ -157,14 +157,10 @@ export default {
             return entry["title"]["$t"].substring(0, 1) == "I";
           });
 
-          console.log(capacityCount);
-
           this.capacity = capacityCount.map(c =>
             isNaN(c["content"]["$t"]) ? null : c["content"]["$t"]
           );
           this.capacity.shift();
-
-          console.log(this.capacity);
 
           this.setChartData();
 
