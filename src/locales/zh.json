@@ -98,7 +98,7 @@
       "wikipedia": "维基百科"
     },
     "xkcd": {
-      "text": "网络漫画来自{0}",
+      "text": "网络漫画来自{0}，汉化版来自XKCD中文站（xkcd.in）",
       "xkcd": "XKCD"
     },
     "github": {

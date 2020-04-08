@@ -26,9 +26,16 @@
     <h2 class="celebration">{{ $t("footer.caption") }}</h2>
 
     <img
+      v-if="$i18n.locale != 'zh'"
       alt="Pathogen resistance"
       class="webcomic"
       src="https://imgs.xkcd.com/comics/pathogen_resistance_2x.png"
+    />
+    <img
+      v-else
+      alt="Pathogen resistance"
+      class="webcomic"
+      src="https://xkcd.in/resources/compiled_cn/09e2f4a69c20330cff3de498e6a0aada.jpg"
     />
 
     <h2 class="references">{{ $t("footer.references") }}</h2>
