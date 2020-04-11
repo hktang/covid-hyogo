@@ -79,7 +79,7 @@ export default {
           });
 
           const cases = responseData.feed.entry.filter(entry => {
-            return entry["content"]["$t"].trim() === "〇";
+            return entry["content"]["$t"].trim() === "〇" || "○";
           });
 
           this.header = headerRow.map(item => item["content"]["$t"]);
