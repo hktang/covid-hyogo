@@ -174,6 +174,7 @@ export default {
                     reverse: true,
                     min: 0,
                     max: this.yLabels.length - 1,
+                    maxTicksLimit: this.yLabels.length,
                     callback: i => {
                       return this.yLabels[i];
                     }

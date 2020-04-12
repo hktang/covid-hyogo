@@ -34,13 +34,14 @@
       "B": "Kita-Harima Medical Center, Ono",
       "C": "Takarazuka Daiichi Hospital, Takarazuka",
       "D": "Jinkei hospital, Himeji",
-      "E": "A geriatric health services facility, Itami",
-      "F": "A daycare provider in Kobe",
-      "G": "Cases related to live houses in Osaka",
-      "H": "People with overseas travel history",
-      "I": "Others",
-      "J": "Under investigation",
-      "K": "Unknown"
+      "E": "Kobe City Medical Center General Hospital",
+      "F": "A geriatric health services facility, Itami",
+      "G": "A daycare provider in Kobe",
+      "H": "Cases related to live houses in Osaka",
+      "I": "People with overseas travel history",
+      "J": "Others",
+      "L": "Under investigation",
+      "L": "Unknown"
     }
   },
   "status": {
