@@ -46,12 +46,12 @@ export default {
           {
             label: this.$t("age.hospitalizedOrDischarged"),
             backgroundColor: "#42b983",
-            data: this.counts
+            data: this.counts.map(x => (x > 0 ? x : 0))
           },
           {
             label: this.$t("age.deceased"),
             backgroundColor: "#7c7f7e",
-            data: this.deathCounts
+            data: this.deathCounts.map(x => -x)
           }
         ]
       };
@@ -102,6 +102,25 @@ export default {
           this.options = {
             maintainAspectRatio: false,
             responsive: true,
+            tooltips: {
+              enabled: true,
+              callbacks: {
+                label: function(tooltipItem, data) {
+                  const theLabel =
+                    data.datasets[tooltipItem.datasetIndex].label;
+
+                  const theNumber = Math.abs(
+                    Number(
+                      data.datasets[tooltipItem.datasetIndex].data[
+                        tooltipItem.index
+                      ]
+                    )
+                  );
+
+                  return theLabel + ": " + theNumber;
+                }
+              }
+            },
             scales: {
               xAxes: [
                 {
