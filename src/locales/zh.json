@@ -51,7 +51,8 @@
       "severe": "重症",
       "deaths": "死亡",
       "discharged": "出院",
-      "confirmed": "累计确诊"
+      "confirmed": "累计确诊",
+      "999": "未公开"
     }
   },
   "age": {
