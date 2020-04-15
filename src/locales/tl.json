@@ -35,13 +35,14 @@
       "C": "Takarazuka Daiichi Hospital, Takarazuka",
       "D": "Jinkei Hospital, Himeji",
       "E": "Kobe City Medical Center General Hospital",
-      "F": "Isang pang-matandang pasilidad na pangkalusugan, Itami",
-      "G": "Isang tagapag-alaga sa Kobe",
-      "H": "Mga kasong nauugnay sa live houses sa Osaka",
-      "I": "Mga taong may rekord ng paglalakbay sa ibang bansa",
-      "J": "Iba pa",
-      "K": "Iniimbestigahan",
-      "L": "Di pa natutukoy"
+      "F": "Japanese Red Cross Kobe Hospital",
+      "G": "Isang pang-matandang pasilidad na pangkalusugan, Itami",
+      "H": "Isang tagapag-alaga sa Kobe",
+      "I": "Mga kasong nauugnay sa live houses sa Osaka",
+      "J": "Mga taong may rekord ng paglalakbay sa ibang bansa",
+      "K": "Iba pa",
+      "L": "Iniimbestigahan",
+      "M": "Di pa natutukoy"
     }
   },
   "status": {

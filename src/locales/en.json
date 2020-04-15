@@ -35,13 +35,14 @@
       "C": "Takarazuka Daiichi Hospital, Takarazuka",
       "D": "Jinkei hospital, Himeji",
       "E": "Kobe City Medical Center General Hospital",
-      "F": "A geriatric health services facility, Itami",
-      "G": "A daycare provider in Kobe",
-      "H": "Cases related to live houses in Osaka",
-      "I": "People with overseas travel history",
-      "J": "Others",
-      "K": "Under investigation",
-      "L": "Unknown"
+      "F": "Japanese Red Cross Kobe Hospital",
+      "G": "A geriatric health services facility, Itami",
+      "H": "A daycare provider in Kobe",
+      "I": "Cases related to live houses in Osaka",
+      "J": "People with overseas travel history",
+      "K": "Others",
+      "L": "Under investigation",
+      "M": "Unknown"
     }
   },
   "status": {
