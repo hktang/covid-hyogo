@@ -103,9 +103,17 @@ export default {
               return entry["title"]["$t"] === colAlpha + "1";
             });
 
+            if (
+              theCaseNumberCell[0]["content"]["$t"].trim().substring(0, 1) !=
+              "#"
+            ) {
+              continue;
+            }
+
             const xValue = this.xLabels.indexOf(
               theCaseNumberCell[0]["content"]["$t"]
             );
+
             const yValue = isMobile
               ? this.yLabels.indexOf(
                   theCluster[0]["content"]["$t"].substring(0, 1)
