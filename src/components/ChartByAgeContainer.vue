@@ -44,14 +44,14 @@ export default {
         labels: this.getLabels(),
         datasets: [
           {
-            label: this.$t("age.hospitalizedOrDischarged"),
+            label: this.$t("status.labels.confirmed"),
             backgroundColor: "#42b983",
             data: this.counts.map(x => (x > 0 ? x : 0))
           },
           {
             label: this.$t("age.deceased"),
-            backgroundColor: "#7c7f7e",
-            data: this.deathCounts.map(x => -x)
+            backgroundColor: "#5c5c5c",
+            data: this.deathCounts
           }
         ]
       };
@@ -89,9 +89,6 @@ export default {
                   this.deathCounts[this.deathCounts.length - 1] += Number(
                     entries[i]["content"]["$t"]
                   );
-                  this.counts[this.deathCounts.length - 1] -= Number(
-                    entries[i]["content"]["$t"]
-                  );
                 }
                 break;
               default:
@@ -124,7 +121,7 @@ export default {
             scales: {
               xAxes: [
                 {
-                  stacked: true
+                  stacked: false
                 }
               ],
               yAxes: [
@@ -132,7 +129,7 @@ export default {
                   ticks: {
                     beginAtZero: true
                   },
-                  stacked: true
+                  stacked: false
                 }
               ]
             }
