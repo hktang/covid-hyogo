@@ -1,5 +1,17 @@
 <template>
   <div class="footer">
+    <i18n path="footer.github.text" tag="p">
+      <template v-slot:0>
+        <a :href="urls.github">{{ $t("footer.github.github") }}</a>
+      </template>
+    </i18n>
+
+    <i18n path="announcement.title" tag="p">
+      <template v-slot:0>
+        <a :href="urls.translate">{{ $t("announcement.platform") }}</a>
+      </template>
+    </i18n>
+
     <h2 class="references">{{ $t("thanks.text") }}</h2>
     <p>
       {{ $t("thanks.developers") }}
@@ -11,12 +23,6 @@
       Uchiyama, Jeeban panthi, Linda Anne Stevenson, Mary Antonette Ramos,
       Nafesa Ismail
     </p>
-
-    <i18n path="announcement.title" tag="p">
-      <template v-slot:0>
-        <a :href="urls.translate">{{ $t("announcement.platform") }}</a>
-      </template>
-    </i18n>
 
     <div class="share">
       <h2>{{ $t("footer.share") }}</h2>
@@ -64,12 +70,6 @@
     <i18n path="footer.xkcd.text" tag="p">
       <template v-slot:0>
         <a :href="urls.xkcd">{{ $t("footer.xkcd.xkcd") }}</a>
-      </template>
-    </i18n>
-
-    <i18n path="footer.github.text" tag="p">
-      <template v-slot:0>
-        <a :href="urls.github">{{ $t("footer.github.github") }}</a>
       </template>
     </i18n>
 
