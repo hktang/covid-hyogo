@@ -7,12 +7,11 @@
       :chart-data="chartdata"
       :options="options"
     />
-    <ul class="legend muted">
-      <li v-for="(legend, key) in legends" :key="legend">
-        <strong>{{ key }}</strong
-        >: {{ legend }}
-      </li>
-    </ul>
+    <p class="legend muted">
+      <span v-for="(legend, key) in legends" :key="legend">
+        <strong>({{ key }})</strong> {{ legend }}
+      </span>
+    </p>
   </div>
 </template>
 

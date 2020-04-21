@@ -36,13 +36,15 @@
       "D": "Jinkei Hospital, Himeji",
       "E": "Kobe City Medical Center General Hospital",
       "F": "Japanese Red Cross Kobe Hospital",
-      "G": "Isang pang-matandang pasilidad na pangkalusugan, Itami",
-      "H": "Isang tagapag-alaga sa Kobe",
-      "I": "Mga kasong nauugnay sa live houses sa Osaka",
-      "J": "Mga taong may rekord ng paglalakbay sa ibang bansa",
-      "K": "Iba pa",
-      "L": "Iniimbestigahan",
-      "M": "Di pa natutukoy"
+      "G": "Kobe Nishi Police Station",
+      "H": "Kobe City Environment Bureau",
+      "I": "Isang pang-matandang pasilidad na pangkalusugan, Itami",
+      "J": "Isang tagapag-alaga sa Kobe",
+      "K": "Mga kasong nauugnay sa live houses sa Osaka",
+      "L": "Mga taong may rekord ng paglalakbay sa ibang bansa",
+      "M": "Iba pa",
+      "N": "Iniimbestigahan",
+      "O": "Di pa natutukoy"
     }
   },
   "status": {

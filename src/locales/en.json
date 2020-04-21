@@ -36,13 +36,15 @@
       "D": "Jinkei hospital, Himeji",
       "E": "Kobe City Medical Center General Hospital",
       "F": "Japanese Red Cross Kobe Hospital",
-      "G": "A geriatric health services facility, Itami",
-      "H": "A daycare provider in Kobe",
-      "I": "Cases related to live houses in Osaka",
-      "J": "People with overseas travel history",
-      "K": "Others",
-      "L": "Under investigation",
-      "M": "Unknown"
+      "G": "Kobe Nishi Police Station",
+      "H": "Kobe City Environment Bureau",
+      "I": "A geriatric health services facility, Itami",
+      "J": "A daycare provider in Kobe",
+      "K": "Cases related to live houses in Osaka",
+      "L": "People with overseas travel history",
+      "M": "Others",
+      "N": "Under investigation",
+      "O": "Unknown"
     }
   },
   "status": {
