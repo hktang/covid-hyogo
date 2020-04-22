@@ -2,7 +2,7 @@
   <div id="app">
     <LocaleSwitch />
     <img alt="Hyogo logo" src="./assets/hyogo.svg" />
-    <h1>{{ $t("siteTitle") }}</h1>
+    <h1 class="site-title">{{ $t("siteURL") }}</h1>
     <p class="muted">{{ $t("siteTagline") }}</p>
     <div class="chart-by-date">
       <ChartByDateContainer />
@@ -49,6 +49,10 @@ body {
   color: #2c3e50;
   margin-top: 0;
   padding-top: 0;
+}
+.site-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
 }
 .muted {
   color: #aaa;
