@@ -1,7 +1,7 @@
 # COVID-19 Hyogo
 
 Tracking the COVID-19 outbreak in Hyogo Prefecture, Japan at
-[https://covid-hyogo.now.sh/][0]
+[https://covid19hyogo.org/][0]
 
 This project consists of a somewhat opinionated set of charts inspired by
 [17 (or so) responsible live visualizations about the coronavirus][1]. The
@@ -79,7 +79,7 @@ pull request directly.
 
 This project is licensed under the MIT License
 
-[0]: https://covid-hyogo.now.sh/
+[0]: https://covid19hyogo.org/
 [1]: https://blog.datawrapper.de/coronaviruscharts/
 [2]: https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html
 [3]: https://web.pref.hyogo.lg.jp/kk03/corona_kanjyajyokyo.html
