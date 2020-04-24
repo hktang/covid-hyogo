@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import axios from "axios";
 import ChartByCluster from "./ScatterPlot.vue";
 import { isMobile } from "mobile-device-detect";
+import DataByCluster from "../data/byCluster.json";
 
 export default {
   name: "ChartByDateContainer",
@@ -57,144 +57,128 @@ export default {
       };
     },
     getData: function() {
-      axios
-        .get(
-          "https://spreadsheets.google.com/feeds/cells/" +
-            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
-            "/6/public/basic?alt=json"
-        )
-        .then(response => {
-          const responseData = response.data;
+      const headerRow = DataByCluster.feed.entry.filter(entry => {
+        return (
+          entry["title"]["$t"].substring(1, 2) === "1" &&
+          entry["title"]["$t"].length == 2
+        );
+      });
 
-          const headerRow = responseData.feed.entry.filter(entry => {
-            return (
-              entry["title"]["$t"].substring(1, 2) === "1" &&
-              entry["title"]["$t"].length == 2
-            );
-          });
+      const caseNumberColumn = DataByCluster.feed.entry.filter(entry => {
+        return entry["title"]["$t"].substring(0, 1) === "B";
+      });
 
-          const caseNumberColumn = responseData.feed.entry.filter(entry => {
-            return entry["title"]["$t"].substring(0, 1) === "B";
-          });
+      const cases = DataByCluster.feed.entry.filter(entry => {
+        return entry["content"]["$t"].trim() === "〇" || "○";
+      });
 
-          const cases = responseData.feed.entry.filter(entry => {
-            return entry["content"]["$t"].trim() === "〇" || "○";
-          });
+      this.header = headerRow.map(item => item["content"]["$t"]);
+      this.yLabels = isMobile
+        ? headerRow.map(item => item["content"]["$t"].substring(0, 1))
+        : headerRow.map(item => item["content"]["$t"]);
+      this.yLabels.splice(0, 2);
+      this.xLabels = caseNumberColumn.map(item => item["content"]["$t"]);
+      this.xLabels.splice(0, 1);
 
-          this.header = headerRow.map(item => item["content"]["$t"]);
-          this.yLabels = isMobile
-            ? headerRow.map(item => item["content"]["$t"].substring(0, 1))
-            : headerRow.map(item => item["content"]["$t"]);
-          this.yLabels.splice(0, 2);
-          this.xLabels = caseNumberColumn.map(item => item["content"]["$t"]);
-          this.xLabels.splice(0, 1);
+      for (let i = 0; i < cases.length; i++) {
+        const label = cases[i]["title"]["$t"];
+        const rowNum = label.substring(1);
+        const colAlpha = label.substring(0, 1);
 
-          for (let i = 0; i < cases.length; i++) {
-            const label = cases[i]["title"]["$t"];
-            const rowNum = label.substring(1);
-            const colAlpha = label.substring(0, 1);
+        const theCaseNumberCell = DataByCluster.feed.entry.filter(entry => {
+          return entry["title"]["$t"] === "B" + rowNum;
+        });
 
-            const theCaseNumberCell = responseData.feed.entry.filter(entry => {
-              return entry["title"]["$t"] === "B" + rowNum;
-            });
+        const theCluster = DataByCluster.feed.entry.filter(entry => {
+          return entry["title"]["$t"] === colAlpha + "1";
+        });
 
-            const theCluster = responseData.feed.entry.filter(entry => {
-              return entry["title"]["$t"] === colAlpha + "1";
-            });
+        if (
+          theCaseNumberCell[0]["content"]["$t"].trim().substring(0, 1) != "#"
+        ) {
+          continue;
+        }
 
-            if (
-              theCaseNumberCell[0]["content"]["$t"].trim().substring(0, 1) !=
-              "#"
-            ) {
-              continue;
-            }
+        const xValue = this.xLabels.indexOf(
+          theCaseNumberCell[0]["content"]["$t"]
+        );
 
-            const xValue = this.xLabels.indexOf(
-              theCaseNumberCell[0]["content"]["$t"]
-            );
+        const yValue = isMobile
+          ? this.yLabels.indexOf(theCluster[0]["content"]["$t"].substring(0, 1))
+          : this.yLabels.indexOf(theCluster[0]["content"]["$t"]);
 
-            const yValue = isMobile
-              ? this.yLabels.indexOf(
-                  theCluster[0]["content"]["$t"].substring(0, 1)
-                )
-              : this.yLabels.indexOf(theCluster[0]["content"]["$t"]);
+        const theCase = {
+          x: xValue,
+          y: yValue,
+          toolTip: theCaseNumberCell[0]["content"]["$t"]
+        };
 
-            const theCase = {
-              x: xValue,
-              y: yValue,
-              toolTip: theCaseNumberCell[0]["content"]["$t"]
-            };
+        if (!this.containsCase(theCase, this.caseData)) {
+          this.caseData.push(theCase);
+        }
+      }
 
-            if (!this.containsCase(theCase, this.caseData)) {
-              this.caseData.push(theCase);
+      this.setChartData();
+
+      this.options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        title: {
+          display: false
+        },
+        legend: {
+          display: false
+        },
+        tooltips: {
+          enabled: true,
+          callbacks: {
+            label: function(tooltipItem, data) {
+              return data.datasets[0].data[tooltipItem.index].toolTip;
             }
           }
-
-          this.setChartData();
-
-          this.options = {
-            responsive: true,
-            maintainAspectRatio: false,
-            title: {
-              display: false
-            },
-            legend: {
-              display: false
-            },
-            tooltips: {
-              enabled: true,
-              callbacks: {
-                label: function(tooltipItem, data) {
-                  return data.datasets[0].data[tooltipItem.index].toolTip;
+        },
+        scales: {
+          xAxes: [
+            {
+              type: "linear",
+              position: "top",
+              gridLines: {
+                display: false
+              },
+              scaleLabel: {
+                display: false
+              },
+              ticks: {
+                min: 0,
+                reverse: true,
+                max: this.xLabels.length,
+                callback: value => {
+                  return this.xLabels[value];
+                },
+                autoSkip: false
+              }
+            }
+          ],
+          yAxes: [
+            {
+              type: "linear",
+              scaleLabel: {
+                display: false
+              },
+              ticks: {
+                reverse: true,
+                min: 0,
+                max: this.yLabels.length - 1,
+                maxTicksLimit: this.yLabels.length,
+                callback: i => {
+                  return this.yLabels[i];
                 }
               }
-            },
-            scales: {
-              xAxes: [
-                {
-                  type: "linear",
-                  position: "top",
-                  gridLines: {
-                    display: false
-                  },
-                  scaleLabel: {
-                    display: false
-                  },
-                  ticks: {
-                    min: 0,
-                    reverse: true,
-                    max: this.xLabels.length,
-                    callback: value => {
-                      return this.xLabels[value];
-                    },
-                    autoSkip: false
-                  }
-                }
-              ],
-              yAxes: [
-                {
-                  type: "linear",
-                  scaleLabel: {
-                    display: false
-                  },
-                  ticks: {
-                    reverse: true,
-                    min: 0,
-                    max: this.yLabels.length - 1,
-                    maxTicksLimit: this.yLabels.length,
-                    callback: i => {
-                      return this.yLabels[i];
-                    }
-                  }
-                }
-              ]
             }
-          };
-          this.loaded = true;
-        })
-        .catch(error => {
-          console.log(error);
-        });
+          ]
+        }
+      };
+      this.loaded = true;
     },
     getLegends: function() {
       this.legends = this.$t("clusters.labels");

@@ -61,6 +61,12 @@ Lint and fix your code before building:
 yarn format
 ```
 
+Retrieve the latest data:
+
+```sh
+yarn scrape
+```
+
 ## Contributing
 
 Comments and contributions welcome! Please [submit an issue][7] or send a

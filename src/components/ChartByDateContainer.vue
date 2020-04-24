@@ -1,50 +1,5 @@
 <template>
   <div class="container">
-    <p class="muted">
-      {{ $t("overview.lastUpdated") }}
-      {{ new Date(lastUpdated) | moment("YYYY-M-D H:mm:ss") }} (JST)
-    </p>
-    <dl>
-      <i18n path="overview.confirmedCases" tag="dt">
-        <template v-slot:0>
-          {{ totalTested.toLocaleString() }}
-        </template>
-      </i18n>
-      <dd>
-        <strong>{{ totalConfirmed.toLocaleString() }}</strong
-        ><br />
-        <span class="muted">
-          <i18n path="overview.confirmedInTested" tag="span">
-            <template v-slot:0>
-              {{ Math.round(totalTested / totalConfirmed).toLocaleString() }}
-            </template>
-          </i18n>
-          <br />
-          <i18n path="overview.oneInPopulation" tag="span">
-            <template v-slot:0>
-              {{ Math.round(population / totalConfirmed).toLocaleString() }}
-            </template>
-          </i18n>
-        </span>
-      </dd>
-      <dt>{{ $t("overview.totalDeaths") }}</dt>
-      <dd>
-        <strong>{{ totalDeaths.toLocaleString() }}</strong
-        ><br />
-        <span class="muted">
-          <i18n path="overview.totalDeathsInConfirmed" tag="span">
-            <template v-slot:0>
-              {{ Math.round(totalConfirmed / totalDeaths).toLocaleString() }}
-            </template> </i18n
-          ><br />
-          <i18n path="overview.oneDeathInPopulation" tag="span">
-            <template v-slot:0>
-              {{ Math.round(population / totalDeaths).toLocaleString() }}
-            </template>
-          </i18n></span
-        >
-      </dd>
-    </dl>
     <h3>{{ $t("daily.title") }}</h3>
     <loading :active.sync="loading"></loading>
     <chart-by-date
@@ -57,9 +12,9 @@
 </template>
 
 <script>
-import axios from "axios";
 import ChartByDate from "./BarChart.vue";
 import Loading from "vue-loading-overlay";
+import DataByDate from "../data/byDate.json";
 
 export default {
   name: "ChartByDateContainer",
@@ -70,12 +25,7 @@ export default {
     chartdata: null,
     dailyF: [],
     dailyM: [],
-    dateLabels: [],
-    lastUpdated: null,
-    totalConfirmed: 0,
-    totalTested: 0,
-    totalDeaths: 0,
-    population: 5460482 // As of 2020/1/1
+    dateLabels: []
   }),
   watch: {
     "$i18n.locale": function() {
@@ -83,101 +33,78 @@ export default {
     }
   },
   async mounted() {
-    this.getDailyTests();
-    this.getDeathCount();
     this.getDailyData();
     this.loading = false;
   },
   methods: {
     getDailyData: function() {
-      axios
-        .get(
-          "https://spreadsheets.google.com/feeds/cells/" +
-            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
-            "/2/public/basic?alt=json"
-        )
-        .then(response => {
-          const responseData = response.data;
-          let excludedRowIds = [];
+      let excludedRowIds = [];
 
-          for (let i = 0; i < responseData.feed.entry.length; i++) {
+      for (let i = 0; i < DataByDate.feed.entry.length; i++) {
+        if (DataByDate.feed.entry[i]["title"]["$t"].substring(0, 1) == "A") {
+          if (
+            DataByDate.feed.entry[i]["content"]["$t"].substring(0, 4) == "2020"
+          ) {
+            this.dateLabels.push(DataByDate.feed.entry[i]["content"]["$t"]);
+          } else {
+            excludedRowIds.push(
+              DataByDate.feed.entry[i]["title"]["$t"].substring(1)
+            );
+          }
+        }
+      }
+      for (let i = 0; i < DataByDate.feed.entry.length; i++) {
+        switch (DataByDate.feed.entry[i]["title"]["$t"].substring(0, 1)) {
+          case "B":
             if (
-              responseData.feed.entry[i]["title"]["$t"].substring(0, 1) == "A"
+              !excludedRowIds.includes(
+                DataByDate.feed.entry[i]["title"]["$t"].substring(1)
+              )
             ) {
-              if (
-                responseData.feed.entry[i]["content"]["$t"].substring(0, 4) ==
-                "2020"
-              ) {
-                this.dateLabels.push(
-                  responseData.feed.entry[i]["content"]["$t"]
-                );
-              } else {
-                excludedRowIds.push(
-                  responseData.feed.entry[i]["title"]["$t"].substring(1)
-                );
-              }
+              this.dailyF.push(DataByDate.feed.entry[i]["content"]["$t"]);
             }
-          }
-          for (let i = 0; i < responseData.feed.entry.length; i++) {
-            switch (responseData.feed.entry[i]["title"]["$t"].substring(0, 1)) {
-              case "B":
-                if (
-                  !excludedRowIds.includes(
-                    responseData.feed.entry[i]["title"]["$t"].substring(1)
-                  )
-                ) {
-                  this.dailyF.push(responseData.feed.entry[i]["content"]["$t"]);
-                }
-                break;
-              case "C":
-                if (
-                  !excludedRowIds.includes(
-                    responseData.feed.entry[i]["title"]["$t"].substring(1)
-                  )
-                ) {
-                  this.dailyM.push(responseData.feed.entry[i]["content"]["$t"]);
-                }
-                break;
-              case "D":
-                if (responseData.feed.entry[i]["title"]["$t"] == "D1") {
-                  this.lastUpdated =
-                    responseData.feed.entry[i]["content"]["$t"];
-                }
-                break;
-              default:
-                break;
+            break;
+          case "C":
+            if (
+              !excludedRowIds.includes(
+                DataByDate.feed.entry[i]["title"]["$t"].substring(1)
+              )
+            ) {
+              this.dailyM.push(DataByDate.feed.entry[i]["content"]["$t"]);
             }
-          }
+            break;
+          case "D":
+            if (DataByDate.feed.entry[i]["title"]["$t"] == "D1") {
+              this.lastUpdated = DataByDate.feed.entry[i]["content"]["$t"];
+            }
+            break;
+          default:
+            break;
+        }
+      }
 
-          this.setChartData();
+      this.setChartData();
 
-          this.options = {
-            maintainAspectRatio: false,
-            responsive: true,
-            scales: {
-              xAxes: [
-                {
-                  stacked: true
-                }
-              ],
-              yAxes: [
-                {
-                  ticks: {
-                    beginAtZero: true
-                  },
-                  stacked: true
-                }
-              ]
+      this.options = {
+        maintainAspectRatio: false,
+        responsive: true,
+        scales: {
+          xAxes: [
+            {
+              stacked: true
             }
-          };
-          this.totalConfirmed =
-            this.dailyF.reduce((a, b) => Number(a) + Number(b), 0) +
-            this.dailyM.reduce((a, b) => Number(a) + Number(b), 0);
-          this.loaded = true;
-        })
-        .catch(error => {
-          console.log(error);
-        });
+          ],
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true
+              },
+              stacked: true
+            }
+          ]
+        }
+      };
+      this.loaded = true;
     },
     setChartData: function() {
       this.chartdata = {
@@ -195,52 +122,6 @@ export default {
           }
         ]
       };
-    },
-    getDailyTests: function() {
-      axios
-        .get(
-          "https://spreadsheets.google.com/feeds/cells/" +
-            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
-            "/5/public/basic?alt=json"
-        )
-        .then(response => {
-          const responseData = response.data;
-
-          //B2: Tests conducted
-          let tests = responseData.feed.entry.filter(entry => {
-            return entry["title"]["$t"] === "B2";
-          });
-
-          this.totalTested = Number(tests[0]["content"]["$t"]);
-        })
-        .catch(error => {
-          console.log(error);
-        });
-    },
-    getDeathCount: function() {
-      axios
-        .get(
-          "https://spreadsheets.google.com/feeds/cells/" +
-            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
-            "/4/public/basic?alt=json"
-        )
-        .then(response => {
-          const entries = response.data.feed.entry;
-          let deathCount = 0;
-
-          for (let i = 0; i < entries.length; i++) {
-            if (entries[i]["title"]["$t"].substring(0, 1) == "C") {
-              if (!isNaN(entries[i]["content"]["$t"])) {
-                deathCount += Number(entries[i]["content"]["$t"]);
-              }
-            }
-          }
-
-          this.totalDeaths = deathCount;
-        })
-        .catch(error => {
-          console.log(error);
-        });
     }
   }
 };
@@ -285,7 +166,7 @@ h3 {
 
 @media only screen and (min-width: 800px) {
   .container {
-    min-height: 50vh;
+    min-height: 300px;
   }
 
   .chart {

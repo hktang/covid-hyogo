@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import axios from "axios";
 import ChartByAge from "./BarChart.vue";
 import Loading from "vue-loading-overlay";
+import DataByAge from "../data/byAge.json";
 
 export default {
   name: "ChartByDateContainer",
@@ -57,89 +57,72 @@ export default {
       };
     },
     getData: function() {
-      axios
-        .get(
-          "https://spreadsheets.google.com/feeds/cells/" +
-            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
-            "/4/public/basic?alt=json"
-        )
-        .then(response => {
-          const responseData = response.data;
-          let excludedRowIds = ["1"];
-          const entries = responseData.feed.entry;
+      let excludedRowIds = ["1"];
+      const entries = DataByAge.feed.entry;
 
-          for (let i = 0; i < entries.length; i++) {
-            switch (entries[i]["title"]["$t"].substring(0, 1)) {
-              case "B":
-                if (
-                  !excludedRowIds.includes(
-                    entries[i]["title"]["$t"].substring(1)
-                  )
-                ) {
-                  this.counts.push(Number(entries[i]["content"]["$t"]));
-                  this.deathCounts.push(0);
-                }
-                break;
-              case "C":
-                if (
-                  !excludedRowIds.includes(
-                    entries[i]["title"]["$t"].substring(1)
-                  )
-                ) {
-                  this.deathCounts[this.deathCounts.length - 1] += Number(
-                    entries[i]["content"]["$t"]
-                  );
-                }
-                break;
-              default:
-                break;
+      for (let i = 0; i < entries.length; i++) {
+        switch (entries[i]["title"]["$t"].substring(0, 1)) {
+          case "B":
+            if (
+              !excludedRowIds.includes(entries[i]["title"]["$t"].substring(1))
+            ) {
+              this.counts.push(Number(entries[i]["content"]["$t"]));
+              this.deathCounts.push(0);
+            }
+            break;
+          case "C":
+            if (
+              !excludedRowIds.includes(entries[i]["title"]["$t"].substring(1))
+            ) {
+              this.deathCounts[this.deathCounts.length - 1] += Number(
+                entries[i]["content"]["$t"]
+              );
+            }
+            break;
+          default:
+            break;
+        }
+      }
+      this.setChartData();
+      this.options = {
+        maintainAspectRatio: false,
+        responsive: true,
+        tooltips: {
+          enabled: true,
+          callbacks: {
+            label: function(tooltipItem, data) {
+              const theLabel = data.datasets[tooltipItem.datasetIndex].label;
+
+              const theNumber = Math.abs(
+                Number(
+                  data.datasets[tooltipItem.datasetIndex].data[
+                    tooltipItem.index
+                  ]
+                )
+              );
+
+              return theLabel + ": " + theNumber;
             }
           }
-          this.setChartData();
-          this.options = {
-            maintainAspectRatio: false,
-            responsive: true,
-            tooltips: {
-              enabled: true,
-              callbacks: {
-                label: function(tooltipItem, data) {
-                  const theLabel =
-                    data.datasets[tooltipItem.datasetIndex].label;
-
-                  const theNumber = Math.abs(
-                    Number(
-                      data.datasets[tooltipItem.datasetIndex].data[
-                        tooltipItem.index
-                      ]
-                    )
-                  );
-
-                  return theLabel + ": " + theNumber;
-                }
-              }
-            },
-            scales: {
-              xAxes: [
-                {
-                  stacked: false
-                }
-              ],
-              yAxes: [
-                {
-                  ticks: {
-                    beginAtZero: true
-                  },
-                  stacked: false
-                }
-              ]
+        },
+        scales: {
+          xAxes: [
+            {
+              stacked: false
             }
-          };
-          this.loaded = true;
-          this.loading = false;
-        })
-        .catch(error => {
-          console.log(error);
-        });
+          ],
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true
+              },
+              stacked: false
+            }
+          ]
+        }
+      };
+      this.loaded = true;
+      this.loading = false;
     }
   }
 };

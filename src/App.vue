@@ -4,6 +4,7 @@
     <img alt="Hyogo logo" src="./assets/hyogo.svg" />
     <h1 class="site-title">{{ $t("siteURL") }}</h1>
     <p class="muted">{{ $t("siteTagline") }}</p>
+    <Summary />
     <div class="chart-by-date">
       <ChartByDateContainer />
     </div>
@@ -15,22 +16,24 @@
   </div>
 </template>
 <script>
-import ChartByAgeContainer from "./components/ChartByAgeContainer.vue";
+import LocaleSwitch from "./components/LocaleSwitch.vue";
+import Summary from "./components/Summary.vue";
 import ChartByDateContainer from "./components/ChartByDateContainer.vue";
 import ChartByClusterContainer from "./components/ChartByClusterContainer.vue";
 import ChartByStatusContainer from "./components/ChartByStatusContainer.vue";
-import LocaleSwitch from "./components/LocaleSwitch.vue";
+import ChartByAgeContainer from "./components/ChartByAgeContainer.vue";
 import MapByCity from "./components/MapByCity.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    ChartByAgeContainer,
+    LocaleSwitch,
+    Summary,
     ChartByDateContainer,
     ChartByClusterContainer,
     ChartByStatusContainer,
-    LocaleSwitch,
+    ChartByAgeContainer,
     MapByCity,
     Footer
   }

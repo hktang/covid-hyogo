@@ -28,8 +28,8 @@
 <script>
 import L from "leaflet";
 import { LMap, LTileLayer, LCircleMarker, LTooltip } from "vue2-leaflet";
-import axios from "axios";
 import { isMobile } from "mobile-device-detect";
+import DataByCity from "../data/byCity.json";
 
 export default {
   name: "MapByCity",
@@ -69,42 +69,30 @@ export default {
   },
   methods: {
     getData: function() {
-      axios
-        .get(
-          "https://spreadsheets.google.com/feeds/cells/" +
-            "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw" +
-            "/3/public/basic?alt=json"
-        )
-        .then(response => {
-          const responseData = response.data;
-          const entries = responseData.feed.entry;
-          const dimension = this.getDimension(entries);
-          let cities = [];
+      const responseData = DataByCity;
+      const entries = responseData.feed.entry;
+      const dimension = this.getDimension(entries);
+      let cities = [];
 
-          while (entries.length)
-            cities.push(entries.splice(0, dimension.colCount));
+      while (entries.length) cities.push(entries.splice(0, dimension.colCount));
 
-          if (isNaN(cities[0][0]["content"]["$t"])) {
-            cities.shift();
-          }
+      if (isNaN(cities[0][0]["content"]["$t"])) {
+        cities.shift();
+      }
 
-          cities.forEach(city => {
-            const data = {
-              center: [
-                Number(city[0]["content"]["$t"]),
-                Number(city[1]["content"]["$t"])
-              ],
-              radius: this.calculateRadius(Number(city[3]["content"]["$t"])),
-              color: "#00cdbb",
-              name: city[2]["content"]["$t"] + ": " + city[3]["content"]["$t"]
-            };
+      cities.forEach(city => {
+        const data = {
+          center: [
+            Number(city[0]["content"]["$t"]),
+            Number(city[1]["content"]["$t"])
+          ],
+          radius: this.calculateRadius(Number(city[3]["content"]["$t"])),
+          color: "#00cdbb",
+          name: city[2]["content"]["$t"] + ": " + city[3]["content"]["$t"]
+        };
 
-            this.circles.push(data);
-          });
-        })
-        .catch(error => {
-          console.log(error);
-        });
+        this.circles.push(data);
+      });
     },
     getDimension: function(entries) {
       let colCount = 0;
