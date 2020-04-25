@@ -61,7 +61,7 @@ function writeFile(fileName, data) {
 
   fs.writeFile(
     "./src/data/" + fileName,
-    JSON.stringify(chartData, null, 1),
+    JSON.stringify(chartData),
     function(err) {
       if (err) return console.log(err);
     }
