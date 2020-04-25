@@ -73,7 +73,7 @@ function getDataSetsByDate(data) {
 
   const dateColumn = data.feed.entry.filter(
     entry => entry["title"]["$t"].substring(0, 1) == "A"
-  );  
+  );
   const femaleColumn = data.feed.entry.filter(
     entry => entry["title"]["$t"].substring(0, 1) == "B"
   );
@@ -83,10 +83,10 @@ function getDataSetsByDate(data) {
 
   dateColumn.shift();
   dataSet.dateLabels = dateColumn.map(value => value["content"]["$t"]);
-  
+
   femaleColumn.shift();
   dataSet.female = femaleColumn.map(value => value["content"]["$t"]);
-  
+
   maleColumn.shift();
   dataSet.male = maleColumn.map(value => value["content"]["$t"]);
 
@@ -94,7 +94,34 @@ function getDataSetsByDate(data) {
 }
 
 function getDataSetsByCity(data) {
-  return data;
+  let dataSet = {};
+  cities = [];
+
+  const latColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "A"
+  );
+  const lngColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "B"
+  );
+  const cityColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "C"
+  );
+  const casesColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "D"
+  );
+
+  for (let i = 1; i < latColumn.length; i++) {
+    cities.push({
+      lat: Number(latColumn[i]["content"]["$t"]),
+      lng: Number(lngColumn[i]["content"]["$t"]),
+      name: cityColumn[i]["content"]["$t"],
+      cases: Number(casesColumn[i]["content"]["$t"])
+    });
+  }
+
+  dataSet.cities = cities;
+
+  return dataSet;
 }
 
 function getDataSetsByAge(data) {

@@ -69,55 +69,24 @@ export default {
   },
   methods: {
     getData: function() {
-      const responseData = DataByCity;
-      const entries = responseData.feed.entry;
-      const dimension = this.getDimension(entries);
-      let cities = [];
-
-      while (entries.length) cities.push(entries.splice(0, dimension.colCount));
-
-      if (isNaN(cities[0][0]["content"]["$t"])) {
-        cities.shift();
-      }
+      let cities = DataByCity.cities;
 
       cities.forEach(city => {
         const data = {
-          center: [
-            Number(city[0]["content"]["$t"]),
-            Number(city[1]["content"]["$t"])
-          ],
-          radius: this.calculateRadius(Number(city[3]["content"]["$t"])),
+          center: [city.lat, city.lng],
+          radius: this.calculateRadius(city.cases),
           color: "#00cdbb",
-          name: city[2]["content"]["$t"] + ": " + city[3]["content"]["$t"]
+          name: city.name + ": " + city.cases
         };
 
         this.circles.push(data);
       });
     },
-    getDimension: function(entries) {
-      let colCount = 0;
-      let rowCount = 0;
-
-      for (let i = 0; i < entries.length; i++) {
-        if (
-          entries[i]["title"]["$t"].length == 2 &&
-          entries[i]["title"]["$t"].substring(1) == "1"
-        ) {
-          colCount += 1;
-        } else {
-          break;
-        }
-      }
-
-      rowCount = entries.length / colCount;
-
-      return { rowCount, colCount };
-    },
     calculateRadius(data) {
       if (this.window.width < 800) {
-        return (this.window.width * data) / 800;
+        return (this.window.width * data) / 1400;
       } else {
-        return (this.window.width * data) / 1200;
+        return (this.window.width * data) / 1600;
       }
     },
     handleResize() {
