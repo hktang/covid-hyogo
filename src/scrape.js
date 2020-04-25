@@ -220,7 +220,41 @@ function getDataSetsByStatus(data) {
 }
 
 function getDataSetsByCluster(data) {
-  return data;
+  let dataSet = {};
+
+  const caseNumberColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "B"
+  );
+
+  dataSet.caseNumber = filterColumn(caseNumberColumn);
+
+  const clusterRow = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(1) == "1"
+  );
+
+  dataSet.clusters = {};
+
+  for (let i = 2; i < clusterRow.length; i++) {
+    const item = clusterRow[i];
+    const key = item.title.$t.substring(0, 1);
+    dataSet.clusters[key] = item.content.$t;
+  }
+
+  const cases = data.feed.entry.filter(entry => {
+    return (
+      entry["content"]["$t"].trim() === "〇" ||
+      entry["content"]["$t"].trim() === "○"
+    );
+  });
+
+  dataSet.caseVsCluster = [];
+
+  for (let i = 0; i < cases.length; i++) {
+    const item = cases[i];
+    dataSet.caseVsCluster.push(item.title.$t);
+  }
+
+  return dataSet;
 }
 
 function getDataSetsSummary(data) {

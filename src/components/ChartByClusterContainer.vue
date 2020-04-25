@@ -57,65 +57,27 @@ export default {
       };
     },
     getData: function() {
-      const headerRow = DataByCluster.feed.entry.filter(entry => {
-        return (
-          entry["title"]["$t"].substring(1, 2) === "1" &&
-          entry["title"]["$t"].length == 2
-        );
-      });
+      const cases = DataByCluster.caseVsCluster;
+      const originalCols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-      const caseNumberColumn = DataByCluster.feed.entry.filter(entry => {
-        return entry["title"]["$t"].substring(0, 1) === "B";
-      });
-
-      const cases = DataByCluster.feed.entry.filter(entry => {
-        return entry["content"]["$t"].trim() === "〇" || "○";
-      });
-
-      this.header = headerRow.map(item => item["content"]["$t"]);
+      this.xLabels = DataByCluster.caseNumber;
       this.yLabels = isMobile
-        ? headerRow.map(item => item["content"]["$t"].substring(0, 1))
-        : headerRow.map(item => item["content"]["$t"]);
-      this.yLabels.splice(0, 2);
-      this.xLabels = caseNumberColumn.map(item => item["content"]["$t"]);
-      this.xLabels.splice(0, 1);
+        ? Object.values(DataByCluster.clusters).map(value =>
+            value.substring(0, 1)
+          )
+        : Object.values(DataByCluster.clusters);
 
       for (let i = 0; i < cases.length; i++) {
-        const label = cases[i]["title"]["$t"];
-        const rowNum = label.substring(1);
-        const colAlpha = label.substring(0, 1);
-
-        const theCaseNumberCell = DataByCluster.feed.entry.filter(entry => {
-          return entry["title"]["$t"] === "B" + rowNum;
-        });
-
-        const theCluster = DataByCluster.feed.entry.filter(entry => {
-          return entry["title"]["$t"] === colAlpha + "1";
-        });
-
-        if (
-          theCaseNumberCell[0]["content"]["$t"].trim().substring(0, 1) != "#"
-        ) {
-          continue;
-        }
-
-        const xValue = this.xLabels.indexOf(
-          theCaseNumberCell[0]["content"]["$t"]
-        );
-
-        const yValue = isMobile
-          ? this.yLabels.indexOf(theCluster[0]["content"]["$t"].substring(0, 1))
-          : this.yLabels.indexOf(theCluster[0]["content"]["$t"]);
+        const label = cases[i];
+        const caseId = label.substring(1) - 2;
 
         const theCase = {
-          x: xValue,
-          y: yValue,
-          toolTip: theCaseNumberCell[0]["content"]["$t"]
+          x: caseId,
+          y: originalCols.indexOf(label.substring(0, 1)) - 2,
+          toolTip: DataByCluster.caseNumber[caseId]
         };
 
-        if (!this.containsCase(theCase, this.caseData)) {
-          this.caseData.push(theCase);
-        }
+        this.caseData.push(theCase);
       }
 
       this.setChartData();
