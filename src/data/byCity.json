@@ -1,1 +1,4131 @@
-{"version":"1.0","encoding":"UTF-8","feed":{"xmlns":"http://www.w3.org/2005/Atom","xmlns$openSearch":"http://a9.com/-/spec/opensearchrss/1.0/","xmlns$batch":"http://schemas.google.com/gdata/batch","xmlns$gs":"http://schemas.google.com/spreadsheets/2006","id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"3.City"},"link":[{"rel":"alternate","type":"application/atom+xml","href":"https://docs.google.com/spreadsheets/d/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/pubhtml"},{"rel":"http://schemas.google.com/g/2005#feed","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic"},{"rel":"http://schemas.google.com/g/2005#post","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic"},{"rel":"http://schemas.google.com/g/2005#batch","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/batch"},{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic?alt=json"}],"author":[{"name":{"$t":"hiukuan.tang"},"email":{"$t":"hiukuan.tang@gmail.com"}}],"openSearch$totalResults":{"$t":"140"},"openSearch$startIndex":{"$t":"1"},"entry":[{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A1"},"content":{"type":"text","$t":"Lat"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B1"},"content":{"type":"text","$t":"Lng"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C1"},"content":{"type":"text","$t":"City"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D1"},"content":{"type":"text","$t":"Total confirmed cases"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E1"},"content":{"type":"text","$t":"Last updated"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A2"},"content":{"type":"text","$t":"34.89"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B2"},"content":{"type":"text","$t":"135.225507"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C2"},"content":{"type":"text","$t":"三田市 Sanda"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D2"},"content":{"type":"text","$t":"9"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E2"},"content":{"type":"text","$t":"4/15/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A3"},"content":{"type":"text","$t":"35.177132"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B3"},"content":{"type":"text","$t":"135.035842"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C3"},"content":{"type":"text","$t":"丹波市 Tamba"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D3"},"content":{"type":"text","$t":"1"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E3"},"content":{"type":"text","$t":"3/15/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A4"},"content":{"type":"text","$t":"34.784348"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B4"},"content":{"type":"text","$t":"135.40091"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C4"},"content":{"type":"text","$t":"伊丹市 Itami"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D4"},"content":{"type":"text","$t":"80"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E4"},"content":{"type":"text","$t":"4/23/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A5"},"content":{"type":"text","$t":"34.756919"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B5"},"content":{"type":"text","$t":"134.84136"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C5"},"content":{"type":"text","$t":"加古川市 Kakogawa"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D5"},"content":{"type":"text","$t":"13"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E5"},"content":{"type":"text","$t":"4/23/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A6"},"content":{"type":"text","$t":"34.9185915"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B6"},"content":{"type":"text","$t":"134.9734436"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C6"},"content":{"type":"text","$t":"加東市 Kato"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D6"},"content":{"type":"text","$t":"6"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E6"},"content":{"type":"text","$t":"4/10/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A7"},"content":{"type":"text","$t":"34.9280226"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B7"},"content":{"type":"text","$t":"134.841609"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C7"},"content":{"type":"text","$t":"加西市 Kasai"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D7"},"content":{"type":"text","$t":"1"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E7"},"content":{"type":"text","$t":"3/16/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A8"},"content":{"type":"text","$t":"34.6413315"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B8"},"content":{"type":"text","$t":"135.5629394"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C8"},"content":{"type":"text","$t":"大阪府 Osaka Prefecture"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D8"},"content":{"type":"text","$t":"2"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E8"},"content":{"type":"text","$t":"4/17/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A9"},"content":{"type":"text","$t":"34.815418"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B9"},"content":{"type":"text","$t":"134.685551"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C9"},"content":{"type":"text","$t":"姫路市 Himeji"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D9"},"content":{"type":"text","$t":"37"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E9"},"content":{"type":"text","$t":"4/23/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A10"},"content":{"type":"text","$t":"34.799984"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B10"},"content":{"type":"text","$t":"135.360259"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C10"},"content":{"type":"text","$t":"宝塚市 Takarazuka"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D10"},"content":{"type":"text","$t":"45"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E10"},"content":{"type":"text","$t":"4/24/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A11"},"content":{"type":"text","$t":"34.732711"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B11"},"content":{"type":"text","$t":"135.405791"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C11"},"content":{"type":"text","$t":"尼崎市 Amagasaki"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D11"},"content":{"type":"text","$t":"39"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E11"},"content":{"type":"text","$t":"4/24/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A12"},"content":{"type":"text","$t":"34.830199"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B12"},"content":{"type":"text","$t":"135.417395"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C12"},"content":{"type":"text","$t":"川西市 Kawanishi"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D12"},"content":{"type":"text","$t":"4"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E12"},"content":{"type":"text","$t":"4/17/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A13"},"content":{"type":"text","$t":"34.7152468"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B13"},"content":{"type":"text","$t":"134.8680023"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C13"},"content":{"type":"text","$t":"播磨町 Harima"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D13"},"content":{"type":"text","$t":"1"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E13"},"content":{"type":"text","$t":"4/19/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A14"},"content":{"type":"text","$t":"34.6381"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B14"},"content":{"type":"text","$t":"135.052094"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C14"},"content":{"type":"text","$t":"明石市 Akashi"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D14"},"content":{"type":"text","$t":"13"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E14"},"content":{"type":"text","$t":"4/24/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A15"},"content":{"type":"text","$t":"35.689487"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B15"},"content":{"type":"text","$t":"139.691711"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C15"},"content":{"type":"text","$t":"東京 Tokyo"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D15"},"content":{"type":"text","$t":"2"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E15"},"content":{"type":"text","$t":"4/9/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A16"},"content":{"type":"text","$t":"34.340382"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B16"},"content":{"type":"text","$t":"134.889557"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C16"},"content":{"type":"text","$t":"洲本 Sumoto"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D16"},"content":{"type":"text","$t":"1"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E16"},"content":{"type":"text","$t":"3/31/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A17"},"content":{"type":"text","$t":"34.4396558"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B17"},"content":{"type":"text","$t":"134.9149109"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C17"},"content":{"type":"text","$t":"淡路市 Awaji"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D17"},"content":{"type":"text","$t":"2"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E17"},"content":{"type":"text","$t":"4/16/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A18"},"content":{"type":"text","$t":"34.8950618"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B18"},"content":{"type":"text","$t":"135.3761626"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C18"},"content":{"type":"text","$t":"猪名川町 Inagawa"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D18"},"content":{"type":"text","$t":"1"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E18"},"content":{"type":"text","$t":"4/24/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A19"},"content":{"type":"text","$t":"34.690081"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B19"},"content":{"type":"text","$t":"135.195631"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C19"},"content":{"type":"text","$t":"神戸市 Kobe"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D19"},"content":{"type":"text","$t":"175"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E19"},"content":{"type":"text","$t":"4/24/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A20"},"content":{"type":"text","$t":"36.204823"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B20"},"content":{"type":"text","$t":"138.25293"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C20"},"content":{"type":"text","$t":"神戸市外 Outside Kobe"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D20"},"content":{"type":"text","$t":"5"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E20"},"content":{"type":"text","$t":"4/17/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A21"},"content":{"type":"text","$t":"34.950238"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B21"},"content":{"type":"text","$t":"134.760182"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C21"},"content":{"type":"text","$t":"福崎町 Fukusaki"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D21"},"content":{"type":"text","$t":"1"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E21"},"content":{"type":"text","$t":"3/15/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A22"},"content":{"type":"text","$t":"34.75"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B22"},"content":{"type":"text","$t":"134.916667"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C22"},"content":{"type":"text","$t":"稲美町 Inami"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D22"},"content":{"type":"text","$t":"5"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E22"},"content":{"type":"text","$t":"4/23/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A23"},"content":{"type":"text","$t":"34.726954"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B23"},"content":{"type":"text","$t":"135.304127"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C23"},"content":{"type":"text","$t":"芦屋市 Ashiya"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D23"},"content":{"type":"text","$t":"23"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E23"},"content":{"type":"text","$t":"4/23/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A24"},"content":{"type":"text","$t":"34.737603"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B24"},"content":{"type":"text","$t":"135.341511"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C24"},"content":{"type":"text","$t":"西宮市 Nishinomiya"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D24"},"content":{"type":"text","$t":"60"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E24"},"content":{"type":"text","$t":"4/23/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A25"},"content":{"type":"text","$t":"36.204823"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B25"},"content":{"type":"text","$t":"138.25293"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C25"},"content":{"type":"text","$t":"西宮市外 Outside Nishinomiya"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D25"},"content":{"type":"text","$t":"1"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E25"},"content":{"type":"text","$t":"4/23/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A26"},"content":{"type":"text","$t":"36.204823"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B26"},"content":{"type":"text","$t":"138.25293"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C26"},"content":{"type":"text","$t":"調査中 Under investigation"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D26"},"content":{"type":"text","$t":"69"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E26"},"content":{"type":"text","$t":"4/23/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A27"},"content":{"type":"text","$t":"36.204823"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B27"},"content":{"type":"text","$t":"138.25293"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C27"},"content":{"type":"text","$t":"非公表 Undiclosed"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D27"},"content":{"type":"text","$t":"2"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E27"},"content":{"type":"text","$t":"4/24/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C5"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C1"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"A28"},"content":{"type":"text","$t":"34.7661005"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C1"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C2"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"B28"},"content":{"type":"text","$t":"134.7906014"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C2"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C3"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"C28"},"content":{"type":"text","$t":"高砂市 Takasago"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C3"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C4"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"D28"},"content":{"type":"text","$t":"6"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C4"}]},{"id":{"$t":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C5"},"updated":{"$t":"2020-04-24T14:57:33.279Z"},"category":[{"scheme":"http://schemas.google.com/spreadsheets/2006","term":"http://schemas.google.com/spreadsheets/2006#cell"}],"title":{"type":"text","$t":"E28"},"content":{"type":"text","$t":"4/20/2020"},"link":[{"rel":"self","type":"application/atom+xml","href":"https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C5"}]}]}}
+{
+ "version": "1.0",
+ "encoding": "UTF-8",
+ "feed": {
+  "xmlns": "http://www.w3.org/2005/Atom",
+  "xmlns$openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+  "xmlns$batch": "http://schemas.google.com/gdata/batch",
+  "xmlns$gs": "http://schemas.google.com/spreadsheets/2006",
+  "id": {
+   "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic"
+  },
+  "updated": {
+   "$t": "2020-04-25T01:05:30.509Z"
+  },
+  "category": [
+   {
+    "scheme": "http://schemas.google.com/spreadsheets/2006",
+    "term": "http://schemas.google.com/spreadsheets/2006#cell"
+   }
+  ],
+  "title": {
+   "type": "text",
+   "$t": "3.City"
+  },
+  "link": [
+   {
+    "rel": "alternate",
+    "type": "application/atom+xml",
+    "href": "https://docs.google.com/spreadsheets/d/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/pubhtml"
+   },
+   {
+    "rel": "http://schemas.google.com/g/2005#feed",
+    "type": "application/atom+xml",
+    "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic"
+   },
+   {
+    "rel": "http://schemas.google.com/g/2005#post",
+    "type": "application/atom+xml",
+    "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic"
+   },
+   {
+    "rel": "http://schemas.google.com/g/2005#batch",
+    "type": "application/atom+xml",
+    "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/batch"
+   },
+   {
+    "rel": "self",
+    "type": "application/atom+xml",
+    "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic?alt=json"
+   }
+  ],
+  "author": [
+   {
+    "name": {
+     "$t": "hiukuan.tang"
+    },
+    "email": {
+     "$t": "hiukuan.tang@gmail.com"
+    }
+   }
+  ],
+  "openSearch$totalResults": {
+   "$t": "140"
+  },
+  "openSearch$startIndex": {
+   "$t": "1"
+  },
+  "entry": [
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A1"
+    },
+    "content": {
+     "type": "text",
+     "$t": "Lat"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B1"
+    },
+    "content": {
+     "type": "text",
+     "$t": "Lng"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C1"
+    },
+    "content": {
+     "type": "text",
+     "$t": "City"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D1"
+    },
+    "content": {
+     "type": "text",
+     "$t": "Total confirmed cases"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E1"
+    },
+    "content": {
+     "type": "text",
+     "$t": "Last updated"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R1C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A2"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.89"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B2"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.225507"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C2"
+    },
+    "content": {
+     "type": "text",
+     "$t": "三田市 Sanda"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D2"
+    },
+    "content": {
+     "type": "text",
+     "$t": "9"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E2"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/15/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R2C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A3"
+    },
+    "content": {
+     "type": "text",
+     "$t": "35.177132"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B3"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.035842"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C3"
+    },
+    "content": {
+     "type": "text",
+     "$t": "丹波市 Tamba"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D3"
+    },
+    "content": {
+     "type": "text",
+     "$t": "1"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E3"
+    },
+    "content": {
+     "type": "text",
+     "$t": "3/15/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R3C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A4"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.784348"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B4"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.40091"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C4"
+    },
+    "content": {
+     "type": "text",
+     "$t": "伊丹市 Itami"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D4"
+    },
+    "content": {
+     "type": "text",
+     "$t": "80"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E4"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/23/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R4C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A5"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.756919"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B5"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.84136"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C5"
+    },
+    "content": {
+     "type": "text",
+     "$t": "加古川市 Kakogawa"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D5"
+    },
+    "content": {
+     "type": "text",
+     "$t": "13"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E5"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/23/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R5C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A6"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.9185915"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B6"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.9734436"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C6"
+    },
+    "content": {
+     "type": "text",
+     "$t": "加東市 Kato"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D6"
+    },
+    "content": {
+     "type": "text",
+     "$t": "6"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E6"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/10/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R6C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A7"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.9280226"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B7"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.841609"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C7"
+    },
+    "content": {
+     "type": "text",
+     "$t": "加西市 Kasai"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D7"
+    },
+    "content": {
+     "type": "text",
+     "$t": "1"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E7"
+    },
+    "content": {
+     "type": "text",
+     "$t": "3/16/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R7C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A8"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.6413315"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B8"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.5629394"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C8"
+    },
+    "content": {
+     "type": "text",
+     "$t": "大阪府 Osaka Prefecture"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D8"
+    },
+    "content": {
+     "type": "text",
+     "$t": "2"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E8"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/17/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R8C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A9"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.815418"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B9"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.685551"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C9"
+    },
+    "content": {
+     "type": "text",
+     "$t": "姫路市 Himeji"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D9"
+    },
+    "content": {
+     "type": "text",
+     "$t": "37"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E9"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/23/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R9C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A10"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.799984"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B10"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.360259"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C10"
+    },
+    "content": {
+     "type": "text",
+     "$t": "宝塚市 Takarazuka"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D10"
+    },
+    "content": {
+     "type": "text",
+     "$t": "45"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E10"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/24/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R10C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A11"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.732711"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B11"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.405791"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C11"
+    },
+    "content": {
+     "type": "text",
+     "$t": "尼崎市 Amagasaki"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D11"
+    },
+    "content": {
+     "type": "text",
+     "$t": "39"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E11"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/24/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R11C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A12"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.830199"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B12"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.417395"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C12"
+    },
+    "content": {
+     "type": "text",
+     "$t": "川西市 Kawanishi"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D12"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E12"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/17/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R12C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A13"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.7152468"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B13"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.8680023"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C13"
+    },
+    "content": {
+     "type": "text",
+     "$t": "播磨町 Harima"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D13"
+    },
+    "content": {
+     "type": "text",
+     "$t": "1"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E13"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/19/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R13C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A14"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.6381"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B14"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.052094"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C14"
+    },
+    "content": {
+     "type": "text",
+     "$t": "明石市 Akashi"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D14"
+    },
+    "content": {
+     "type": "text",
+     "$t": "13"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E14"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/24/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R14C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A15"
+    },
+    "content": {
+     "type": "text",
+     "$t": "35.689487"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B15"
+    },
+    "content": {
+     "type": "text",
+     "$t": "139.691711"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C15"
+    },
+    "content": {
+     "type": "text",
+     "$t": "東京 Tokyo"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D15"
+    },
+    "content": {
+     "type": "text",
+     "$t": "2"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E15"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/9/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R15C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A16"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.340382"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B16"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.889557"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C16"
+    },
+    "content": {
+     "type": "text",
+     "$t": "洲本 Sumoto"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D16"
+    },
+    "content": {
+     "type": "text",
+     "$t": "1"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E16"
+    },
+    "content": {
+     "type": "text",
+     "$t": "3/31/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R16C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A17"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.4396558"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B17"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.9149109"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C17"
+    },
+    "content": {
+     "type": "text",
+     "$t": "淡路市 Awaji"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D17"
+    },
+    "content": {
+     "type": "text",
+     "$t": "2"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E17"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/16/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R17C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A18"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.8950618"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B18"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.3761626"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C18"
+    },
+    "content": {
+     "type": "text",
+     "$t": "猪名川町 Inagawa"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D18"
+    },
+    "content": {
+     "type": "text",
+     "$t": "1"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E18"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/24/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R18C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A19"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.690081"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B19"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.195631"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C19"
+    },
+    "content": {
+     "type": "text",
+     "$t": "神戸市 Kobe"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D19"
+    },
+    "content": {
+     "type": "text",
+     "$t": "175"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E19"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/24/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R19C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A20"
+    },
+    "content": {
+     "type": "text",
+     "$t": "36.204823"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B20"
+    },
+    "content": {
+     "type": "text",
+     "$t": "138.25293"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C20"
+    },
+    "content": {
+     "type": "text",
+     "$t": "神戸市外 Outside Kobe"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D20"
+    },
+    "content": {
+     "type": "text",
+     "$t": "5"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E20"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/17/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R20C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A21"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.950238"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B21"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.760182"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C21"
+    },
+    "content": {
+     "type": "text",
+     "$t": "福崎町 Fukusaki"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D21"
+    },
+    "content": {
+     "type": "text",
+     "$t": "1"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E21"
+    },
+    "content": {
+     "type": "text",
+     "$t": "3/15/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R21C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A22"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.75"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B22"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.916667"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C22"
+    },
+    "content": {
+     "type": "text",
+     "$t": "稲美町 Inami"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D22"
+    },
+    "content": {
+     "type": "text",
+     "$t": "5"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E22"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/23/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R22C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A23"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.726954"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B23"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.304127"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C23"
+    },
+    "content": {
+     "type": "text",
+     "$t": "芦屋市 Ashiya"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D23"
+    },
+    "content": {
+     "type": "text",
+     "$t": "23"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E23"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/23/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R23C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A24"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.737603"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B24"
+    },
+    "content": {
+     "type": "text",
+     "$t": "135.341511"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C24"
+    },
+    "content": {
+     "type": "text",
+     "$t": "西宮市 Nishinomiya"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D24"
+    },
+    "content": {
+     "type": "text",
+     "$t": "60"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E24"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/23/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R24C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A25"
+    },
+    "content": {
+     "type": "text",
+     "$t": "36.204823"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B25"
+    },
+    "content": {
+     "type": "text",
+     "$t": "138.25293"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C25"
+    },
+    "content": {
+     "type": "text",
+     "$t": "西宮市外 Outside Nishinomiya"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D25"
+    },
+    "content": {
+     "type": "text",
+     "$t": "1"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E25"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/23/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R25C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A26"
+    },
+    "content": {
+     "type": "text",
+     "$t": "36.204823"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B26"
+    },
+    "content": {
+     "type": "text",
+     "$t": "138.25293"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C26"
+    },
+    "content": {
+     "type": "text",
+     "$t": "調査中 Under investigation"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D26"
+    },
+    "content": {
+     "type": "text",
+     "$t": "69"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E26"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/23/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R26C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A27"
+    },
+    "content": {
+     "type": "text",
+     "$t": "36.204823"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B27"
+    },
+    "content": {
+     "type": "text",
+     "$t": "138.25293"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C27"
+    },
+    "content": {
+     "type": "text",
+     "$t": "非公表 Undiclosed"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D27"
+    },
+    "content": {
+     "type": "text",
+     "$t": "2"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E27"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/24/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R27C5"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C1"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "A28"
+    },
+    "content": {
+     "type": "text",
+     "$t": "34.7661005"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C1"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C2"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "B28"
+    },
+    "content": {
+     "type": "text",
+     "$t": "134.7906014"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C2"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C3"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "C28"
+    },
+    "content": {
+     "type": "text",
+     "$t": "高砂市 Takasago"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C3"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C4"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "D28"
+    },
+    "content": {
+     "type": "text",
+     "$t": "6"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C4"
+     }
+    ]
+   },
+   {
+    "id": {
+     "$t": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C5"
+    },
+    "updated": {
+     "$t": "2020-04-25T01:05:30.509Z"
+    },
+    "category": [
+     {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#cell"
+     }
+    ],
+    "title": {
+     "type": "text",
+     "$t": "E28"
+    },
+    "content": {
+     "type": "text",
+     "$t": "4/20/2020"
+    },
+    "link": [
+     {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/cells/1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/3/public/basic/R28C5"
+     }
+    ]
+   }
+  ]
+ }
+}

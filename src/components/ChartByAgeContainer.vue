@@ -21,7 +21,7 @@ export default {
   components: { ChartByAge, Loading },
   data: () => ({
     chartdata: null,
-    counts: [],
+    confirmed: [],
     deathCounts: [],
     loaded: false,
     loading: true
@@ -32,57 +32,12 @@ export default {
     }
   },
   async mounted() {
-    this.getData();
+    this.setup();
   },
   methods: {
-    getLabels: function() {
-      const labels = this.$t("age.labels");
-      return Object.values(labels);
-    },
-    setChartData: function() {
-      this.chartdata = {
-        labels: this.getLabels(),
-        datasets: [
-          {
-            label: this.$t("status.labels.confirmed"),
-            backgroundColor: "#42b983",
-            data: this.counts.map(x => (x > 0 ? x : 0))
-          },
-          {
-            label: this.$t("age.deceased"),
-            backgroundColor: "#5c5c5c",
-            data: this.deathCounts
-          }
-        ]
-      };
-    },
-    getData: function() {
-      let excludedRowIds = ["1"];
-      const entries = DataByAge.feed.entry;
-
-      for (let i = 0; i < entries.length; i++) {
-        switch (entries[i]["title"]["$t"].substring(0, 1)) {
-          case "B":
-            if (
-              !excludedRowIds.includes(entries[i]["title"]["$t"].substring(1))
-            ) {
-              this.counts.push(Number(entries[i]["content"]["$t"]));
-              this.deathCounts.push(0);
-            }
-            break;
-          case "C":
-            if (
-              !excludedRowIds.includes(entries[i]["title"]["$t"].substring(1))
-            ) {
-              this.deathCounts[this.deathCounts.length - 1] += Number(
-                entries[i]["content"]["$t"]
-              );
-            }
-            break;
-          default:
-            break;
-        }
-      }
+    setup: function() {
+      this.confirmed = DataByAge.confirmed;
+      this.deathCounts = DataByAge.deaths;
       this.setChartData();
       this.options = {
         maintainAspectRatio: false,
@@ -123,6 +78,27 @@ export default {
       };
       this.loaded = true;
       this.loading = false;
+    },
+    getLabels: function() {
+      const labels = this.$t("age.labels");
+      return Object.values(labels);
+    },
+    setChartData: function() {
+      this.chartdata = {
+        labels: this.getLabels(),
+        datasets: [
+          {
+            label: this.$t("status.labels.confirmed"),
+            backgroundColor: "#42b983",
+            data: this.confirmed
+          },
+          {
+            label: this.$t("age.deceased"),
+            backgroundColor: "#5c5c5c",
+            data: this.deathCounts
+          }
+        ]
+      };
     }
   }
 };

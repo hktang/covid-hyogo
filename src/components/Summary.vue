@@ -69,20 +69,12 @@ export default {
   },
   methods: {
     getSummary: function() {
-      this.lastUpdated = DataSummary.feed.updated.$t;
-      this.totalTested = this.getCell(DataSummary, "B1");
-      this.totalConfirmed = this.getCell(DataSummary, "B2");
-      this.totalDeaths = this.getCell(DataSummary, "B3");
-      this.population = this.getCell(DataSummary, "B4");
-
+      this.lastUpdated = DataSummary.updated;
+      this.totalTested = DataSummary.totalTested;
+      this.totalConfirmed = DataSummary.totalConfirmed;
+      this.totalDeaths = DataSummary.totalDeaths;
+      this.population = DataSummary.population;
       this.loaded = true;
-    },
-    getCell: function(responseData, cell) {
-      let data = responseData.feed.entry.filter(entry => {
-        return entry["title"]["$t"] === cell;
-      });
-
-      return Number(data[0]["content"]["$t"]);
     }
   }
 };

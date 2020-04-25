@@ -33,56 +33,14 @@ export default {
     }
   },
   async mounted() {
-    this.getDailyData();
+    this.setupData();
     this.loading = false;
   },
   methods: {
-    getDailyData: function() {
-      let excludedRowIds = [];
-
-      for (let i = 0; i < DataByDate.feed.entry.length; i++) {
-        if (DataByDate.feed.entry[i]["title"]["$t"].substring(0, 1) == "A") {
-          if (
-            DataByDate.feed.entry[i]["content"]["$t"].substring(0, 4) == "2020"
-          ) {
-            this.dateLabels.push(DataByDate.feed.entry[i]["content"]["$t"]);
-          } else {
-            excludedRowIds.push(
-              DataByDate.feed.entry[i]["title"]["$t"].substring(1)
-            );
-          }
-        }
-      }
-      for (let i = 0; i < DataByDate.feed.entry.length; i++) {
-        switch (DataByDate.feed.entry[i]["title"]["$t"].substring(0, 1)) {
-          case "B":
-            if (
-              !excludedRowIds.includes(
-                DataByDate.feed.entry[i]["title"]["$t"].substring(1)
-              )
-            ) {
-              this.dailyF.push(DataByDate.feed.entry[i]["content"]["$t"]);
-            }
-            break;
-          case "C":
-            if (
-              !excludedRowIds.includes(
-                DataByDate.feed.entry[i]["title"]["$t"].substring(1)
-              )
-            ) {
-              this.dailyM.push(DataByDate.feed.entry[i]["content"]["$t"]);
-            }
-            break;
-          case "D":
-            if (DataByDate.feed.entry[i]["title"]["$t"] == "D1") {
-              this.lastUpdated = DataByDate.feed.entry[i]["content"]["$t"];
-            }
-            break;
-          default:
-            break;
-        }
-      }
-
+    setupData: function() {
+      this.dailyF = DataByDate.female;
+      this.dailyM = DataByDate.male;
+      this.dateLabels = DataByDate.dateLabels;
       this.setChartData();
 
       this.options = {
