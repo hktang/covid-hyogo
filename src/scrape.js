@@ -74,28 +74,27 @@ function getDataSetsByDate(data) {
   const dateColumn = data.feed.entry.filter(
     entry => entry["title"]["$t"].substring(0, 1) == "A"
   );
+
+  dataSet.dateLabels = filterColumn(dateColumn);
+
   const femaleColumn = data.feed.entry.filter(
     entry => entry["title"]["$t"].substring(0, 1) == "B"
   );
+
+  dataSet.female = filterColumn(femaleColumn);
+
   const maleColumn = data.feed.entry.filter(
     entry => entry["title"]["$t"].substring(0, 1) == "C"
   );
 
-  dateColumn.shift();
-  dataSet.dateLabels = dateColumn.map(value => value["content"]["$t"]);
-
-  femaleColumn.shift();
-  dataSet.female = femaleColumn.map(value => value["content"]["$t"]);
-
-  maleColumn.shift();
-  dataSet.male = maleColumn.map(value => value["content"]["$t"]);
+  dataSet.male = filterColumn(maleColumn);
 
   return dataSet;
 }
 
 function getDataSetsByCity(data) {
   let dataSet = {};
-  cities = [];
+  let cities = [];
 
   const latColumn = data.feed.entry.filter(
     entry => entry["title"]["$t"].substring(0, 1) == "A"
@@ -130,27 +129,94 @@ function getDataSetsByAge(data) {
   const labelColumn = data.feed.entry.filter(
     entry => entry["title"]["$t"].substring(0, 1) == "A"
   );
+
+  dataSet.ageLabels = filterColumn(labelColumn);
+
   const confirmedColumn = data.feed.entry.filter(
     entry => entry["title"]["$t"].substring(0, 1) == "B"
   );
+
+  dataSet.confirmed = filterColumn(confirmedColumn);
+
   const deathsColumn = data.feed.entry.filter(
     entry => entry["title"]["$t"].substring(0, 1) == "C"
   );
 
-  labelColumn.shift();
-  dataSet.ageLabels = labelColumn.map(value => value["content"]["$t"]);
-
-  confirmedColumn.shift();
-  dataSet.confirmed = confirmedColumn.map(value => value["content"]["$t"]);
-
-  deathsColumn.shift();
-  dataSet.deaths = deathsColumn.map(value => value["content"]["$t"]);
+  dataSet.deaths = filterColumn(deathsColumn);
 
   return dataSet;
 }
 
 function getDataSetsByStatus(data) {
-  return data;
+  let dataSet = {};
+
+  const dateColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "A"
+  );
+
+  dataSet.dateLabels = filterColumn(dateColumn);
+
+  const totalTestedColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "B"
+  );
+
+  dataSet.totalTested = filterColumn(totalTestedColumn);
+
+  const confirmedColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "C"
+  );
+
+  dataSet.confirmed = filterColumn(confirmedColumn);
+
+  const hospitalizedColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "D"
+  );
+
+  dataSet.hospitalized = filterColumn(hospitalizedColumn);
+
+  const nonSevereCasesColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "E"
+  );
+
+  dataSet.nonSevereCases = filterColumn(nonSevereCasesColumn);
+
+  const severeCasesColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "F"
+  );
+
+  dataSet.severeCases = filterColumn(severeCasesColumn);
+
+  const deathsColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "G"
+  );
+
+  dataSet.deaths = filterColumn(deathsColumn);
+
+  const dischargedColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "H"
+  );
+
+  dataSet.discharged = filterColumn(dischargedColumn);
+
+  const totalBedsColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "I"
+  );
+
+  dataSet.totalBeds = filterColumnWithNaN(totalBedsColumn);
+
+  const hospitalBedsColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "J"
+  );
+
+  dataSet.hospitalBeds = filterColumnWithNaN(hospitalBedsColumn);
+
+  const otherFacilitiesColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "K"
+  );
+
+  dataSet.otherBeds = filterColumnWithNaN(otherFacilitiesColumn);
+
+  return dataSet;
 }
 
 function getDataSetsByCluster(data) {
@@ -174,4 +240,20 @@ function getCell(responseData, cell) {
   });
 
   return Number(data[0]["content"]["$t"]);
+}
+
+function filterColumn(column) {
+  column.shift();
+  return column.map(value =>
+    isNaN(value["content"]["$t"])
+      ? value["content"]["$t"]
+      : Number(value["content"]["$t"])
+  );
+}
+
+function filterColumnWithNaN(column) {
+  column.shift();
+  return column.map(value =>
+    isNaN(value["content"]["$t"]) ? null : Number(value["content"]["$t"])
+  );
 }

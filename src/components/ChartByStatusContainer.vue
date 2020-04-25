@@ -104,54 +104,13 @@ export default {
       };
     },
     getData: function() {
-      const entries = DataByStatus.feed.entry;
-
-      for (let i = 0; i < entries.length; i++) {
-        if (entries[i]["title"]["$t"].substring(0, 1) == "A") {
-          if (!isNaN(entries[i]["content"]["$t"].substring(0, 4))) {
-            this.dateLabels.push(entries[i]["content"]["$t"]);
-          }
-        }
-      }
-
-      const totalPositiveCases = entries.filter(entry => {
-        return entry["title"]["$t"].substring(0, 1) == "C";
-      });
-      this.totalPositive = totalPositiveCases.map(c => c["content"]["$t"]);
-      this.totalPositive.shift();
-
-      const nonSevereCases = entries.filter(entry => {
-        return entry["title"]["$t"].substring(0, 1) == "E";
-      });
-      this.nonSevere = nonSevereCases.map(c => c["content"]["$t"]);
-      this.nonSevere.shift();
-
-      const severeCases = entries.filter(entry => {
-        return entry["title"]["$t"].substring(0, 1) == "F";
-      });
-      this.severe = severeCases.map(c => c["content"]["$t"]);
-      this.severe.shift();
-
-      const deathCases = entries.filter(entry => {
-        return entry["title"]["$t"].substring(0, 1) == "G";
-      });
-      this.deaths = deathCases.map(c => c["content"]["$t"] * -1);
-      this.deaths.shift();
-
-      const dischargedCases = entries.filter(entry => {
-        return entry["title"]["$t"].substring(0, 1) == "H";
-      });
-      this.discharged = dischargedCases.map(c => c["content"]["$t"] * -1);
-      this.discharged.shift();
-
-      const capacityCount = entries.filter(entry => {
-        return entry["title"]["$t"].substring(0, 1) == "I";
-      });
-
-      this.capacity = capacityCount.map(c =>
-        isNaN(c["content"]["$t"]) ? null : c["content"]["$t"]
-      );
-      this.capacity.shift();
+      this.dateLabels = DataByStatus.dateLabels;
+      this.totalPositive = DataByStatus.confirmed;
+      this.nonSevere = DataByStatus.nonSevereCases;
+      this.severe = DataByStatus.severeCases;
+      this.deaths = DataByStatus.deaths.map(x => -x);
+      this.discharged = DataByStatus.discharged.map(x => -x);
+      this.capacity = DataByStatus.totalBeds;
 
       this.setChartData();
 
