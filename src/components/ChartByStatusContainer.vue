@@ -22,6 +22,8 @@ export default {
   data: () => ({
     chartdata: null,
     capacity: [],
+    hospitalBeds: [],
+    nonHospitalBeds: [],
     dateLabels: [],
     nonSevere: [],
     severe: [],
@@ -58,6 +60,34 @@ export default {
         labels: this.dateLabels,
         datasets: [
           {
+            label: this.$t("capacity.labels.beds"),
+            fill: "#423383",
+            pointBackgroundColor: "#423383",
+            borderColor: "#423383",
+            borderWidth: 1,
+            pointRadius: 3,
+            type: "line",
+            data: this.capacity,
+            yAxisID: "no-stack",
+            spanGaps: true,
+            tension: 0.1,
+            borderDash: [3, 3]
+          },
+          {
+            label: this.$t("capacity.labels.hospitalBeds"),
+            fill: "#ff6500",
+            pointBackgroundColor: "#ff6500",
+            borderColor: "#ff6500",
+            borderWidth: 1,
+            pointRadius: 3,
+            type: "line",
+            data: this.hospitalBeds,
+            yAxisID: "no-stack",
+            spanGaps: true,
+            tension: 0.1,
+            borderDash: [3, 3]
+          },
+          {
             label: this.$t("status.labels.nonSevere"),
             backgroundColor: "#42b983",
             data: this.nonSevere
@@ -80,25 +110,11 @@ export default {
           {
             label: this.$t("status.labels.confirmed"),
             backgroundColor: "#f0f0f0",
-            borderColor: "#42b983",
+            borderColor: "#cccccc",
             borderWidth: 1,
-            pointRadius: 2,
+            pointRadius: 1,
             data: this.totalPositive,
             type: "line"
-          },
-          {
-            label: this.$t("capacity.labels.beds"),
-            fill: "rgba(25.9%,20%,51.4%,0)",
-            pointBackgroundColor: "#423383",
-            borderColor: "#423383",
-            borderWidth: 2,
-            pointRadius: 2,
-            type: "line",
-            data: this.capacity,
-            yAxisID: "no-stack",
-            spanGaps: true,
-            tension: 0,
-            borderDash: [2, 6]
           }
         ]
       };
@@ -111,6 +127,8 @@ export default {
       this.deaths = DataByStatus.deaths.map(x => -x);
       this.discharged = DataByStatus.discharged.map(x => -x);
       this.capacity = DataByStatus.totalBeds;
+      this.hospitalBeds = DataByStatus.hospitalBeds;
+      this.nonHospitalBeds = DataByStatus.otherBeds;
 
       this.setChartData();
 
