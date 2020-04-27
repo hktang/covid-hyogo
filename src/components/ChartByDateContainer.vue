@@ -49,6 +49,12 @@ export default {
         scales: {
           xAxes: [
             {
+              ticks: {
+                reverse: true
+              },
+              gridLines: {
+                display: false
+              },
               stacked: true
             }
           ],
