@@ -18,12 +18,14 @@
     "oneInPopulation": "兵庫県居住者 {0} 人に1人",
     "totalDeaths": "死亡者総計",
     "totalDeathsInConfirmed": "感染確認者 {0} 人に1人",
+    "totalDeathsInTested": "感染確認者 {0} 人に1人",
     "oneDeathInPopulation": "兵庫県居住者 {0} 人に1人"
   },
   "daily": {
     "title": "感染確認者数（日別）",
     "female": "女性",
-    "male": "男性"
+    "male": "男性",
+    "sevenDayMovingAverage": "7日間移動平均"
   },
   "clusters": {
     "title": "感染経路",
@@ -82,17 +84,16 @@
   },
   "capacity":{
     "labels": {
-      "beds": "COVID-19対応ベッド数"
+      "beds": "COVID-19対応ベッド数",
+      "hospitalBeds": "医療機関対応ベッド数"
     }
   },
   "footer": {
-    "caption": "In celebration of the human brain, and pasta",
     "share": "このページをシェアする",
-    "dataSourcesReferences": "統計情報出典と参考サイト",
+    "caption": "In celebration of the human brain, and pasta",
     "references": "情報元と参考サイト",
     "inspiredBy": {
       "text": "{0} を参考として作成しました。",
-      "url": "https://blog.datawrapper.de/coronaviruscharts/",
       "blogTitle": "コロナウイルスに関するレスポンシブな17のライブ・ビジュアライゼーション（英語サイト）"
     },
     "dataFrom": {

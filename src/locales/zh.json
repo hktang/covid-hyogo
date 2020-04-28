@@ -24,7 +24,8 @@
   "daily": {
     "title": "每日确诊病例概况",
     "female": "女",
-    "male": "男"
+    "male": "男",
+    "sevenDayMovingAverage": "7日移动平均"
   },
   "clusters": {
     "title": "聚集性感染",
@@ -55,8 +56,7 @@
       "severe": "重症",
       "deaths": "死亡",
       "discharged": "出院",
-      "confirmed": "累计确诊",
-      "999": "未公开"
+      "confirmed": "累计确诊"
     }
   },
   "age": {
@@ -84,7 +84,8 @@
   },
   "capacity":{
     "labels": {
-      "beds": "可用于感染者治疗的病床数"
+      "beds": "适用于感染者的病总床数",
+      "hospitalBeds": "医疗机构病床总数"
     }
   },
   "footer": {
