@@ -25,7 +25,9 @@ export default {
     chartdata: null,
     dailyF: [],
     dailyM: [],
-    dateLabels: []
+    sevenDayMovingAverage: [],
+    dateLabels: [],
+    yTicksMax: null
   }),
   watch: {
     "$i18n.locale": function() {
@@ -40,7 +42,9 @@ export default {
     setupData: function() {
       this.dailyF = DataByDate.female;
       this.dailyM = DataByDate.male;
+      this.sevenDayMovingAverage = DataByDate.sevenDayMovingAverage;
       this.dateLabels = DataByDate.dateLabels;
+      this.yTicksMax = Math.ceil(Math.max(...DataByDate.total) / 5) * 5;
       this.setChartData();
 
       this.options = {
@@ -61,9 +65,21 @@ export default {
           yAxes: [
             {
               ticks: {
-                beginAtZero: true
+                beginAtZero: true,
+                max: this.yTicksMax
               },
               stacked: true
+            },
+            {
+              id: "no-stack",
+              stacked: false,
+              display: false,
+              type: "linear",
+              ticks: {
+                beginAtZero: true,
+                min: 0,
+                max: this.yTicksMax
+              }
             }
           ]
         }
@@ -74,6 +90,18 @@ export default {
       this.chartdata = {
         labels: this.dateLabels,
         datasets: [
+          {
+            label: this.$t("daily.sevenDayMovingAverage"),
+            data: this.sevenDayMovingAverage,
+            yAxisID: "no-stack",
+            type: "line",
+            tension: 0.2,
+            fill: "rgba(25.9%,20%,51.4%,0)",
+            pointBackgroundColor: "#f0f0f0",
+            borderColor: "#e1576d",
+            borderWidth: 1,
+            pointRadius: 3
+          },
           {
             label: this.$t("daily.female"),
             backgroundColor: "#42b983",

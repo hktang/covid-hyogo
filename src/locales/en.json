@@ -24,7 +24,8 @@
   "daily": {
     "title": "Daily confirmed cases",
     "female": "Female",
-    "male": "Male"
+    "male": "Male",
+    "sevenDayMovingAverage": "Seven-day moving average"
   },
   "clusters": {
     "title": "Clusters",
@@ -83,7 +84,8 @@
   },
   "capacity":{
     "labels": {
-      "beds": "Total beds available for COVID-19 patients"
+      "beds": "Total beds for COVID-19",
+      "hospitalBeds": "Hospital beds for COVID-19"
     }
   },
   "footer": {
