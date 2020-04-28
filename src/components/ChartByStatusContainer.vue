@@ -62,7 +62,7 @@ export default {
           {
             label: this.$t("capacity.labels.beds"),
             fill: "#423383",
-            pointBackgroundColor: "#423383",
+            pointBackgroundColor: "#f0f0f0",
             borderColor: "#423383",
             borderWidth: 1,
             pointRadius: 3,
@@ -70,21 +70,21 @@ export default {
             data: this.capacity,
             yAxisID: "no-stack",
             spanGaps: true,
-            tension: 0.1,
+            tension: 0.2,
             borderDash: [3, 3]
           },
           {
             label: this.$t("capacity.labels.hospitalBeds"),
             fill: "#ff6500",
-            pointBackgroundColor: "#ff6500",
-            borderColor: "#ff6500",
-            borderWidth: 1,
+            pointBackgroundColor: "#f0f0f0",
+            borderColor: "#e1576d",
+            borderWidth: 2,
             pointRadius: 3,
             type: "line",
             data: this.hospitalBeds,
             yAxisID: "no-stack",
             spanGaps: true,
-            tension: 0.1,
+            tension: 0.2,
             borderDash: [3, 3]
           },
           {
@@ -112,7 +112,7 @@ export default {
             backgroundColor: "#f0f0f0",
             borderColor: "#cccccc",
             borderWidth: 1,
-            pointRadius: 1,
+            pointRadius: 2,
             data: this.totalPositive,
             type: "line"
           }

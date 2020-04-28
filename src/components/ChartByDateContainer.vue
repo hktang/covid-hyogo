@@ -97,10 +97,10 @@ export default {
             type: "line",
             tension: 0.2,
             fill: "rgba(25.9%,20%,51.4%,0)",
-            pointBackgroundColor: "#e1576d",
+            pointBackgroundColor: "#f0f0f0",
             borderColor: "#e1576d",
             borderWidth: 1,
-            pointRadius: 2
+            pointRadius: 3
           },
           {
             label: this.$t("daily.female"),
