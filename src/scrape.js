@@ -87,6 +87,18 @@ function getDataSetsByDate(data) {
 
   dataSet.male = filterColumn(maleColumn);
 
+  const totalColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "D"
+  );
+
+  dataSet.total = filterColumn(totalColumn);
+
+  const sevenDayMovingAverageColumn = data.feed.entry.filter(
+    entry => entry["title"]["$t"].substring(0, 1) == "E"
+  );
+
+  dataSet.sevenDayMovingAverage = filterColumn(sevenDayMovingAverageColumn);
+
   return dataSet;
 }
 
