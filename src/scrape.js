@@ -59,13 +59,11 @@ function writeFile(fileName, data) {
       break;
   }
 
-  fs.writeFile(
-    "./src/data/" + fileName,
-    JSON.stringify(chartData, null, 1),
-    function(err) {
-      if (err) return console.log(err);
-    }
-  );
+  fs.writeFile("./src/data/" + fileName, JSON.stringify(chartData), function(
+    err
+  ) {
+    if (err) return console.log(err);
+  });
 }
 
 function getDataSetsByDate(data) {
