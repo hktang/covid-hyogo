@@ -2,7 +2,7 @@
   <div class="container">
     <p class="muted">
       {{ $t("overview.lastUpdated") }}
-      {{ new Date(lastUpdated) | moment("YYYY-M-D H:mm:ss") }} (JST)
+      {{ new Date(lastUpdated) | moment("YYYY-M-D HH:mm:ss") }} (JST)
     </p>
     <dl>
       <i18n path="overview.confirmedCases" tag="dt">
