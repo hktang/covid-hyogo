@@ -8,6 +8,7 @@
   "siteTagline": "Memaparkan COVID-19 di wilayah Hyogo, Jepun",
   "thanks": {
     "text": "Penghargaan",
+    "developers": "Pembangun",
     "translators": "Penterjemah: "
   },
   "overview": {
@@ -23,7 +24,8 @@
   "daily": {
     "title": "Kes-kes yang telah disahkan setiap hari",
     "female": "Perempuan",
-    "male": "Lelaki"
+    "male": "Lelaki",
+    "sevenDayMovingAverage": "Pangkaraniwang galaw sa loob ng pitong araw"
   },
   "clusters": {
     "title": "Kluster",
@@ -34,10 +36,10 @@
       "B": "Pusat Perubatan Kita-Harima, Ono",
       "C": "Hospital Takarazuka Daiichi, Takarazuka",
       "D": "Hospital Jinkei, Himeji",
-      "E": "Kobe City Medical Center General Hospital",
-      "F": "Japanese Red Cross Kobe Hospital",
-      "G": "Kobe Nishi Police Station",
-      "H": "Kobe City Environment Bureau",
+      "E": "Pusat Perubatan Hospital Awam Bandar Kobe",
+      "F": "Hospital Palang Merah Jepun Kobe",
+      "G": "Balai Polis Kobe Nishi",
+      "H": "Biro Alam Sekitar Bandar Kobe",
       "I": "Kemudahan perkhidmatan kesihatan geriatrik, Itami",
       "J": "Pusat penjagaan kanak-kanak di Kobe",
       "K": "Kes yang berkaitan dengan perumahan di Osaka",
@@ -73,7 +75,7 @@
       "80": "Umur 80-89",
       "90": "Umur 90-99",
       "100": "Umur> 99",
-      "999": "Undisclosed"
+      "999": "Tidak didedahkan"
     }
   },
   "city": {
@@ -82,7 +84,8 @@
   },
   "capacity": {
     "labels": {
-      "beds": "Jumlah katil tersedia untuk pesakit COVID-19"
+      "beds": "Jumlah katil bagi pesakit COVID-19",
+      "hospitalBeds": "Katil di hospital bagi pesakit COVID-19"
     }
   },
   "footer": {

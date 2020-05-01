@@ -24,7 +24,8 @@
   "daily": {
     "title": "Kumpirmadong mga kaso sa bawat araw",
     "female": "Babae",
-    "male": "Lalaki"
+    "male": "Lalaki",
+    "sevenDayMovingAverage": "Purata pergerakan dalam 7 hari"
   },
   "clusters": {
     "title": "Mga kumpol",
@@ -74,7 +75,7 @@
       "80": "Edad 80-89",
       "90": "Edad 90-99",
       "100": "Edad > 99",
-      "999": "Undisclosed"
+      "999": "Mga hindi natukoy"
     }
   },
   "city": {
@@ -83,7 +84,8 @@
   },
   "capacity":{
     "labels": {
-      "beds": "Kabuuang bilang ng higaan para sa COVID-19"
+      "beds": "Kabuuang bilang ng higaan para sa COVID-19",
+      "hospitalBeds": "Higaang pang-ospital para sa COVID-19"
     }
   },
   "footer": {
