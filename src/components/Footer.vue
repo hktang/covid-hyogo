@@ -20,7 +20,7 @@
     <p>
       {{ $t("thanks.translators") }}
       Adhura Husna, <a href="https://github.com/akiya64">akiya64</a>, Christmas
-      Uchiyama, Jeeban panthi, Linda Anne Stevenson, Mary Antonette Ramos,
+      Uchiyama, Jeeban Panthi, Linda Anne Stevenson, Mary Antonette Ramos,
       Nafesa Ismail
     </p>
 
