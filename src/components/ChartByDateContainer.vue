@@ -98,9 +98,9 @@ export default {
             tension: 0.2,
             fill: "rgba(25.9%,20%,51.4%,0)",
             pointBackgroundColor: "#f0f0f0",
-            borderColor: "#e1576d",
+            borderColor: "rgba(88.2%,34.1%,42.7%, 60%)",
             borderWidth: 1,
-            pointRadius: 3
+            pointRadius: 1
           },
           {
             label: this.$t("daily.female"),
