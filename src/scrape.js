@@ -16,11 +16,14 @@ for (const [key, value] of Object.entries(files)) {
   });
 }
 
+// Spreadsheet ID for production:
+// 1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/
+
 function getSheet(sheetId) {
   return axios
     .get(
       "https://spreadsheets.google.com/feeds/cells/" +
-        "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/" +
+        "1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs/" +
         sheetId +
         "/public/basic?alt=json"
     )
