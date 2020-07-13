@@ -61,7 +61,7 @@ def getNewCases(data, oldData):
 
 def getSheet():
     gc = gspread.service_account()
-    return gc.open_by_key('1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs')
+    return gc.open_by_key('1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw')
 
 
 def updateSheet(sheet, newCases, yearUpdated):
@@ -208,8 +208,10 @@ def updateKensa():
     worksheet = gSheet.worksheet("5.Status")
     lastDateString = worksheet.acell("A2").value
     lastDateTime = datetime.strptime(lastDateString, "%Y-%m-%d")
+    oldValue = worksheet.acell("B2").value
+    newValue = tds[0].text.strip()
 
-    if(worksheet.acell("B2").value == tds[0].text.strip()):
+    if(oldValue == newValue):
         print("Status sheet already up-to-date")
         return
     else:
