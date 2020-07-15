@@ -43,13 +43,13 @@ def getDataFromTrs(trs):
 
 
 def readCaseJson():
-    with open(os.path.dirname(__file__) + '/hassei.json', 'r') as f:
+    with open(os.path.dirname(__file__) + '/hassei.json', 'r', encoding="utf-8" ) as f:
         data = json.load(f)
     return data
 
 
 def writeCaseJson(data):
-    with open(os.path.dirname(__file__) + '/hassei.json', 'w') as f:
+    with open(os.path.dirname(__file__) + '/hassei.json', 'w', encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print("Json saved.")
 
