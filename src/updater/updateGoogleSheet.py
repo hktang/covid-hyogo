@@ -99,6 +99,9 @@ def updateDailySheet(sheet):
         lastDateString = worksheet.get("A2").first()
 
     # If 2.A2 equals D.A3 then copy D.A3 over
+
+    # Todo: sometimes backdated cases do happen. 
+    # Need to check one more row (2.A3 and D.A4)
     refWorksheet = sheet.worksheet("D")
     pivotLastDateString = refWorksheet.get("A3").first()
     if lastDateString == pivotLastDateString:
