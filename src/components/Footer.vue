@@ -73,7 +73,11 @@
       </template>
     </i18n>
 
-    <cookie-law />
+    <cookie-law>
+      <div slot="message">
+        This website uses cookies only for the purpose of traffic analysis.
+      </div>
+    </cookie-law>
   </div>
 </template>
 <script>
