@@ -6,6 +6,8 @@
   "siteTitle": "COVID-19 Hyogo",
   "siteURL": "covid19hyogo.org",
   "siteTagline": "Memaparkan COVID-19 di wilayah Hyogo, Jepun",
+  "cookieMessage": "Harap maklum bahawa laman web ini menggunakan kuki hanya untuk tujuan analisis lalu lintas.",
+  "ok": "OK",
   "thanks": {
     "text": "Penghargaan",
     "developers": "Pembangun",
@@ -25,7 +27,7 @@
     "title": "Kes-kes yang telah disahkan setiap hari",
     "female": "Perempuan",
     "male": "Lelaki",
-    "sevenDayMovingAverage": "Pangkaraniwang galaw sa loob ng pitong araw"
+    "sevenDayMovingAverage": "Purata Bergerak Seminggu"
   },
   "clusters": {
     "title": "Kluster",
@@ -52,17 +54,17 @@
   "status": {
     "title": "Status pesakit",
     "labels": {
-      "nonSevere": "Bukan parah",
-      "severe": "Parah",
+      "nonSevere": "Tidak berbahaya",
+      "severe": "Dirawat di Unit Rawatan Rapi",
       "deaths": "Kematian",
-      "discharged": "Discaj",
-      "confirmed": "Kumulatif disahkan"
+      "discharged": "Jumlah discaj",
+      "confirmed": "Jumlah kimulatif kes disahkan"
     }
   },
   "age": {
     "title": "Pengagihan mengikut kumpulan umur",
     "hospitalizedOrDischarged": "Dimasukkan ke hospital atau discaj",
-    "deceased": "Meninggal dunia",
+    "deceased": "Jumlah kematian",
     "labels": {
       "0": "Umur <10",
       "10": "Umur 10-19",

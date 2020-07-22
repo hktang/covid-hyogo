@@ -6,6 +6,8 @@
   "siteTitle": "COVID-19 Hyogo",
   "siteURL": "covid19hyogo.org",
   "siteTagline": "Visualizing COVID-19 in Hyogo Prefecture, Japan",
+  "cookieMessage": "This website uses cookies only for the purpose of traffic analysis.",
+  "ok": "OK",
   "thanks": {
     "text": "Special thanks",
     "developers": "Development: ",

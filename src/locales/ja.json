@@ -6,6 +6,8 @@
   "siteTitle": "兵庫県 COVID-19 感染状況",
   "siteURL": "covid19hyogo.org",
   "siteTagline": "兵庫県内の感染状況ビジュアライゼーション",
+  "cookieMessage": "This website uses cookies only for the purpose of traffic analysis.",
+  "ok": "OK",
   "thanks": {
     "text": "スペシャルサンクス",
     "developers": "開発: ",

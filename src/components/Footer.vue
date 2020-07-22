@@ -73,9 +73,9 @@
       </template>
     </i18n>
 
-    <cookie-law>
+    <cookie-law :button-text="$t('ok')">
       <div slot="message">
-        This website uses cookies only for the purpose of traffic analysis.
+        {{ $t("cookieMessage") }}
       </div>
     </cookie-law>
   </div>
