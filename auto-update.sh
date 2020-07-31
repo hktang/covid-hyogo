@@ -11,10 +11,10 @@ else
   cd ~/covid-hyogo
 
   # Update Google Spreadsheet
-  python3 ~/covid-hyogo/src/updater/updateGoogleSheet.py >> ~/covid-hyogo/updater.log 2>&1
+  # python3 ~/covid-hyogo/src/updater/updateGoogleSheet.py >> ~/covid-hyogo/updater.log 2>&1
 
   # Update local json data
-  yarn scrape ~/covid-hyogo/updater.log 2>&1
+  yarn scrape >> ~/covid-hyogo/updater.log 2>&1
 
   # Commit and push
   git checkout master
