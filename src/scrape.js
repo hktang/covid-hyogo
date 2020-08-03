@@ -16,17 +16,16 @@ for (const [key, value] of Object.entries(files)) {
   });
 }
 
-// Spreadsheet ID for production:
-// 1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/
-
-// Spreadsheet ID for development:
-// 1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs/
-
 function getSheet(sheetId) {
   return axios
     .get(
       "https://spreadsheets.google.com/feeds/cells/" +
+        /* Production 
         "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/" +
+        */
+
+        /* Development */
+        "1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs/" +
         sheetId +
         "/public/basic?alt=json"
     )
@@ -203,31 +202,31 @@ function getDataSetsByStatus(data) {
   dataSet.severeCases = filterColumn(severeCasesColumn);
 
   const deathsColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "G"
+    entry => entry["title"]["$t"].substring(0, 1) == "H"
   );
 
   dataSet.deaths = filterColumn(deathsColumn);
 
   const dischargedColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "H"
+    entry => entry["title"]["$t"].substring(0, 1) == "I"
   );
 
   dataSet.discharged = filterColumn(dischargedColumn);
 
   const totalBedsColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "I"
+    entry => entry["title"]["$t"].substring(0, 1) == "J"
   );
 
   dataSet.totalBeds = filterColumnWithNaN(totalBedsColumn);
 
   const hospitalBedsColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "J"
+    entry => entry["title"]["$t"].substring(0, 1) == "K"
   );
 
   dataSet.hospitalBeds = filterColumnWithNaN(hospitalBedsColumn);
 
   const otherFacilitiesColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "K"
+    entry => entry["title"]["$t"].substring(0, 1) == "L"
   );
 
   dataSet.otherBeds = filterColumnWithNaN(otherFacilitiesColumn);
