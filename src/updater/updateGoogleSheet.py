@@ -28,10 +28,10 @@ def getSheet():
     gc = gspread.service_account()
 
     # production
-    # return gc.open_by_key('1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw')
+    return gc.open_by_key('1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw')
 
     # Development
-    return gc.open_by_key('1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs')
+    # return gc.open_by_key('1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs')
 
 
 def updateKensa():

@@ -20,12 +20,12 @@ function getSheet(sheetId) {
   return axios
     .get(
       "https://spreadsheets.google.com/feeds/cells/" +
-        /* Production 
+        /* Production */
         "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/" +
+        /* Development 
+        "1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs/" +
         */
 
-        /* Development */
-        "1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs/" +
         sheetId +
         "/public/basic?alt=json"
     )
