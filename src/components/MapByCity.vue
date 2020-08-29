@@ -48,7 +48,7 @@ export default {
       zoom: isMobile ? 9 : 11,
       center: [34.75, 135.05],
       url:
-        "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
+        "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png?api_key=22725d1b-c8d4-4942-963c-bcd98f86773b",
       attribution:
         '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
       circles: [],
