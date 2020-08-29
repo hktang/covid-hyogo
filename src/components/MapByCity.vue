@@ -15,7 +15,11 @@
         :key="circle.id"
         :lat-lng="circle.center"
         :radius="circle.radius"
+        :fill-color="circle.fillColor"
+        :fill-opacity="circle.fillOpacity"
         :color="circle.color"
+        :weight="circle.weight"
+        :opacity="circle.opacity"
       >
         <l-tooltip class="tooltip">
           {{ circle.name }}
@@ -44,10 +48,11 @@ export default {
       zoom: isMobile ? 9 : 11,
       center: [34.75, 135.05],
       url:
-        "https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png",
+        "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
       attribution:
-        'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
       circles: [],
+      max: 0,
       options: {
         scrollWheelZoom: false,
         dragging: !L.Browser.mobile,
@@ -65,9 +70,19 @@ export default {
     this.handleResize();
   },
   mounted() {
+    this.getMaxCases();
     this.getData();
   },
   methods: {
+    getMaxCases: function() {
+      let cities = DataByCity.cities;
+
+      cities.forEach(city => {
+        if (this.max < city.cases) {
+          this.max = city.cases;
+        }
+      });
+    },
     getData: function() {
       let cities = DataByCity.cities;
 
@@ -75,7 +90,11 @@ export default {
         const data = {
           center: [city.lat, city.lng],
           radius: this.calculateRadius(city.cases),
+          fillColor: "#00cdbb",
           color: "#00cdbb",
+          weight: 5,
+          opacity: 0.6,
+          fillOpacity: 0.1,
           name: city.name + ": " + city.cases
         };
 
@@ -83,11 +102,8 @@ export default {
       });
     },
     calculateRadius(data) {
-      if (this.window.width < 800) {
-        return (this.window.width * data) / 1400;
-      } else {
-        return (this.window.width * data) / 1600;
-      }
+      const scale = this.window.width / 8 / this.max;
+      return data * scale;
     },
     handleResize() {
       this.window.width = window.innerWidth;
