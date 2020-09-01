@@ -1,9 +1,0 @@
-[1mdiff --git a/src/data/summary.json b/src/data/summary.json[m
-[1mindex 7f5eabd..297bb8e 100644[m
-[1m--- a/src/data/summary.json[m
-[1m+++ b/src/data/summary.json[m
-[36m@@ -1 +1 @@[m
-[31m-{"updated":"2020-07-25T06:06:19.818Z","totalTested":21956,"totalConfirmed":965,"totalDeaths":45,"population":5460482}[m
-\ No newline at end of file[m
-[32m+[m[32m{"updated":"2020-07-25T07:06:46.594Z","totalTested":21956,"totalConfirmed":965,"totalDeaths":45,"population":5460482}[m
-\ No newline at end of file[m
