@@ -6,7 +6,7 @@ import os
 import re
 import requests
 
-kensaUrl = "https://web.pref.hyogo.lg.jp/kk03/200129.html"
+kensaUrl = "https://web.pref.hyogo.lg.jp/kf16/coronavirus_data.html"
 
 def getSoup(url):
     result = requests.get(url)
