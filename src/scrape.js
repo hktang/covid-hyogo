@@ -202,31 +202,31 @@ function getDataSetsByStatus(data) {
   dataSet.severeCases = filterColumn(severeCasesColumn);
 
   const deathsColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "H"
+    entry => entry["title"]["$t"].substring(0, 1) == "I"
   );
 
   dataSet.deaths = filterColumn(deathsColumn);
 
   const dischargedColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "I"
+    entry => entry["title"]["$t"].substring(0, 1) == "J"
   );
 
   dataSet.discharged = filterColumn(dischargedColumn);
 
   const totalBedsColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "J"
+    entry => entry["title"]["$t"].substring(0, 1) == "K"
   );
 
   dataSet.totalBeds = filterColumnWithNaN(totalBedsColumn);
 
   const hospitalBedsColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "K"
+    entry => entry["title"]["$t"].substring(0, 1) == "L"
   );
 
   dataSet.hospitalBeds = filterColumnWithNaN(hospitalBedsColumn);
 
   const otherFacilitiesColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "L"
+    entry => entry["title"]["$t"].substring(0, 1) == "M"
   );
 
   dataSet.otherBeds = filterColumnWithNaN(otherFacilitiesColumn);
