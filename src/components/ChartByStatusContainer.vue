@@ -43,7 +43,7 @@ export default {
       return maxPositive > maxCapacity ? maxPositive : maxCapacity;
     },
     maxOthers: function() {
-      return Math.floor((this.deaths[0] + this.discharged[0]) / 100) * 100;
+      return Math.floor(this.deaths[0] / 100) * 100;
     }
   },
   watch: {
@@ -101,7 +101,8 @@ export default {
             label: this.$t("age.deceased"),
             backgroundColor: "#7c7f7e",
             data: this.deaths
-          },
+          }
+          /** removed 15 Dec 2020
           {
             label: this.$t("status.labels.discharged"),
             backgroundColor: "#addcf3",
@@ -116,12 +117,13 @@ export default {
             data: this.totalPositive,
             type: "line"
           }
+          **/
         ]
       };
     },
     getData: function() {
       this.dateLabels = DataByStatus.dateLabels;
-      this.totalPositive = DataByStatus.confirmed;
+      // this.totalPositive = DataByStatus.confirmed;
       this.nonSevere = DataByStatus.nonSevereCases;
       this.severe = DataByStatus.severeCases;
       this.deaths = DataByStatus.deaths.map(x => -x);
