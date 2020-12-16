@@ -15,13 +15,14 @@ def getSoup(url):
 
 
 def getKensaTr(soup):
-    tr = soup.find("table", {"class", "ex_table"}).findAll("tr")[3::4]
+    tr = soup.findAll("table", {"class", "ex_table"})[1].findAll("tr")[3::4]
     return tr[0]
 
 
 def getTotalConfirmed(soup):
-    h3 = soup.find("h3", {"class", "section"})
-    return re.search("[\d,]{4,}", h3.text).group(0).replace(',', '')
+    tr = soup.find("table", {"class", "ex_table"}).findAll("tr")[2::3]
+    totalConfirmed = tr[0].findAll("td")[0::1][0].text.replace(',', '')
+    return totalConfirmed
 
 
 def getSheet():
