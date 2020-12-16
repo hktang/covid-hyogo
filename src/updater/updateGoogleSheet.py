@@ -44,7 +44,7 @@ def updateKensa():
     lastDateString = worksheet.acell("A2").value
     lastDateTime = datetime.strptime(lastDateString, "%Y-%m-%d")
     oldValue = worksheet.acell("B2").value
-    newValue = tds[0].text.strip()
+    newValue = tds[0].text.strip().replace(',', '')
 
     if(oldValue == newValue):
         print("Status sheet already up-to-date")
@@ -53,7 +53,7 @@ def updateKensa():
         # Add new row
         data = ['']
         for td in tds:
-            data.append(td.text.strip())
+            data.append(td.text.strip().replace(',', ''))
 
         worksheet.insert_row(data, 2, "USER_ENTERED")
 
@@ -71,7 +71,7 @@ def updateTotalConfirmed():
     gSheet = getSheet()
     worksheet = gSheet.worksheet("7.Totals")
 
-    oldValue = worksheet.acell("B2").value
+    oldValue = worksheet.acell("B2").value.replace(',', '')
 
     if(oldValue == totalConfirmed):
         print("Total confirmed unchanged.")
