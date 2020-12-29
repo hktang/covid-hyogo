@@ -227,8 +227,6 @@ def daterange(start_date, end_date):
 
 
 def merge_city_data(city_data):
-    city_data.sort(key=lambda x: x[0])
-
     lats = []
     merged_data = []
 
