@@ -230,7 +230,6 @@ function getDataSetsByStatus(data) {
 
   dataSet.otherBeds = filterColumnWithNaN(otherFacilitiesColumn);
 
-  console.log(dataSet);
   return dataSet;
 }
 
@@ -279,7 +278,6 @@ function getDataSetsSummary(data) {
   dataSet.totalConfirmed = getCell(data, "B2");
   dataSet.totalDeaths = getCell(data, "B3");
   dataSet.population = getCell(data, "B4");
-
   return dataSet;
 }
 
