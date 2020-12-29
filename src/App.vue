@@ -8,8 +8,8 @@
     <div class="chart-by-date">
       <ChartByDateContainer />
     </div>
-    <ChartByClusterContainer />
     <ChartByStatusContainer />
+    <ChartByClusterContainer />
     <ChartByAgeContainer />
     <MapByCity />
     <Footer />
