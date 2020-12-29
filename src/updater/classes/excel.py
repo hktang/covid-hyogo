@@ -88,7 +88,7 @@ class Excel:
                     else:
                         row_data.append(str(cell.value))
                 else:
-                    row_data.append(str(cell.value))
+                    row_data.append(cell.value)
 
             case_data.append(row_data)
 

@@ -22,7 +22,7 @@ def getKensaTr(soup):
 
 def getTotalConfirmed(soup):
     tr = soup.find("table", {"class", "ex_table"}).findAll("tr")[2::3]
-    totalConfirmed = tr[0].findAll("td")[0::1][0].text.replace(',', '')
+    totalConfirmed = tr[0].findAll("td")[0::1][0].text.replace(',', '').strip()
     return totalConfirmed
 
 
@@ -82,7 +82,7 @@ def updateTotalConfirmed():
 
 
 def main():
-    updateKensa()
+    # updateKensa()
     updateTotalConfirmed()
 
 

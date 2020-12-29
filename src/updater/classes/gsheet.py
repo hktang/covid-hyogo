@@ -8,7 +8,8 @@ class Gsheet:
     gc = None
 
     def __init__(self, key=key):
+        self.key = key
         self.gc = gspread.service_account()
 
-    def get_wb(self, key=key):
-        return self.gc.open_by_key(key)
+    def get_wb(self):
+        return self.gc.open_by_key(self.key)
