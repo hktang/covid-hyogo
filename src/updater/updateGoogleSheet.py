@@ -102,7 +102,7 @@ def update_daily_data_on_gsheet():
 def update_age_data_on_gsheet():
     age_data = []
     for group, label in age_groups.items():
-        count = len(x_df.loc[x_df[3].str.strip() == group])
+        count = len(x_df.loc[x_df[3].astype(str) == group])
         age_data.append([label, count])
     g_ws = g_wb.worksheet(gsheet_tabs[4])
     g_ws.update("A2:B", age_data)
