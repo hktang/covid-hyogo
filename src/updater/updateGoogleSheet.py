@@ -23,6 +23,20 @@ gsheet_tabs = {
     8: 'Hyogo (JA)',
 }
 
+age_groups = {
+    '10歳未満': '<10',
+    '10': '10-19',
+    '20': '20-29',
+    '30': '30-39',
+    '40': '40-49',
+    '50': '50-59',
+    '60': '60-69',
+    '70': '70-79',
+    '80': '80-89',
+    '90歳以上': '>90',
+    '非公表': 'Undisclosed'
+}
+
 x_wb = Excel(params=excel_params)
 x_ws = x_wb.load_worksheet()
 x_case_data = x_wb.get_case_data(x_ws)
@@ -86,6 +100,16 @@ def update_daily_data_on_gsheet():
     print('Daily sheet updated.')
 
 
+def update_age_data_on_gsheet():
+    age_data = []
+    for group, label in age_groups.items():
+        count = len(x_df.loc[x_df[3].str.strip() == group])
+        age_data.append([label, count])
+    gws = g_wb.worksheet(gsheet_tabs[4])
+    gws.update("A2:B", age_data)
+    print('Age sheet updated.')
+
+
 def get_unique_by_col(data, col):
     values = []
     for row in data:
@@ -99,6 +123,7 @@ def daterange(start_date, end_date):
         yield end_date - timedelta(n)
 
 
-# update_main_data_on_gsheet()
-# update_metadata_on_gsheet()
-# update_daily_data_on_gsheet()
+update_main_data_on_gsheet()
+update_metadata_on_gsheet()
+update_daily_data_on_gsheet()
+update_age_data_on_gsheet()
