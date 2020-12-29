@@ -1,89 +1,104 @@
-from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-import gspread
+from classes.excel import Excel
+from classes.gsheet import Gsheet
+from datetime import timedelta, date
 import json
-import os
-import re
-import requests
+import gspread
+import numpy
+import pandas
 
-kensaUrl = "https://web.pref.hyogo.lg.jp/kf16/coronavirus_data.html"
+excel_params = {
+    'source_url': 'https://web.pref.hyogo.lg.jp/kk03/documents/corona-kanjajokyou.xlsx',
+}
 
-def getSoup(url):
-    result = requests.get(url)
-    if result.status_code == 200:
-        return BeautifulSoup(result.content, 'html.parser')
+gsheet_key = '1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs'
 
+gsheet_tabs = {
+    1: '1. Hyogo',
+    2: '2.Daily',
+    3: '3.City',
+    4: '4.Age',
+    5: '5.Status',
+    6: '6. Cluster',
+    7: '7.Totals',
+    8: 'Hyogo (JA)',
+}
 
-def getKensaTr(soup):
-    tr = soup.findAll("table", {"class", "ex_table"})[1].findAll("tr")[3::4]
-    return tr[0]
+x_wb = Excel(params=excel_params)
+x_ws = x_wb.load_worksheet()
+x_case_data = x_wb.get_case_data(x_ws)
+x_df = pandas.DataFrame(x_case_data)
 
-
-def getTotalConfirmed(soup):
-    tr = soup.find("table", {"class", "ex_table"}).findAll("tr")[2::3]
-    totalConfirmed = tr[0].findAll("td")[0::1][0].text.replace(',', '')
-    return totalConfirmed
-
-
-def getSheet():
-    gc = gspread.service_account()
-
-    # production
-    return gc.open_by_key('1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw')
-
-    # Development
-    # return gc.open_by_key('1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs')
+g_wb = Gsheet(gsheet_key).get_wb()
 
 
-def updateKensa():
-    soup = getSoup(kensaUrl)
-    tr = getKensaTr(soup)
-    tds = tr.findAll("td")
-    gSheet = getSheet()
-    worksheet = gSheet.worksheet("5.Status")
-    lastDateString = worksheet.acell("A2").value
-    lastDateTime = datetime.strptime(lastDateString, "%Y-%m-%d")
-    oldValue = worksheet.acell("B2").value
-    newValue = tds[0].text.strip().replace(',', '')
-
-    if(oldValue == newValue):
-        print("Status sheet already up-to-date")
-        return
-    else:
-        # Add new row
-        data = ['']
-        for td in tds:
-            data.append(td.text.strip().replace(',', ''))
-
-        worksheet.insert_row(data, 2, "USER_ENTERED")
-
-        # Add date
-        newDateTime = lastDateTime + timedelta(days=1)
-        newDateString = newDateTime.strftime("%Y-%m-%d")
-        worksheet.update("A2", newDateString, raw=False)
-
-        print("Status sheet updated")
+def update_main_data_on_gsheet():
+    max_col = x_wb.get_column_letter(x_ws.max_column)
+    datarange = 'A' + str(x_wb.params['start_row']) + \
+        ":" + max_col + str(x_ws.max_row)
+    gws = g_wb.worksheet(gsheet_tabs[8])
+    gws.update(datarange, x_case_data)
+    print('Case data updated.')
 
 
-def updateTotalConfirmed():
-    soup = getSoup(kensaUrl)
-    totalConfirmed = getTotalConfirmed(soup)
-    gSheet = getSheet()
-    worksheet = gSheet.worksheet("7.Totals")
-
-    oldValue = worksheet.acell("B2").value.replace(',', '')
-
-    if(oldValue == totalConfirmed):
-        print("Total confirmed unchanged.")
-    else:
-        worksheet.update("B2", totalConfirmed, raw=False)
-        print("Total confirmed updated.")
+def update_metadata_on_gsheet():
+    gws = g_wb.worksheet(gsheet_tabs[8])
+    gws.update(x_wb.params['last_updated_cell'], str(
+        x_ws[x_wb.params['last_updated_cell']].value)[0:10])
+    gws.update(x_wb.params['annotation_cell'],
+               x_ws[x_wb.params['annotation_cell']].value)
+    print('Timestamp and summary updated.')
 
 
-def main():
-    updateKensa()
-    updateTotalConfirmed()
+def update_daily_data_on_gsheet():
+
+    case_dates = get_unique_by_col(x_case_data, 2)
+
+    start_date = date(2020, 3, 1)
+    end_date = x_wb.get_newest_date(x_ws).date()
+
+    daily_data = []
+
+    for single_date in daterange(start_date, end_date):
+
+        date_string = single_date.strftime(x_wb.params['time_format'])
+
+        if date_string in case_dates:
+            # total rows on that date
+            total = x_df.loc[x_df[2] == date_string]
+
+            # Check Gender column (4)
+            male_count = len(total.loc[total[4].str.strip() == '男性'])
+            female_count = len(total.loc[total[4].str.strip() == '女性'])
+            undisclosed_count = len(total.loc[total[4].str.strip() == '非公表'])
+
+            daily_data.append([date_string, male_count, female_count,
+                               undisclosed_count, len(total)])
+        else:
+            daily_data.append([date_string, 0, 0, 0, 0])
+
+    df = pandas.DataFrame(daily_data)
+    df['rolling'] = df.rolling(7).mean()[4].shift(-6)
+    data_list = (df.replace(numpy.nan, 0, regex=True).values.tolist())
+
+    gws = g_wb.worksheet(gsheet_tabs[2])
+    gws.update("A2:F", data_list)
+
+    print('Daily sheet updated.')
 
 
-if __name__ == "__main__":
-    main()
+def get_unique_by_col(data, col):
+    values = []
+    for row in data:
+        if row[col] not in values:
+            values.append(row[col])
+    return values
+
+
+def daterange(start_date, end_date):
+    for n in range(int((end_date - start_date).days) + 1):
+        yield end_date - timedelta(n)
+
+
+# update_main_data_on_gsheet()
+# update_metadata_on_gsheet()
+# update_daily_data_on_gsheet()

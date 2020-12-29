@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
+vendor
 /dist
 
 # local env files
@@ -20,3 +21,5 @@ updater.log
 *.njsproj
 *.sln
 *.sw?
+*.pyc
+*.pyo
