@@ -36,6 +36,80 @@ age_groups = {
     '非公表': 'Undisclosed'
 }
 
+placeholder_lat_ln = [36.204823, 138.25293]
+
+current_cities = {
+    'たつの市': [34.831408, 134.549424],
+    '三木市': [34.796896, 134.990194],
+    '三田市': [34.89, 135.225507],
+    '中播磨健康福祉事務所管内': [34.822511, 134.693029],
+    '丹波健康福祉事務所管内': [35.177132, 135.035842],
+    '丹波市': [35.177132, 135.035842],
+    '京都市': [35.011564, 135.768149],
+    '伊丹健康福祉事務所管内': [34.784348, 135.40091],
+    '伊丹健康福祉事務所管外': placeholder_lat_ln,
+    '伊丹市': [34.784348, 135.40091],
+    '加古川健康事務所管内': [34.756919, 134.84136],
+    '加古川健康福祉事務所管内': [34.756919, 134.84136],
+    '加古川市': [34.756919, 134.84136],
+    '加東健康福祉事務所管内': [34.9185915, 134.9734436],
+    '加東市': [34.9185915, 134.9734436],
+    '加西市': [34.9280226, 134.841609],
+    '千葉県': [35.335416, 140.183252],
+    '千葉県船橋市': [35.694549, 139.982728],
+    '南あわじ市': [34.29449, 134.779782],
+    '吹田市': [34.759359, 135.516477],
+    '堺市': [34.573326, 135.483118],
+    '多可町': [35.050216, 134.923425],
+    '大阪市': [34.6413315, 135.5629394],
+    '大阪府': [34.6413315, 135.5629394],
+    '姫路市': [34.815418, 134.685551],
+    '宍粟市': [35.004241, 134.549379],
+    '宝塚健康福祉事務所管内': [34.799984, 135.360259],
+    '宝塚市': [34.799984, 135.360259],
+    '寝屋川市': [34.76625, 135.628018],
+    '小野市': [34.853198, 134.93151],
+    '尼崎市': [34.732711, 135.405791],
+    '川西市': [34.830199, 135.417395],
+    '播磨町': [34.7152468, 134.8680023],
+    '新温泉町': [35.623691, 134.44893],
+    '明石': [34.643208, 134.997586],
+    '明石市': [34.643208, 134.997586],
+    '明石市外': placeholder_lat_ln,
+    '朝来健康福祉事務所管内': [35.339783, 134.852348],
+    '朝来市': [35.339783, 134.852348],
+    '東京都': [35.689487, 139.691711],
+    '池田市': [34.821557, 135.42838],
+    '洲本健康福祉事務所管内': [34.340382, 134.889557],
+    '淡路市': [34.4396558, 134.9149109],
+    '猪名川町': [34.8950618, 135.3761626],
+    '県内': [34.683336, 135.163486],
+    '県外': placeholder_lat_ln,
+    "県外\n（大阪府内）": placeholder_lat_ln,
+    '神戸市': [34.690081, 135.195631],
+    '神戸市外': placeholder_lat_ln,
+    '福崎町': [34.950238, 134.760182],
+    '稲美町': [34.75, 134.916667],
+    '管外': placeholder_lat_ln,
+    '芦屋健康福祉事務所管内': [34.726954, 135.304127],
+    '芦屋市': [34.726954, 135.304127],
+    '西宮市': [34.737603, 135.341511],
+    '西宮市外': placeholder_lat_ln,
+    '西脇市': [34.993388, 134.969355],
+    '調査中': placeholder_lat_ln,
+    '豊中市': [34.781108, 135.469953],
+    '豊岡健康福祉事務所管内': [35.544556, 134.820241],
+    '赤穂健康福祉事務所管内': [34.755069, 134.390227],
+    '赤穂市': [34.755069, 134.390227],
+    '長崎県': [33.248853, 129.693091],
+    '青森県': [40.765708, 140.917588],
+    '非公表': placeholder_lat_ln,
+    '香川県': [34.222592, 134.019915],
+    '高砂市': [34.7661005, 134.7906014],
+    '龍野健康福祉事務所管内': [34.831408, 134.549424],
+}
+
+
 x_wb = Excel(params=excel_params)
 x_ws = x_wb.load_worksheet()
 x_case_data = x_wb.get_main_data(x_ws)
@@ -109,6 +183,36 @@ def update_age_data_on_gsheet():
     print('Age sheet updated.')
 
 
+def update_cities_data_on_gsheet():
+    city_data = []
+    cities = get_unique_by_col(x_case_data, 6)
+
+    for city in cities:
+        count = len(x_df.loc[x_df[6] == city])
+
+        if city == '':
+            continue
+
+        if city not in current_cities:
+            lat_ln = placeholder_lat_ln
+            print('Notice:', city, 'is not in the list.')
+        else:
+            lat_ln = current_cities[city]
+
+        city_data.append([lat_ln[0], lat_ln[1], city, count])
+
+    merged_data = merge_city_data(city_data)
+
+    g_ws = g_wb.worksheet(gsheet_tabs[3])
+
+    g_ws.clear()
+
+    g_ws.update("A1:D1", [['Lat', 'Lng', 'City', 'Total confirmed cases']])
+    g_ws.update("A2:D", merged_data)
+
+    print("City sheet updated.")
+
+
 def get_unique_by_col(data, col):
     values = []
     for row in data:
@@ -122,11 +226,34 @@ def daterange(start_date, end_date):
         yield end_date - timedelta(n)
 
 
+def merge_city_data(city_data):
+    city_data.sort(key=lambda x: x[0])
+
+    lats = []
+    merged_data = []
+
+    for row in city_data:
+        lat = row[0]
+        id = next((i for i, x in enumerate(
+            merged_data) if lat in x), None)
+
+        if id == None:
+            lats.append(lat)
+            merged_data.append(row)
+        else:
+            existing_row = merged_data[id]
+            existing_row[2] = existing_row[2].replace("\n", '') + ', ' + row[2]
+            existing_row[3] = existing_row[3] + row[3]
+
+    return merged_data
+
+
 def main():
     update_main_data_on_gsheet()
     update_metadata_on_gsheet()
     update_daily_data_on_gsheet()
     update_age_data_on_gsheet()
+    update_cities_data_on_gsheet()
 
 
 if __name__ == "__main__":
