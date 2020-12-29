@@ -10,6 +10,9 @@ const files = {
   7: "summary.json"
 };
 
+const gId = "1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs/"; // dev
+// const gId = "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/" // prod
+
 for (const [key, value] of Object.entries(files)) {
   getSheet(key).then(data => {
     writeFile(value, data);
@@ -20,12 +23,7 @@ function getSheet(sheetId) {
   return axios
     .get(
       "https://spreadsheets.google.com/feeds/cells/" +
-        /* Production */
-        "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/" +
-        /* Development 
-        "1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs/" +
-        */
-
+        gId +
         sheetId +
         "/public/basic?alt=json"
     )
@@ -93,13 +91,13 @@ function getDataSetsByDate(data) {
   dataSet.male = filterColumn(maleColumn);
 
   const totalColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "D"
+    entry => entry["title"]["$t"].substring(0, 1) == "E"
   );
 
   dataSet.total = filterColumn(totalColumn);
 
   const sevenDayMovingAverageColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "E"
+    entry => entry["title"]["$t"].substring(0, 1) == "F"
   );
 
   dataSet.sevenDayMovingAverage = filterColumn(sevenDayMovingAverageColumn);
@@ -172,65 +170,66 @@ function getDataSetsByStatus(data) {
   dataSet.dateLabels = filterColumn(dateColumn);
 
   const totalTestedColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "B"
+    entry => entry["title"]["$t"].substring(0, 1) == "C"
   );
 
   dataSet.totalTested = filterColumn(totalTestedColumn);
 
   const confirmedColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "C"
+    entry => entry["title"]["$t"].substring(0, 1) == "D"
   );
 
   dataSet.confirmed = filterColumn(confirmedColumn);
 
   const hospitalizedColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "D"
+    entry => entry["title"]["$t"].substring(0, 1) == "E"
   );
 
   dataSet.hospitalized = filterColumn(hospitalizedColumn);
 
   const nonSevereCasesColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "E"
+    entry => entry["title"]["$t"].substring(0, 1) == "F"
   );
 
   dataSet.nonSevereCases = filterColumn(nonSevereCasesColumn);
 
   const severeCasesColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "F"
+    entry => entry["title"]["$t"].substring(0, 1) == "G"
   );
 
   dataSet.severeCases = filterColumn(severeCasesColumn);
 
   const deathsColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "I"
+    entry => entry["title"]["$t"].substring(0, 1) == "K"
   );
 
   dataSet.deaths = filterColumn(deathsColumn);
 
   const dischargedColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "J"
+    entry => entry["title"]["$t"].substring(0, 1) == "L"
   );
 
   dataSet.discharged = filterColumn(dischargedColumn);
 
   const totalBedsColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "K"
+    entry => entry["title"]["$t"].substring(0, 1) == "M"
   );
 
   dataSet.totalBeds = filterColumnWithNaN(totalBedsColumn);
 
   const hospitalBedsColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "L"
+    entry => entry["title"]["$t"].substring(0, 1) == "N"
   );
 
   dataSet.hospitalBeds = filterColumnWithNaN(hospitalBedsColumn);
 
   const otherFacilitiesColumn = data.feed.entry.filter(
-    entry => entry["title"]["$t"].substring(0, 1) == "M"
+    entry => entry["title"]["$t"].substring(0, 1) == "O"
   );
 
   dataSet.otherBeds = filterColumnWithNaN(otherFacilitiesColumn);
-
+  
+  console.log(dataSet);
   return dataSet;
 }
 

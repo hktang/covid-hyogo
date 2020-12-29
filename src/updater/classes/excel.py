@@ -31,7 +31,11 @@ class Excel:
 
     def load_worksheet(self):
         ''' Loads sheet based on sheet name. '''
-        return self.workbook[self.params['sheet_name']]
+        try:
+            ws = self.workbook[self.params['sheet_name']]
+        except:
+            ws = self.workbook[self.workbook.sheetnames[0]]
+        return ws
 
     def ordinal_to_date(self, ordinal, _epoch0=datetime(1899, 12, 31)):
         ''' 
@@ -50,7 +54,7 @@ class Excel:
             letter = chr(65 + remainder) + letter
         return letter
 
-    def get_case_data(self, ws):
+    def get_main_data(self, ws):
         ''' Returns cleaned data of all cases.'''
         case_data = []
         count = 0

@@ -1,13 +1,11 @@
 from classes.excel import Excel
 from classes.gsheet import Gsheet
 from datetime import timedelta, date
-import json
-import gspread
 import numpy
 import pandas
 
 excel_params = {
-    'source_url': 'https://web.pref.hyogo.lg.jp/kk03/documents/corona-kanjajokyou.xlsx',
+    'url': 'https://web.pref.hyogo.lg.jp/kk03/documents/corona-kanjajokyou.xlsx',
 }
 
 gsheet_key = '1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs'
@@ -39,7 +37,7 @@ age_groups = {
 
 x_wb = Excel(params=excel_params)
 x_ws = x_wb.load_worksheet()
-x_case_data = x_wb.get_case_data(x_ws)
+x_case_data = x_wb.get_main_data(x_ws)
 x_df = pandas.DataFrame(x_case_data)
 
 g_wb = Gsheet(gsheet_key).get_wb()
@@ -49,17 +47,17 @@ def update_main_data_on_gsheet():
     max_col = x_wb.get_column_letter(x_ws.max_column)
     datarange = 'A' + str(x_wb.params['start_row']) + \
         ":" + max_col + str(x_ws.max_row)
-    gws = g_wb.worksheet(gsheet_tabs[8])
-    gws.update(datarange, x_case_data)
+    g_ws = g_wb.worksheet(gsheet_tabs[8])
+    g_ws.update(datarange, x_case_data)
     print('Case data updated.')
 
 
 def update_metadata_on_gsheet():
-    gws = g_wb.worksheet(gsheet_tabs[8])
-    gws.update(x_wb.params['last_updated_cell'], str(
+    g_ws = g_wb.worksheet(gsheet_tabs[8])
+    g_ws.update(x_wb.params['last_updated_cell'], str(
         x_ws[x_wb.params['last_updated_cell']].value)[0:10])
-    gws.update(x_wb.params['annotation_cell'],
-               x_ws[x_wb.params['annotation_cell']].value)
+    g_ws.update(x_wb.params['annotation_cell'],
+                x_ws[x_wb.params['annotation_cell']].value)
     print('Timestamp and summary updated.')
 
 
@@ -81,11 +79,11 @@ def update_daily_data_on_gsheet():
             total = x_df.loc[x_df[2] == date_string]
 
             # Check Gender column (4)
-            male_count = len(total.loc[total[4].str.strip() == '男性'])
             female_count = len(total.loc[total[4].str.strip() == '女性'])
+            male_count = len(total.loc[total[4].str.strip() == '男性'])
             undisclosed_count = len(total.loc[total[4].str.strip() == '非公表'])
 
-            daily_data.append([date_string, male_count, female_count,
+            daily_data.append([date_string, female_count, male_count,
                                undisclosed_count, len(total)])
         else:
             daily_data.append([date_string, 0, 0, 0, 0])
@@ -94,8 +92,8 @@ def update_daily_data_on_gsheet():
     df['rolling'] = df.rolling(7).mean()[4].shift(-6)
     data_list = (df.replace(numpy.nan, 0, regex=True).values.tolist())
 
-    gws = g_wb.worksheet(gsheet_tabs[2])
-    gws.update("A2:F", data_list)
+    g_ws = g_wb.worksheet(gsheet_tabs[2])
+    g_ws.update("A2:F", data_list)
 
     print('Daily sheet updated.')
 
@@ -105,8 +103,8 @@ def update_age_data_on_gsheet():
     for group, label in age_groups.items():
         count = len(x_df.loc[x_df[3].str.strip() == group])
         age_data.append([label, count])
-    gws = g_wb.worksheet(gsheet_tabs[4])
-    gws.update("A2:B", age_data)
+    g_ws = g_wb.worksheet(gsheet_tabs[4])
+    g_ws.update("A2:B", age_data)
     print('Age sheet updated.')
 
 
@@ -123,7 +121,12 @@ def daterange(start_date, end_date):
         yield end_date - timedelta(n)
 
 
-update_main_data_on_gsheet()
-update_metadata_on_gsheet()
-update_daily_data_on_gsheet()
-update_age_data_on_gsheet()
+def main():
+    update_main_data_on_gsheet()
+    update_metadata_on_gsheet()
+    update_daily_data_on_gsheet()
+    update_age_data_on_gsheet()
+
+
+if __name__ == "__main__":
+    main()
