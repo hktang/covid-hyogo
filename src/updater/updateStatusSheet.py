@@ -10,7 +10,8 @@ excel_params = {
     'time_format': "%Y-%m-%d",
 }
 
-gsheet_key = '1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs'
+# gsheet_key = '1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs'  # dev
+gsheet_key = '1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw'  # prod
 
 x_wb = Excel(params=excel_params)
 x_ws = x_wb.load_worksheet()

@@ -10,8 +10,9 @@ const files = {
   7: "summary.json"
 };
 
-const gId = "1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs/"; // dev
-// const gId = "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/" // prod
+//const gId = "1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs/"; // dev
+
+const gId = "1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw/"; // prod
 
 for (const [key, value] of Object.entries(files)) {
   getSheet(key).then(data => {
@@ -228,7 +229,7 @@ function getDataSetsByStatus(data) {
   );
 
   dataSet.otherBeds = filterColumnWithNaN(otherFacilitiesColumn);
-  
+
   console.log(dataSet);
   return dataSet;
 }

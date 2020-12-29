@@ -8,7 +8,8 @@ excel_params = {
     'url': 'https://web.pref.hyogo.lg.jp/kk03/documents/corona-kanjajokyou.xlsx',
 }
 
-gsheet_key = '1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs'
+# gsheet_key = '1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs'  # dev
+gsheet_key = '1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw'  # prod
 
 gsheet_tabs = {
     1: '1. Hyogo',
