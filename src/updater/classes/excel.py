@@ -96,6 +96,16 @@ class Excel:
 
     def get_newest_date(self, ws):
         ''' Returns the formatted date of the newest date of cases'''
-        date_value = ws[self.params['date_cols']
-                        [0]+str(self.params['start_row'])].value
+
+        first_row = self.params['start_row']
+
+        while True:
+
+            first_cell = self.params['date_cols'][0] + str(first_row)
+            first_row += 1
+            date_value = ws[first_cell].value
+
+            if isinstance(date_value, int):
+                break
+
         return self.ordinal_to_date(date_value)
