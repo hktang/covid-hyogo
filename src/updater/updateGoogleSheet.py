@@ -1,9 +1,12 @@
+from bs4 import BeautifulSoup
 from classes.excel import Excel
 from classes.gsheet import Gsheet
 from datetime import timedelta, date
 import numpy
 import pandas
+import requests
 
+page_url = 'https://web.pref.hyogo.lg.jp/kk03/corona_hasseijyokyo.html'
 
 excel_params = [{
     'url': 'https://web.pref.hyogo.lg.jp/kk03/documents/corona_kanjyajyokyo.xlsx',
@@ -112,18 +115,6 @@ current_cities = {
     '龍野健康福祉事務所管内': [34.831408, 134.549424],
 }
 
-for params in excel_params:
-    try:
-        x_wb = Excel(params=params)
-    except:
-        continue
-
-x_ws = x_wb.load_worksheet()
-x_case_data = x_wb.get_main_data(x_ws)
-x_df = pandas.DataFrame(x_case_data)
-
-g_wb = Gsheet(gsheet_key).get_wb()
-
 
 def update_main_data_on_gsheet():
     max_col = x_wb.get_column_letter(x_ws.max_column)
@@ -157,7 +148,7 @@ def update_daily_data_on_gsheet():
         date_string = single_date.strftime(x_wb.params['time_format'])
 
         if date_string in case_dates:
-            # total rows on that date
+            # Total rows on that date
             total = x_df.loc[x_df[2] == date_string]
 
             # Check Gender column (4)
@@ -168,10 +159,13 @@ def update_daily_data_on_gsheet():
             daily_data.append([date_string, female_count, male_count,
                                undisclosed_count, len(total)])
         else:
+            # Append row with date string and zeros.
             daily_data.append([date_string, 0, 0, 0, 0])
 
+    # Calculate 7-date rolling average and add to a new 'column'
     df = pandas.DataFrame(daily_data)
     df['rolling'] = df.rolling(7).mean()[4].shift(-6)
+
     data_list = (df.replace(numpy.nan, 0, regex=True).values.tolist())
 
     g_ws = g_wb.worksheet(gsheet_tabs[2])
@@ -181,8 +175,10 @@ def update_daily_data_on_gsheet():
 
 
 def update_age_data_on_gsheet():
+
     age_data = []
     for group, label in age_groups.items():
+        # Count the totals of the same group
         count = len(x_df.loc[x_df[3].astype(str) == group])
         age_data.append([label, count])
     g_ws = g_wb.worksheet(gsheet_tabs[4])
@@ -191,6 +187,7 @@ def update_age_data_on_gsheet():
 
 
 def update_cities_data_on_gsheet():
+
     city_data = []
     cities = get_unique_by_col(x_case_data, 6)
 
@@ -253,12 +250,44 @@ def merge_city_data(city_data):
     return merged_data
 
 
+def getSoup(url):
+    result = requests.get(url)
+    if result.status_code == 200:
+        return BeautifulSoup(result.content, 'html.parser')
+
+
+def get_url_from_soup(url):
+    '''Get spreadsheet URL from the page.'''
+    soup = getSoup(url)
+    a = soup.find("a", {"class", "icon_excel"})
+    return 'https://web.pref.hyogo.lg.jp' + a['href']
+
+
 def main():
     update_main_data_on_gsheet()
     update_metadata_on_gsheet()
     update_daily_data_on_gsheet()
     update_age_data_on_gsheet()
     update_cities_data_on_gsheet()
+
+
+for params in excel_params:
+    try:
+        x_wb = Excel(params=params)
+    except:
+        continue
+
+try:
+    x_ws = x_wb.load_worksheet()
+except:
+    url = get_url_from_soup(page_url)
+    x_wb = Excel({'url': url})
+    x_ws = x_wb.load_worksheet()
+
+x_case_data = x_wb.get_main_data(x_ws)
+x_df = pandas.DataFrame(x_case_data)
+
+g_wb = Gsheet(gsheet_key).get_wb()
 
 
 if __name__ == "__main__":
