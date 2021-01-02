@@ -27,6 +27,7 @@
     "title": "Daily confirmed cases",
     "female": "Female",
     "male": "Male",
+    "dailyTotal": "Daily total",
     "sevenDayMovingAverage": "Seven-day moving average"
   },
   "clusters": {

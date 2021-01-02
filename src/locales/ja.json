@@ -27,6 +27,7 @@
     "title": "感染確認者数（日別）",
     "female": "女性",
     "male": "男性",
+    "dailyTotal": "日別合計",
     "sevenDayMovingAverage": "7日間移動平均"
   },
   "clusters": {

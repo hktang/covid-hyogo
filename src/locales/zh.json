@@ -24,9 +24,10 @@
     "oneDeathInPopulation": "或每{0}位兵库县居民中有1人死亡。"
   },
   "daily": {
-    "title": "每日确诊病例概况",
+    "title": "每日新增病例",
     "female": "女",
     "male": "男",
+    "dailyTotal": "当日合计",
     "sevenDayMovingAverage": "7日移动平均"
   },
   "clusters": {
