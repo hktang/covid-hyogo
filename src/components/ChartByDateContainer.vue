@@ -50,6 +50,30 @@ export default {
       this.options = {
         maintainAspectRatio: false,
         responsive: true,
+        tooltips: {
+          enabled: true,
+          callbacks: {
+            label: function(tooltipItem, data) {
+              const theLabel = data.datasets[tooltipItem.datasetIndex].label;
+
+              const theNumber = Math.abs(
+                Number(
+                  data.datasets[tooltipItem.datasetIndex].data[
+                    tooltipItem.index
+                  ]
+                )
+              );
+
+              const theTotal =
+                data.datasets[1].data[tooltipItem.index] +
+                data.datasets[2].data[tooltipItem.index];
+
+              const totalLabel = data.datasets[0].totalLabel;
+
+              return `${theLabel}: ${theNumber} (${totalLabel}: ${theTotal})`;
+            }
+          }
+        },
         scales: {
           xAxes: [
             {
@@ -92,6 +116,7 @@ export default {
         datasets: [
           {
             label: this.$t("daily.sevenDayMovingAverage"),
+            totalLabel: this.$t("daily.dailyTotal"),
             data: this.sevenDayMovingAverage,
             yAxisID: "no-stack",
             type: "line",
@@ -162,7 +187,7 @@ h3 {
   }
 
   .chart {
-    width: 50vw;
+    width: 80vw;
     height: 50vh;
   }
 }
