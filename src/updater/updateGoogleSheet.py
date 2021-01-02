@@ -4,9 +4,12 @@ from datetime import timedelta, date
 import numpy
 import pandas
 
-excel_params = {
+
+excel_params = [{
+    'url': 'https://web.pref.hyogo.lg.jp/kk03/documents/corona_kanjyajyokyo.xlsx',
+}, {
     'url': 'https://web.pref.hyogo.lg.jp/kk03/documents/corona-kanjajokyou.xlsx',
-}
+}]
 
 # gsheet_key = '1MJbDJzx8JHVbe9aH--FqkW34eDUczF9WnQvFq9szrzs'  # dev
 gsheet_key = '1B0aXcDc2IOkKRcWqoQzVsswoJ-rd5hXp8DYgT9KyqDw'  # prod
@@ -109,8 +112,12 @@ current_cities = {
     '龍野健康福祉事務所管内': [34.831408, 134.549424],
 }
 
+for params in excel_params:
+    try:
+        x_wb = Excel(params=params)
+    except:
+        continue
 
-x_wb = Excel(params=excel_params)
 x_ws = x_wb.load_worksheet()
 x_case_data = x_wb.get_main_data(x_ws)
 x_df = pandas.DataFrame(x_case_data)
