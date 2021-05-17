@@ -1,5 +1,7 @@
 # COVID-19 Hyogo
 
+This project is abandoned. Please visit [this page][7] for daily updates. 
+
 Tracking the COVID-19 outbreak in Hyogo Prefecture, Japan at
 [https://covid19hyogo.org/][0]
 
@@ -97,3 +99,4 @@ This project is licensed under the MIT License
 [4]: https://t.me/covid19hyogo_bot
 [5]: https://www.transifex.com/covid-19-hyogo/covid-19-in-hyogo/
 [6]: https://github.com/hktang/covid-hyogo/issues
+[7]: https://web.pref.hyogo.lg.jp/kf16/coronavirus_data.html

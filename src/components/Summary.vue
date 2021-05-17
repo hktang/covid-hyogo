@@ -1,5 +1,12 @@
 <template>
   <div class="container">
+    <h1>
+      This site is abandoned. Visit
+      <a href="https://web.pref.hyogo.lg.jp/kf16/coronavirus_data.html">
+        https://web.pref.hyogo.lg.jp/kf16/coronavirus_data.html
+      </a>
+      for official data and graphics. Take care!
+    </h1>
     <p class="muted">
       {{ $t("overview.lastUpdated") }}
       {{ new Date(lastUpdated) | moment("YYYY-M-D HH:mm:ss") }} (JST)
@@ -61,22 +68,25 @@ export default {
     totalConfirmed: 0,
     totalTested: 0,
     totalDeaths: 0,
-    population: 0
+    population: 0,
   }),
   watch: {},
   async mounted() {
     this.getSummary();
+    window.location.replace(
+      "https://web.pref.hyogo.lg.jp/kf16/coronavirus_data.html"
+    );
   },
   methods: {
-    getSummary: function() {
+    getSummary: function () {
       this.lastUpdated = DataSummary.updated;
       this.totalTested = DataSummary.totalTested;
       this.totalConfirmed = DataSummary.totalConfirmed;
       this.totalDeaths = DataSummary.totalDeaths;
       this.population = DataSummary.population;
       this.loaded = true;
-    }
-  }
+    },
+  },
 };
 </script>
 
