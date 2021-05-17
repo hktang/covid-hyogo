@@ -73,9 +73,8 @@ export default {
   watch: {},
   async mounted() {
     this.getSummary();
-    window.location.replace(
-      "https://web.pref.hyogo.lg.jp/kf16/coronavirus_data.html"
-    );
+    window.location.href =
+      "https://web.pref.hyogo.lg.jp/kf16/coronavirus_data.html";
   },
   methods: {
     getSummary: function() {
