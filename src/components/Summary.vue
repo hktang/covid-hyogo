@@ -68,7 +68,7 @@ export default {
     totalConfirmed: 0,
     totalTested: 0,
     totalDeaths: 0,
-    population: 0,
+    population: 0
   }),
   watch: {},
   async mounted() {
@@ -78,15 +78,15 @@ export default {
     );
   },
   methods: {
-    getSummary: function () {
+    getSummary: function() {
       this.lastUpdated = DataSummary.updated;
       this.totalTested = DataSummary.totalTested;
       this.totalConfirmed = DataSummary.totalConfirmed;
       this.totalDeaths = DataSummary.totalDeaths;
       this.population = DataSummary.population;
       this.loaded = true;
-    },
-  },
+    }
+  }
 };
 </script>
 
