@@ -1,6 +1,4 @@
-# COVID-19 Hyogo
-
-This project is abandoned. Please visit [this page][7] for daily updates. 
+# This project is abandoned. Please visit [this page][7] for daily updates. 
 
 Tracking the COVID-19 outbreak in Hyogo Prefecture, Japan at
 [https://covid19hyogo.org/][0]
